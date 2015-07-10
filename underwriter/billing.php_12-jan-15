@@ -1,0 +1,209 @@
+<?php 
+ini_set('display_errors',1);  
+error_reporting(E_ALL);
+$path = $_SERVER['DOCUMENT_ROOT']."/path.php";
+require_once($path);
+include('header.php');
+require_once($config);
+include('../classes/login-functions.php');
+if(loggedin()) 
+{
+/*Class file to call the functions*/
+?>
+<section class="row">
+	<div class="container dashboard_bg">
+		<div class="anesth_dashbord_client">
+			<?php
+				if(isset($_REQUEST['fid']) && isset($_REQUEST['action'])== "bill")
+				{
+			?>
+				<?php
+					$tempd = mysql_query("SELECT * FROM `bill_forward_underwriter` WHERE `form_id`='$_REQUEST[fid]' && `user_id`='$_REQUEST[uid]' && `underwriter_id`='$doctor_id'") or die(mysql_error());
+					if(mysql_num_rows($tempd)>0)
+					{
+				?>
+				<h1>Accept Bill</h1>
+						<div class="anesth_box_bg">
+							<div class="anesth_row_heading">
+								<div class="anesth_span_1">Date</div>
+								<div class="anesth_span_3">Message</div>
+								<div class="anesth_span_4">Physician</div>
+								<div class="anesth_span_5">Facility</div>
+								<div class="anesth_span_6">Other</div>
+								<div class="anesth_span_7">Total</div>
+							</div>
+							<div class="anesth_box_bg">
+								<?php 
+									//echo $k = "SELECT * , SUM( doctor_cost + doctor_price) AS totalcostd, SUM(facility_cost+facility_price ) AS totalcostf, SUM( anes_cost + anes_price) as totalcosta  FROM  `billing_info` WHERE form_id = '$_REQUEST[fid]' && user_id = '$_REQUEST[uid]' && `underwriter_id`='$doctor_id' GROUP BY cpt_code";
+									$sql = mysql_query("SELECT * , SUM( doctor_cost + doctor_price ) AS totalcostd, SUM( facility_cost + facility_price ) AS totalcostf, SUM( anes_cost + anes_price ) AS totalcosta, SUM( doctor_cost + doctor_price + facility_cost + facility_price + anes_cost + anes_price ) AS all_total FROM `billing_info` WHERE form_id = '$_REQUEST[fid]' && user_id = '$_REQUEST[uid]' && `underwriter_id`='$doctor_id'") or die(mysql_error()); 
+									$row = mysql_fetch_object($sql);
+									$data = mysql_query("SELECT * FROM `bill_forward_underwriter` WHERE form_id='$_GET[fid]' && user_id='$_GET[uid]' && `underwriter_id`='$doctor_id'") or die(mysql_error());
+									$sdata = mysql_fetch_object($data);
+								?>
+								<div class="anesth_row_heading">
+									<div class="anesth_span_1"><?php echo $sdata->date_time; ?></div>
+									<div class="anesth_span_3"><?php echo $sdata->admin_message; ?></div>
+									<div class="anesth_span_4">
+										<b>
+											$<?php 
+												$phytot = $row->totalcostd;
+												echo number_format($phytot,2);
+											?>
+										</b>
+									</div>
+									<div class="anesth_span_5">
+										<b>
+											$<?php 
+												$tfac = $row->totalcostf;
+												echo number_format($tfac,2);
+											?>
+										</b>
+									</div>
+									<div class="anesth_span_6">
+										<b>
+											$<?php 
+												$tother = $row->totalcosta;
+												echo number_format($tother,2);
+											?>
+										</b>
+									</div>
+									<div class="anesth_span_7">
+									<b>
+										$<?php 
+											$all_total = $row->all_total;
+											echo number_format($all_total,2);
+										?>
+									</b>
+									</div>
+								</div>
+							</div>
+							<h1>Billing Information With CPT Codes</h1>
+							<div class="anesth_row_heading">
+								<div class="anesth_span_1">CPT Code</div>
+								<div class="anesth_span_3">Description</div>
+							</div>
+							<?php
+								$t_data = mysql_query("SELECT * FROM `billing_info` WHERE `form_id`='$_REQUEST[fid]' && `user_id`='$_REQUEST[uid]' && `underwriter_id`='$doctor_id'") or die(mysql_error());
+								while($cpt_code = mysql_fetch_object($t_data))
+								{
+							?>
+								<div class="anesth_row_heading">
+									<div class="anesth_span_1"><?=$cpt_code->cpt_code?></div>
+									<div class="anesth_span_3"><?=$cpt_code->description?></div>
+								</div>
+							<?php
+								}
+							?>
+						</div>
+					<div class="accept_case">
+						<h1>Underwriter Decisions</h1>
+						<form name="billing_update" method="post" action="">
+						<?php
+							$sql = mysql_query("SELECT * FROM `decisions`") or die(mysql_error());
+							while($data = mysql_fetch_object($sql))
+							{
+						?>
+							<input type="radio" name="accept" selected	 value=<?php echo $data->id; ?>><?php echo $data->dec_name; ?><br/>
+						<?php
+							}
+						?>
+							<input type="submit" name="acceptcase" value="Action">
+						</form>
+						<?php
+							$data = mysql_query("SELECT a . * , b . * FROM bill_forward_underwriter AS a, decisions AS b WHERE a.underwriter_message = b.id && a.`form_id`='$_REQUEST[fid]' && a.`user_id`='$_REQUEST[uid]' && a.`underwriter_id`='$doctor_id'") or die(mysql_error());
+							if(mysql_num_rows($data)>0)
+							{
+								$data           = mysql_fetch_object($data);
+								echo "Your Last Message has been forwarded to Admin: &nbsp;<b>". $data->dec_name."</b>";
+							}
+							else
+							{
+								echo "<div class='e_message'>Your Decision is Pending till Now.</div>";
+							}
+						?>
+						<?php
+							if(isset($_POST['acceptcase']))
+							{
+								$accepttt = $_POST['accept'];
+								$update_bill = mysql_query("UPDATE `bill_forward_underwriter` SET `underwriter_message`= '$accepttt' WHERE `form_id`='$_REQUEST[fid]' && `user_id`='$_REQUEST[uid]' && `underwriter_id`='$doctor_id'") or die(mysql_error());
+								if($update_bill)
+								{
+									echo "Decision is Successfully Sent to Admin";
+								}
+								else
+								{
+									echo "There is Something going Wrong. Please try again Later.";
+								}
+							}
+						?>
+					</div>
+			<?php
+			}
+			else{
+				echo "Unexpected Error. Please Go Back";
+			}
+			}
+			else
+			{
+			?>
+			<h1>New Client Application</h1>
+			<div class="anesth_box_bg">
+				<div class="anesth_row_heading">
+					<div class="anesth_span_1">Client No.</div>
+					<div class="anesth_span_2">Client Name</div>
+					<div class="anesth_span_3">Date of Birth</div>
+					<div class="anesth_span_4">Application Date</div>			
+				</div>
+				<?php
+					$temp_bill  = mysql_query("SELECT * FROM `bill_forward_underwriter` WHERE `underwriter_id`='$doctor_id'") or die(mysql_error());
+					while($bill = mysql_fetch_object($temp_bill))
+					{
+				?>
+					<div class="anesth_row_content">				
+						<div class="anesth_span_1">
+							<?php
+								echo $form_id = $bill->form_id;
+							?>
+						</div>
+						<div class="anesth_span_2">
+							<?php
+								$user_id         = $bill->user_id;
+								echo $first_name = $functions->GetObjectById($user_id,"first_name")."&nbsp;";	
+								echo $last_name  = $functions->GetObjectById($user_id,"last_name");
+							?>
+						</div>
+						<div class="anesth_span_3">
+							<?php
+								echo $functions->GetD_O_B("p_d_o_b",$user_id);
+							?>
+						</div>
+						<div class="anesth_span_4">
+							<?php
+								$app_date = $functions->GetObjectFromPCTI("date_time",$form_id);
+								echo date('Y-M-d',strtotime($app_date))."<br/>";
+								echo date('h:m:s a',strtotime($app_date));
+							?>
+						</div>
+						<div class="anesth_span_5">
+							<a title="Check Status" href="check-status.php?fid=<?=$bill->form_id; ?>&uid=<?=$bill->user_id;?>&cid=<?=$functions->Getcidbyformid($form_id);?>" class="dr_check_status">View Application</a>
+							<a title="Accept Billing" href="billing.php?fid=<?=$bill->form_id; ?>&uid=<?=$bill->user_id;?>&action=bill">Accept Billing</a>
+						</div>
+					</div>
+				<?php
+					}
+				?>
+			</div>
+			<?php } ?>
+		</div>
+	</div>
+</section>
+<?php
+require($get_footer);
+}
+else
+{
+	
+header('Location:../../login.php');
+	
+}
+?>

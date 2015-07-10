@@ -1,0 +1,68 @@
+.row{width:100%; float:left; margin:auto; height:auto;}
+.container{width:1170px; height:auto; margin:0 auto;}
+
+.logo{width:40%; float:left; clear:right; margin:auto; padding:5px 0px;}
+.logo h1{background:url(images/logo.png) no-repeat left; display:block; min-height:100px;}
+.logo h1 a{text-decoration:none; text-indent:-999999px; line-height:75px; display:block;}
+
+.social_right{width:28%; float:right; margin:auto; padding:5px 0px;}
+.social_feeds{width:100%; display:inline-block; text-align:right;}
+.social_feeds ul{margin:0; padding:0; float:right;}
+.social_feeds ul li{list-style:none; display:block; float:left; position:relative; text-align:center; margin:0px 5px;}
+.social_feeds ul li a{text-indent:-999999px; display:block;}
+
+.social_facebook{background:url(images/social_sprite.png) no-repeat -3px -2px; display:block; width:31px; height:35px; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; -ms-transition:all 0.5s ease-in-out; -o-transition:all 0.5s ease-in-out; transition:all 0.5s ease-in-out;}
+.social_facebook:hover{background:url(images/social_sprite.png) no-repeat -3px -41px; display:block; width:31px; height:35px; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; -ms-transition:all 0.5s ease-in-out; -o-transition:all 0.5s ease-in-out; transition:all 0.5s ease-in-out;}
+
+.social_twitter{background:url(images/social_sprite.png) no-repeat -41px -2px; display:block; width:31px; height:35px; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; -ms-transition:all 0.5s ease-in-out; -o-transition:all 0.5s ease-in-out; transition:all 0.5s ease-in-out;}
+.social_twitter:hover{background:url(images/social_sprite.png) no-repeat -41px -41px; display:block; width:31px; height:35px; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; -ms-transition:all 0.5s ease-in-out; -o-transition:all 0.5s ease-in-out; transition:all 0.5s ease-in-out;}
+
+.social_linkedin{background:url(images/social_sprite.png) no-repeat -78px -2px; display:block; width:31px; height:35px; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; -ms-transition:all 0.5s ease-in-out; -o-transition:all 0.5s ease-in-out; transition:all 0.5s ease-in-out;}
+.social_linkedin:hover{background:url(images/social_sprite.png) no-repeat -78px -41px; display:block; width:31px; height:35px; -webkit-transition:all 0.5s ease-in-out; -moz-transition:all 0.5s ease-in-out; -ms-transition:all 0.5s ease-in-out; -o-transition:all 0.5s ease-in-out; transition:all 0.5s ease-in-out;}
+
+.toll_free{width:100%; display:inline-block; text-align:right;}
+.toll_free h1{font:normal 28px open_sansregular; color:#f6821f; text-align:center;}
+
+.primary_nav{width:100%; float:left; background:#1b86e3; border-top:3px solid #0b6ac1; border-bottom:3px solid #0b6ac1;}
+.primary_nav_left{width:80%; float:left; clear:right; height:auto; margin:auto;}
+
+.nav_icon_left{background:url(images/nav_left.png) no-repeat left; height:47px; width:3%; float:left;}
+.nav_icon_right{background:url(images/nav_right.png) no-repeat right; height:47px; width:3%; float:right; clear:right;}
+
+.menu_bg{background:url(images/nav_center.png) repeat-x left; float:left; clear:right; height:47px; width:94%;}
+.menu_bg ul{margin:0; padding:0; list-style:none; position:relative;}
+.menu_bg ul li{padding:0; float:left; position:relative; border-right:1px solid rgba(255, 255, 255, 0.40); border-left:1px solid rgba(0, 0, 0, 0.40);}
+.menu_bg ul li:first-child{border-right:1px solid rgba(255, 255, 255, 0.40); border-left:none;}
+.menu_bg ul li:last-child{border-right:none; border-left:1px solid rgba(0, 0, 0, 0.40);}
+.menu_bg ul li:hover{background:#1ca2e7; color:#fff;}
+.menu_bg ul li a{display:block; margin:0; padding:8px 20px; font-size:15px; font-family:open_sansregular; line-height:2em; text-decoration:none; color:#fff;}
+.menu_bg ul ul{display:none; position:absolute; top:46px; left:0; float:left; right:auto; width:15em;z-index:9999999}
+.menu_bg ul ul li{left:auto; margin:0; clear:left; float:left; width:100%; border-bottom:1px solid #fff;}
+.menu_bg ul ul li a,
+.menu_bg ul li.active li a,
+.menu_bg ul li:hover ul li a,
+.menu_bg ul li.hover ul li a{background:#0b6ac1; color:#fff; line-height:2em; float:left; width:100%; font-size:15px;}
+.menu_bg ul ul li a:hover,
+.menu_bg ul li.active ul li a:hover,
+.menu_bg ul li:hover ul li a:hover,
+.menu_bg ul li.hover ul li a:hover{background:#4cc2ff; color:#fff; float:left;}
+.menu_bg ul li:hover ul,.menu_bg ul li.hover ul{display:block;}
+
+.login_button{float:right; width:20%; height:auto; position:relative;}
+.login_button h1{position:absolute; top:-9px; right:0; height:56px; padding:0px 0px 0px 30px;}
+.login_button h1 a{color:#fff; text-decoration:none; font:normal 20px open_sansregular; padding:0px 20px 5px 15px; display:block; line-height:50px;}
+.login_icon{background:url(images/login_shadow.png) no-repeat; position:absolute; width:10px; height:10px; top:-9px; right:112px;}
+
+.login_section_content{width:100%; float:left; height:auto; margin:auto; padding:100px 0px;}
+
+.login_left{width:49%; float:left; height:auto; margin:auto; text-align:center;}
+.login_left h1{font:normal 30px open_sanslight; padding:0px 0px 10px 0px;}
+.login_left p{font:normal 14px open_sanslight; text-align:left; padding:0px 15px;}
+
+.toll_free{width:100%; display:inline-block; text-align:left; padding:10px 0px 0px 0px;}
+.profile_left{width:30%; height:auto; float:left; margin:auto;}
+.profile_right{width:70%; height:auto; float:right; margin:auto;}
+.profile_right h3{font:normal 25px open_sansregular; color:#333;}
+.profile_right p{font:italic 15px open_sansregular; color:#f6821f;}
+.profile_right p a{text-decoration:none; color:#f6821f;}
+.profile_right p a:hover{text-decoration:underline;}

@@ -1,0 +1,164 @@
+/var/www/doctors/index.php:	$('#popupDatepicker').datepick({yearRange: '1920:2020',minDate: new Date(12-1, 25),dateFormat: 'dd-mm-yyyy'});
+/var/www/underwriter/index.php:	$('#popupDatepicker').datepick({yearRange: '1920:2020',minDate: new Date(12-1, 25),dateFormat: 'dd-mm-yyyy'});
+/var/www/mayo-admin/welcome/includes/assign-proffessional_backup.php:						 <div class="controls input-append date form_datetime" data-date="<?php echo date('d-mm-Y'); ?>T05:25:07Z" data-date-format="dd-mm-yyyy / HH:ii p" data-link-field="dtp_input1">
+/var/www/mayo-admin/welcome/includes/assign-proffessional_backup.php:						<div class="controls input-append date form_datetime" data-date="<?php echo date('d-mm-Y'); ?>T05:25:07Z" data-date-format="dd-mm-yyyy / HH:ii p" 
+/var/www/mayo-admin/welcome/includes/assign-proffessional_uuuu.php:						 <div class="controls input-append date form_datetime" data-date="<?php echo date('d-mm-Y'); ?>T05:25:07Z" data-date-format="dd-mm-yyyy / HH:ii p" data-link-field="dtp_input1">
+/var/www/mayo-admin/welcome/includes/assign-proffessional_uuuu.php:						<div class="controls input-append date form_datetime" data-date="<?php echo date('d-mm-Y'); ?>T05:25:07Z" data-date-format="dd-mm-yyyy / HH:ii p" 
+/var/www/mayo-admin/welcome/includes-closed/assign-proffessional_backup.php:						 <div class="controls input-append date form_datetime" data-date="<?php echo date('d-mm-Y'); ?>T05:25:07Z" data-date-format="dd-mm-yyyy / HH:ii p" data-link-field="dtp_input1">
+/var/www/mayo-admin/welcome/includes-closed/assign-proffessional_backup.php:						<div class="controls input-append date form_datetime" data-date="<?php echo date('d-mm-Y'); ?>T05:25:07Z" data-date-format="dd-mm-yyyy / HH:ii p" 
+/var/www/mayo-admin/welcome/includes-closed/assign-proffessional_uuuu.php:						 <div class="controls input-append date form_datetime" data-date="<?php echo date('d-mm-Y'); ?>T05:25:07Z" data-date-format="dd-mm-yyyy / HH:ii p" data-link-field="dtp_input1">
+/var/www/mayo-admin/welcome/includes-closed/assign-proffessional_uuuu.php:						<div class="controls input-append date form_datetime" data-date="<?php echo date('d-mm-Y'); ?>T05:25:07Z" data-date-format="dd-mm-yyyy / HH:ii p" 
+/var/www/case-manager/pain-management/pain-management-step-2.php:						<input type="text" placeholder="dd-mm-yyyy" class="required_field name="injury_date" id="injury_date"/>
+/var/www/case-manager/cases.php:	$('#popupDatepicker').datepick({yearRange: '1920:2020',minDate: new Date(12-1, 25),dateFormat: 'dd-mm-yyyy'});
+/var/www/uploads/15-03-10_07:03:4873658.php:				$date_time = date('d-m-Y');
+/var/www/anesthesiologist/includes/appointment.php:				$date_time = date('d-m-Y');
+/var/www/attorney/includes/appointment.php:				$date_time = date('d-m-Y');
+/var/www/attorney/upload-documents_orig.php:						<div class="attorney_span_1"><?php //$getdate = $listdocuments['upload_date']; echo date('d-M-Y',strtotime($getdate)); ?></div>
+/var/www/attorney/other-documents.php:						<div class="attorney_span_1"><?php $getdate = $listdocuments['upload_date']; echo date('d-M-Y',strtotime($getdate)); ?></div>
+/var/www/attorney/client-list.php:						<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>
+/var/www/attorney/clients-list.php:						<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>
+/var/www/attorney/classes/meshed.php:		 $n_date       = date('d-M-Y', strtotime($datetime));
+/var/www/attorney/appointment.php:				$date_time = date('d-m-Y');
+/var/www/attorney/upload-documents.php:						<div class="attorney_span_1"><?php //$getdate = $listdocuments['upload_date']; echo date('d-M-Y',strtotime($getdate)); ?></div>
+/var/www/doctors/appointment-status.php:												echo $date_tiem = date('d-m-Y',strtotime($d_o_b));
+/var/www/doctors/appointment-schedule.php:					$date_time               = date('d-m-Y h:i:s');
+/var/www/doctors/includes/appointment.php:				$date_time = date('d-m-Y');
+/var/www/doctors/upload-report.php:						<div class="dr_new_client_1"><?php $getdate = $listdocuments['upload_date']; echo date('d-M-Y',strtotime($getdate)); ?></div>
+/var/www/doctors/appointments.php:						$date_time              = date('d-m-y h:i:s');
+/var/www/doctors/client-list.php:						<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>
+/var/www/doctors/schedulling.php:					<?php //$date = date('d-M-Y', strtotime($row['date_time'])); ?>
+/var/www/doctors/schedulling-report.php:						<div class="dr_new_client_1"><?php $getdate = $listdocuments['upload_date']; echo date('d-M-Y',strtotime($getdate)); ?></div>
+/var/www/doctors/schedule-messages.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/doctors/schedule-cron-jobs/first-consult-cron.php:	$date  = date('d-m-Y');
+/var/www/underwriter/billing.php:					$newDate = date('d-m-Y');
+/var/www/underwriter/includes/appointment.php:				$date_time = date('d-m-Y');
+/var/www/underwriter/includes/appointment.php:				$date_time = date('d-m-Y');
+/var/www/underwriter/upload-reports.php:						<div class="attorney_span_1"><?php $getdate = $listdocuments['upload_date']; echo date('d-M-Y',strtotime($getdate)); ?></div>
+/var/www/underwriter/client-list.php:						<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>
+/var/www/mayo-admin/welcome/ortho-case/forward-bill.php:						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/ortho-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/ortho-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/includes/tcpdf/examples/final-billing.php:					<td width="40" align="center" valign="middle" class="border_bottom border_right">'.date('d-m-y').'</td>
+/var/www/mayo-admin/welcome/includes/tcpdf/examples/final-billing.php:						<td width="40" align="center" valign="middle" class="border_right border_bottom">'.date('d-m-y',strtotime($billingfinal->date_bill)).'</td>
+/var/www/mayo-admin/welcome/includes/tcpdf/examples/final-billing.php:					<td width="40" align="center" valign="middle" class="border_bottom border_right">'.date('d-m-y').'</td>
+/var/www/mayo-admin/welcome/includes/tcpdf/examples/final-billing.php: $docs = $pathofmayo."/billing/caseno-".$_REQUEST['fid']."-".date('d-m-y_h-m-s').".pdf";
+/var/www/mayo-admin/welcome/includes/tcpdf/examples/final-billing.php:$insertPdf = "INSERT INTO `final_billing` (`user_id`,`form_id`,`hire_id`,`pdf_name`,`billing_amount`,`date_time`) VALUES ('$_REQUEST[uid]','$_REQUEST[fid]','$_REQUEST[staffinfo]','caseno-".$_REQUEST['fid']."-".date('d-m-y_h-m-s').".pdf','$totalmoney',now())";
+/var/www/mayo-admin/welcome/includes/tcpdf/examples/final-billing.php: $docs = $pathofmayo."/billing/caseno-".$_REQUEST['fid']."-".date('d-m-y_h-m-s').".pdf";
+/var/www/mayo-admin/welcome/includes/tcpdf/examples/final-billing.php:$insertPdf = "INSERT INTO `final_billing` (`user_id`,`form_id`,`hire_id`,`pdf_name`,`billing_amount`,`date_time`) VALUES ('$_REQUEST[uid]','$_REQUEST[fid]','$_REQUEST[staffinfo]','caseno-".$_REQUEST['fid']."-".date('d-m-y_h-m-s').".pdf','$totalmoney',now())";
+/var/www/mayo-admin/welcome/includes/assign-proffessional.php:					$date_time                = date('d-m-Y h:i:s');
+/var/www/mayo-admin/welcome/includes/forward-billing.php:	$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/includes/forward-billing.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/includes/forward-billing.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/includes/assign-proffessional_backup.php:					$date_time              = date('d-m-Y h:i:s');
+/var/www/mayo-admin/welcome/includes/assign-proffessional_backup.php:						$message_status         = "Appointment is Cancelled on ".date('d-m-Y');
+/var/www/mayo-admin/welcome/includes/assign-proffessional_backup.php:						$date_time              = date('d-m-y h:i:s');
+/var/www/mayo-admin/welcome/includes/assign-proffessional_uuuu.php:					$date_time              = date('d-m-Y h:i:s');
+/var/www/mayo-admin/welcome/includes/assign-proffessional_uuuu.php:						$message_status         = "Appointment is Cancelled on ".date('d-m-Y');
+/var/www/mayo-admin/welcome/includes/assign-proffessional_uuuu.php:						$date_time              = date('d-m-y h:i:s');
+/var/www/mayo-admin/welcome/includes/pdf-generator/final-billing.php:		echo $docs = $_SERVER['DOCUMENT_ROOT']."/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+/var/www/mayo-admin/welcome/includes/pdf-generator/final-billing.php:		echo $docs = $_SERVER['DOCUMENT_ROOT']."/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+/var/www/mayo-admin/welcome/includes/pdf-generator/final-billing.php:		echo $sql = "INSERT INTO `final_billing` (`user_id`,`form_id`,`pdf_name`) VALUES ('$_REQUEST[uid]','$_REQUEST[fid]','caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf')";
+/var/www/mayo-admin/welcome/includes/pdf-generator/test.php:	$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/includes/pdf-generator/test.php:          <td align="right" valign="top" style="border-right:1px solid #999a9e; padding:2px;"><b><?php echo date('d-m-y h:i:s A'); ?></b></td>
+/var/www/mayo-admin/welcome/includes-closed/forward-billing.php:	$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/includes-closed/forward-billing.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/includes-closed/forward-billing.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/includes-closed/assign-proffessional_backup.php:					$date_time              = date('d-m-Y h:i:s');
+/var/www/mayo-admin/welcome/includes-closed/assign-proffessional_backup.php:						$message_status         = "Appointment is Cancelled on ".date('d-m-Y');
+/var/www/mayo-admin/welcome/includes-closed/assign-proffessional_backup.php:						$date_time              = date('d-m-y h:i:s');
+/var/www/mayo-admin/welcome/includes-closed/assign-proffessional_uuuu.php:					$date_time              = date('d-m-Y h:i:s');
+/var/www/mayo-admin/welcome/includes-closed/assign-proffessional_uuuu.php:						$message_status         = "Appointment is Cancelled on ".date('d-m-Y');
+/var/www/mayo-admin/welcome/includes-closed/assign-proffessional_uuuu.php:						$date_time              = date('d-m-y h:i:s');
+/var/www/mayo-admin/welcome/final-billing.php:		echo $docs = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+/var/www/mayo-admin/welcome/final-billing.php:		echo $docs = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+/var/www/mayo-admin/welcome/final-billing.php:		echo $sql = "INSERT INTO `final_billing` (`user_id`,`form_id`,`pdf_name`) VALUES ('$_REQUEST[uid]','$_REQUEST[fid]','caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf')";
+/var/www/mayo-admin/welcome/re-schedule.php:						$date_time              = date('d-m-y h:i:s');
+/var/www/mayo-admin/welcome/general-surgery-case/forward-bill.php:						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/general-surgery-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/general-surgery-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/general-surgery-case/index_backup.php:								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+/var/www/mayo-admin/welcome/medical-release/forward-bill.php:						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/medical-release/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/medical-release/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/medical-release/index_backup.php:								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+/var/www/mayo-admin/welcome/forms.php:								echo date('d-M-Y',strtotime($getdate)); 
+/var/www/mayo-admin/welcome/neurology-case/forward-bill.php:						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/neurology-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/neurology-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/pain-management-case/forward-bill.php:						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/pain-management-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/pain-management-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/mesh-case/forward-bill.php:						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/mesh-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/mesh-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome/mesh-case/index_backup.php:								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+/var/www/mayo-admin/welcome/cases/case-history.php:							$n_date = date('d-M-Y',strtotime($data)); 
+/var/www/mayo-admin/welcome/reports-pag.php:			<div class="first_name_16"><?php echo $dob_c = $row['p_d_o_b'];  //echo date('d-m-Y',strtotime($dob_c)); ?></div>
+/var/www/mayo-admin/welcome/reports-pag.php:				<?php $dateSurgury = explode('/',$row['date_appt']); list($a,$b)=$dateSurgury; echo date('d-m-Y',strtotime($a)) ;?>
+/var/www/mayo-admin/welcome-old/ortho-case/index.php:								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+/var/www/mayo-admin/welcome-old/ortho-case/forward-bill.php:						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/ortho-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/ortho-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/ortho-case/meshed-pagin.php:			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+/var/www/mayo-admin/welcome-old/update-report.php:				<input type="text" name="dob" placeholder="" value="<?php echo date('d-m-Y',strtotime($reports->p_d_o_b));?>">
+/var/www/mayo-admin/welcome-old/update-report.php:				<input type="text" name="adate" placeholder="" value="<?php echo date('d-m-Y',strtotime($reports->date_time)); ?>">
+/var/www/mayo-admin/welcome-old/update-report.php:<?php $dateSurgury = explode('/',$reports->date_appt); list($a,$b)=$dateSurgury; echo date('d-m-Y',strtotime($a)) ;?>">
+/var/www/mayo-admin/welcome-old/update-report.php:				<input type="text" name="bdate" placeholder="" value="<?php echo date('d-m-Y',strtotime($reports->billing_date)); ?>">
+/var/www/mayo-admin/welcome-old/includes/tcpdf/examples/final-billing.php:						<td width="40" align="center" valign="middle" class="border_right border_bottom">'.date('d-m-y',strtotime($billingfinal->date_bill)).'</td>
+/var/www/mayo-admin/welcome-old/includes/tcpdf/examples/final-billing.php:					<td width="40" align="center" valign="middle" class="border_bottom border_right">'.date('d-m-y').'</td>
+/var/www/mayo-admin/welcome-old/includes/tcpdf/examples/final-billing.php:						<td width="40" align="center" valign="middle" class="border_right border_bottom">'.date('d-m-y',strtotime($billingfinal->date_bill)).'</td>
+/var/www/mayo-admin/welcome-old/includes/tcpdf/examples/final-billing.php:					<td width="40" align="center" valign="middle" class="border_bottom border_right">'.date('d-m-y').'</td>
+/var/www/mayo-admin/welcome-old/includes/tcpdf/examples/final-billing.php: $docs = $pathofmayo."/billing/caseno-".$_REQUEST['fid']."-".date('d-m-y_h-m-s').".pdf";
+/var/www/mayo-admin/welcome-old/includes/tcpdf/examples/final-billing.php:$insertPdf = "INSERT INTO `final_billing` (`user_id`,`form_id`,`hire_id`,`pdf_name`,`billing_amount`,`date_time`) VALUES ('$_REQUEST[uid]','$_REQUEST[fid]','$_REQUEST[staffinfo]','caseno-".$_REQUEST['fid']."-".date('d-m-y_h-m-s').".pdf','$totalmoney',now())";
+/var/www/mayo-admin/welcome-old/includes/tcpdf/examples/final-billing.php: $docs = $pathofmayo."/billing/caseno-".$_REQUEST['fid']."-".date('d-m-y_h-m-s').".pdf";
+/var/www/mayo-admin/welcome-old/includes/tcpdf/examples/final-billing.php:$insertPdf = "INSERT INTO `final_billing` (`user_id`,`form_id`,`hire_id`,`pdf_name`,`billing_amount`,`date_time`) VALUES ('$_REQUEST[uid]','$_REQUEST[fid]','$_REQUEST[staffinfo]','caseno-".$_REQUEST['fid']."-".date('d-m-y_h-m-s').".pdf','$totalmoney',now())";
+/var/www/mayo-admin/welcome-old/includes/forward-billing.php:	$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/includes/forward-billing.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/includes/forward-billing.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/includes/pdf-generator/final-billing.php:		echo $docs = $_SERVER['DOCUMENT_ROOT']."/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+/var/www/mayo-admin/welcome-old/includes/pdf-generator/final-billing.php:		echo $docs = $_SERVER['DOCUMENT_ROOT']."/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+/var/www/mayo-admin/welcome-old/includes/pdf-generator/final-billing.php:		echo $sql = "INSERT INTO `final_billing` (`user_id`,`form_id`,`pdf_name`) VALUES ('$_REQUEST[uid]','$_REQUEST[fid]','caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf')";
+/var/www/mayo-admin/welcome-old/includes/pdf-generator/test.php:	$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/includes/pdf-generator/test.php:          <td align="right" valign="top" style="border-right:1px solid #999a9e; padding:2px;"><b><?php echo date('d-m-y h:i:s A'); ?></b></td>
+/var/www/mayo-admin/welcome-old/final-billing.php:		echo $docs = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+/var/www/mayo-admin/welcome-old/final-billing.php:		echo $docs = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+/var/www/mayo-admin/welcome-old/final-billing.php:		echo $sql = "INSERT INTO `final_billing` (`user_id`,`form_id`,`pdf_name`) VALUES ('$_REQUEST[uid]','$_REQUEST[fid]','caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf')";
+/var/www/mayo-admin/welcome-old/general-surgery-case/index.php:								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+/var/www/mayo-admin/welcome-old/general-surgery-case/forward-bill.php:						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/general-surgery-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/general-surgery-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/general-surgery-case/meshed-pagin.php:			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+/var/www/mayo-admin/welcome-old/medical-release/index.php:								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+/var/www/mayo-admin/welcome-old/medical-release/forward-bill.php:						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/medical-release/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/medical-release/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/medical-release/meshed-pagin.php:			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+/var/www/mayo-admin/welcome-old/new-cases/new-cases-temp.php:	<div class="email_address_15"><?php $date_birth = $row['p_d_o_b']; echo date('d-m-Y',strtotime($date_birth));?>&nbsp;</div>
+/var/www/mayo-admin/welcome-old/forms.php:								echo date('d-M-Y',strtotime($getdate)); 
+/var/www/mayo-admin/welcome-old/neurology-case/index.php:								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+/var/www/mayo-admin/welcome-old/neurology-case/forward-bill.php:						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/neurology-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/neurology-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/neurology-case/meshed-pagin.php:			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+/var/www/mayo-admin/welcome-old/pain-management-case/index.php:								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+/var/www/mayo-admin/welcome-old/pain-management-case/forward-bill.php:						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/pain-management-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/pain-management-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/pain-management-case/meshed-pagin.php:		<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+/var/www/mayo-admin/welcome-old/mesh-case/index.php:								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+/var/www/mayo-admin/welcome-old/mesh-case/forward-bill.php:						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/mesh-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/mesh-case/forward-bill.php:						$dattime = date('d-M-Y h:i:s a');
+/var/www/mayo-admin/welcome-old/mesh-case/meshed-pagin.php:			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+/var/www/mayo-admin/welcome-old/cases/case-history.php:							$n_date = date('d-M-Y',strtotime($data)); 
+/var/www/mayo-admin/welcome-old/reports-pag.php:			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+/var/www/mayo-admin/welcome-old/reports-pag.php:				<?php $dob_cd = $row['date_time'];  echo date('d-m-Y',strtotime($dob_cd)); ?>
+/var/www/mayo-admin/welcome-old/reports-pag.php:				<?php $dateSurgury = explode('/',$row['date_appt']); list($a,$b)=$dateSurgury; echo date('d-m-Y',strtotime($a)) ;?>
+/var/www/case-manager/other-documents.php:						<div class="attorney_span_1"><?php $getdate = $listdocuments['upload_date']; echo date('d-M-Y',strtotime($getdate)); ?></div>
+/var/www/case-manager/classes/meshed.php:		 $n_date       = date('d-M-Y', strtotime($datetime));
+/var/www/case-manager/appointment.php:				$date_time = date('d-m-Y');
+/var/www/case-manager/check-status.php:									echo $dattime = date('d-M-Y',strtotime($date));
+/var/www/case-manager/upload-documents.php:						<div class="attorney_span_1"><?php //$getdate = $listdocuments['upload_date']; echo date('d-M-Y',strtotime($getdate)); ?></div>
+/var/www/classes/functions.php:				$date     = date("d-m-Y,h:i:s A");
+/var/www/medical-facility/includes/appointment.php:				$date_time = date('d-m-Y');
+/var/www/medical-facility/client-list.php:						<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>

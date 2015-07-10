@@ -1,0 +1,135 @@
+<?php
+session_start();
+
+require_once('../../includes/functions.php');
+$path = $_SERVER['DOCUMENT_ROOT']."/path.php";
+require_once($path);
+include($config);
+
+include '../functions.php';
+
+include 'class.php';
+?> <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+ <script type="text/javascript">
+	 function update(id)
+	 {
+		 
+		 $.ajax({
+			 
+				type:"POST",
+				url:"activate-user.php",
+				data:"id="+id,
+				success:function(msg)
+				{
+					alert("User Activated Successfully");
+				}
+			 
+			 });
+		 
+	 }
+	 function deleteuser(id)
+	 {
+		 
+		 $.ajax({
+			 
+			 type:"POST",
+			 url:"delete-user.php",
+			 data:"id="+id,
+			 success:function(msg)
+			 {
+				 
+				 alert("User Deleted Successfully ");
+				 
+			 }
+			 
+		});
+		 
+	 }
+ </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                function loading_show(){
+                    $('#loading').html("<img src='images/loading.gif'/>").fadeIn('fast');
+                }
+                function loading_hide(){
+                    $('#loading').fadeOut('fast');
+                }                
+                function loadData(page){
+                    loading_show();                    
+                    $.ajax
+                    ({
+                        type: "POST",
+                        url: "verify-users-pagination.php",
+                        data: "page="+page,
+                        success: function(msg)
+                        {
+                            $("#container").ajaxComplete(function(event, request, settings)
+                            {
+                                loading_hide();
+                                $("#container").html(msg);
+                            });
+                        }
+                    });
+                }
+                loadData(1);  // For first time page load default results
+                $('#container .pagination li.active').live('click',function(){
+                    var page = $(this).attr('p');
+                    loadData(page);
+                    
+                });           
+                $('#go_btn').live('click',function(){
+                    var page = parseInt($('.goto').val());
+                    var no_of_pages = parseInt($('.total').attr('a'));
+                    if(page != 0 && page <= no_of_pages){
+                        loadData(page);
+                    }else{
+                        alert('Enter a PAGE between 1 and '+no_of_pages);
+                        $('.goto').val("").focus();
+                        return false;
+                    }
+                    
+                });
+            });
+        </script>
+<?php
+if(loggedin())
+{
+	include('header.php');
+?>
+<link rel="stylesheet" href="admin-style.css" type="text/css">
+<section class="row">
+	<div class="container">
+		<div class="form_section_content">
+			<h1 class="add_user">User's Verification</h1>
+			<div class="view_log_details">
+				<div class="log_heading">
+					<div class="serial_no_14">S.No.</div>
+					<div class="user_name_14">User Name</div>
+					<div class="first_name_14">First Name</div>
+					<div class="email_address_14">Email</div>
+					<div class="status_14">Status</div>
+					<div class="action_14_a">Action</div>
+				</div>
+			</div>
+		</div>
+		
+         <div id="loading"></div>
+        <div id="container">
+            <div class="data"></div>
+            <div class="pagination"></div>
+        </div>
+	</div>
+</section>
+
+</div>
+	</div>
+</section>
+
+<?php
+include($get_footer);
+}
+else
+{
+header('Location:../login.php');
+}
+?>

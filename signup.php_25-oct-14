@@ -1,0 +1,289 @@
+<?php
+$path = $_SERVER['DOCUMENT_ROOT']."/rao/path.php"; 
+include($path);
+include($config);
+require_once('classes/register.php');
+require($get_header);
+?>
+ <!-- For validations -->
+
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+
+<script src="http://<?php echo $validateminjs; ?>"></script>
+
+<!-- validation end --> 
+
+<!-- jQuery Form Validation code -->
+<script>
+$(document).ready(function(){
+	jQuery.validator.addMethod("noSpace", function(value, element)
+    	{ return value.indexOf(" ") < 0; }, "No space in Password");
+    	$.validator.addMethod("alpha", function(value, element) {
+    return this.optional(element) || value == value.match(/^[a-zA-Z ]*$/);
+ });
+    $("#regform").validate({
+    
+        // Specify the validation rules
+        rules: {
+            uname: {
+				required:true,
+				minlength:5,
+				noSpace: true
+				},
+            email: {
+                required: true,
+                email: true
+            },
+            upassword: {
+                required: true,
+                minlength: 5,
+                noSpace: true
+            },
+            confirm_password:{
+					required:true,
+					equalTo:"#uppassword"
+				},
+            fname:{
+				required: true,
+				minlength: 3,
+				alpha: true
+				},
+			lname:{
+				required:true,
+				minlength: 3,
+				alpha: true
+				},
+			designation:{
+				required:true,
+				},
+			organisation:{
+				required:true,
+				},
+			uemail:{
+				required:true
+				},
+
+        },
+        
+        // Specify the validation error messages
+        errorElement: "span",
+        messages: {
+            uname: {
+				required: "Please choose Username",
+				noSpace: "Spaces are not allowed in Username"
+			},
+            fname:{
+				required: "Please Enter your Name",
+				alpha: "Only Characters are allowed"
+			},
+            lname:{
+				required: "Please enter your Last Name",
+				alpha: "Only Characters are allowed"
+			},
+            designation:"Field is required",
+            confirm_password:"Password doesn't Match",
+            organisation:"Field is required",
+            uemail: "Please enter a valid email address",
+            username: "Please enter a valid username",
+            password: {
+                required: "Please provide a password",
+                minlength: "Your password must be at least 5 characters long",
+                noSpace: "Spaces are not allowed in Password"
+            },
+            check:"Please Check Terms and Conditions"
+        },
+        
+        submitHandler: function(form) {
+            form.submit();
+        }
+    });
+
+  });
+</script>
+<!-- Jquery validation code ends -->
+<section class="row">
+	<div class="container">
+		<div class="form_section_content">
+			<?php 
+	if(!loggedin()) 
+		{
+?>
+			<h1 class="add_user">MayoSurgical New Client Registration</h1>
+<form name="userinfo" method="post" action="" id="regform" onsubmit="return validatecheck()">
+	<ul>
+		
+		<li>
+			<span class="form_label">
+				<label>First Name</label>
+			</span>
+			<span class="form_input">
+				<input type="text" name="fname" placeholder="First Name">
+				<span class="error"></span>
+			</span>
+		</li>
+			
+	   <li>
+		   <span class="form_label">
+				<label>Last Name</label>
+			</span>
+			<span class="form_input">
+				<input type="text" name="lname" placeholder="Last Name">
+				<span class="error"></span>
+			</span>
+	   </li>
+       
+	   <li>
+			<span class="form_label">
+				<label>Email-ID</label>
+			</span>
+			<span class="form_input">
+				<input type="email" name="uemail" placeholder="Email-ID">
+				<span class="error"></span>
+			</span>
+		</li>
+        <li>
+			<span class="form_label">	
+				<label>User Name</label>
+			</span>
+			<span class="form_input">
+				<input type="text" name="uname" placeholder="Choose User Name">
+				<span class="error"></span>
+			</span>
+		</li>
+		
+		<li>
+			<span class="form_label">	
+				<label>Password</label>
+			</span>
+			<span class="form_input">
+				<input type="password" name="upassword" id="uppassword" placeholder="Choose Password">
+				<span class="error"></span>
+			</span>
+		</li>
+		
+		<li>
+			<span class="form_label">
+				<label>Confirm Password</label>
+			</span>
+			<span class="form_input">
+				<input type="password" name="confirm_password" placeholder="Confirm Password">
+				<span class="error"></span>
+			</span>
+		</li>
+	   <li>
+		   <span class="form_label">
+				<label>Designation</label>
+			</span>
+			<span class="form_input">
+				<select name="designation" class="sel_reg_form">
+					<option value="">...Select...</option>
+					<?php
+						$desig_temp = mysql_query("SELECT * FROM `designation`") or die(mysql_error());
+						while($designat = mysql_fetch_array($desig_temp))
+						{
+					 ?>
+						<option value="<?php echo $designat['id']; ?>"><?php echo $designat['designation']; ?></option>
+					<?php 
+						} 
+					?>
+				</select>
+				<span class="error"></span>
+			</span>
+	   </li>
+       <!--<li>
+		    <span class="form_label">
+				<label>Employee No</label>	
+			</span>
+			<span class="form_input">
+				<input type="text" name="empno" placeholder="Employee No">
+				<span class="error"></span>
+			</span>
+		</li>-->
+		
+		<li>
+			<span class="form_label">
+				<label>Organisation</label>
+			</span>
+			<span class="form_input">
+				<input type="text" name="organisation" placeholder="Organisation">
+				<span class="error"></span>
+			</span>
+		</li>
+        <li>
+			<span class="form_label">
+			<div class="chk_bx_area">&nbsp;</div>
+			</span>
+			<span class="form_input">	
+           <label><input name="check" id="terms" type="checkbox" value="check" required/>I agree to MayoSurgical.com Terms &amp; Policies</label>
+           <span class="error_checkbox"><?php if($_POST['check'] = ""){echo $check_message;} ?></span>
+            </span>
+            
+		</li>
+
+		<li>	
+			<input type="submit" name="register" value="Register" onclick="return validatecheck();">
+		</li>
+		</ul>
+	
+</form>
+<?php
+	$registration = new Register();
+	
+	if(isset($_POST['register']))
+	{
+		
+		$seprator = "|";
+		
+		$message = "User Added";
+		
+		$check = $_POST['check'];
+		
+		if($check=="")
+		{
+			$check_message = "Please Check the Terms & Conditions";
+		}
+		
+		$uname = mysql_real_escape_string($_POST['uname']);
+		
+		$password = mysql_real_escape_string($_POST['upassword']);
+		
+		$mdpass = md5($password);
+		
+		$fname = mysql_real_escape_string($_POST['fname']);
+		
+		$lname = mysql_real_escape_string($_POST['lname']);
+		
+		$designation = mysql_real_escape_string($_POST['designation']);
+		
+		$organisation = mysql_real_escape_string($_POST['organisation']);
+		
+		$uemail = mysql_real_escape_string($_POST['uemail']);
+		
+		$user_ip = $_SERVER['REMOTE_ADDR'];
+		
+		$finalreg = $registration->UserRegister($uname,$mdpass,$fname,$lname,$designation,$organisation,$uemail,$user_ip);
+		
+		if($finalreg=1)
+		{
+			echo "<li><div class='thank_message'>Thank you for Registering with Mayo Surgical, your information has been sent for approval 
+			and your will receive an email when your account is active.</div></li>";
+		}
+		else
+		{
+			echo "<li><div class='thank_message'>Username/Password Already Exists.</div></li>";
+		}
+
+	}
+}
+else
+{
+	echo "<li><div class='thank_message'><h1 style='text-align:center;'>You are already Logged in.</h1></div></li>";
+}
+?>
+
+</div>
+	</div>
+</section>
+<?php
+require($get_footer);
+?>

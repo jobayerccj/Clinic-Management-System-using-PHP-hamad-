@@ -1,0 +1,175 @@
+				$date_time = date('d-m-Y');
+				$date_time = date('d-m-Y');
+						<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>
+					<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>
+				$date_time = date('d-m-Y');
+						<div class="attorney_span_1"><?php //$getdate = $listdocuments['upload_date']; echo date('d-M-Y',strtotime($getdate)); ?></div>
+						<div class="attorney_span_1"><?php $getdate = $listdocuments['upload_date']; echo date('d-M-Y',strtotime($getdate)); ?></div>
+									echo date('d-m-Y',strtotime($search->p_date)); 
+									echo date('d-m-Y',strtotime($getinfo->p_date)); 
+						<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>
+					<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>
+						<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>
+							$date = date('d-M-Y', strtotime($row['date_time'])); 
+		 $n_date       = date('d-M-Y', strtotime($datetime));
+				$date_time = date('d-m-Y');
+						<div class="attorney_span_1"><?php //$getdate = $listdocuments['upload_date']; echo date('d-M-Y',strtotime($getdate)); ?></div>
+												echo $date_tiem = date('d-m-Y',strtotime($d_o_b));
+					$date_time              = date('d-m-Y h:i:s');
+				$date_time = date('d-m-Y');
+						<div class="dr_new_client_1"><?php $getdate = $listdocuments['upload_date']; echo date('d-M-Y',strtotime($getdate)); ?></div>
+						$message_status         = "Appointment is Cancelled on ".date('d-m-Y');
+						$date_time              = date('d-m-y h:i:s');
+						<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>
+					<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>
+					<?php //$date = date('d-M-Y', strtotime($row['date_time'])); ?>
+						<div class="dr_new_client_1"><?php $getdate = $listdocuments['upload_date']; echo date('d-M-Y',strtotime($getdate)); ?></div>
+						$dattime = date('d-M-Y h:i:s a');
+						<div class="doctor_span_1"><?php $getdate = $listdocuments['upload_date']; echo date('d-M-Y',strtotime($getdate)); ?></div>
+					$newDate = date('d-m-Y');
+											echo date('d-m-Y',strtotime($dataDate));
+				$date_time = date('d-m-Y');
+						<div class="attorney_span_1"><?php $getdate = $listdocuments['upload_date']; echo date('d-M-Y',strtotime($getdate)); ?></div>
+						<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>
+					<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>
+								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+				<input type="text" name="dob" placeholder="" value="<?php echo date('d-m-Y',strtotime($reports->p_d_o_b));?>">
+				<input type="text" name="adate" placeholder="" value="<?php echo date('d-m-Y',strtotime($reports->date_time)); ?>">
+<?php $dateSurgury = explode('/',$reports->date_appt); list($a,$b)=$dateSurgury; echo date('d-m-Y',strtotime($a)) ;?>">
+				<input type="text" name="bdate" placeholder="" value="<?php echo date('d-m-Y',strtotime($reports->billing_date)); ?>">
+					<td width="40" align="center" valign="middle" class="border_bottom border_right">'.date('d-m-y').'</td>
+						<td width="40" align="center" valign="middle" class="border_right border_bottom">'.date('d-m-y',strtotime($billingfinal->date_bill)).'</td>
+					<td width="40" align="center" valign="middle" class="border_bottom border_right">'.date('d-m-y').'</td>
+ $docs = $pathofmayo."/billing/caseno-".$_REQUEST['fid']."-".date('d-m-y_h-m-s').".pdf";
+$insertPdf = "INSERT INTO `final_billing` (`user_id`,`form_id`,`hire_id`,`pdf_name`,`billing_amount`,`date_time`) VALUES ('$_REQUEST[uid]','$_REQUEST[fid]','$_REQUEST[staffinfo]','caseno-".$_REQUEST['fid']."-".date('d-m-y_h-m-s').".pdf','$totalmoney',now())";
+ $docs = $pathofmayo."/billing/caseno-".$_REQUEST['fid']."-".date('d-m-y_h-m-s').".pdf";
+$insertPdf = "INSERT INTO `final_billing` (`user_id`,`form_id`,`hire_id`,`pdf_name`,`billing_amount`,`date_time`) VALUES ('$_REQUEST[uid]','$_REQUEST[fid]','$_REQUEST[staffinfo]','caseno-".$_REQUEST['fid']."-".date('d-m-y_h-m-s').".pdf','$totalmoney',now())";
+					$date_time              = date('d-m-Y h:i:s');
+						$message_status         = "Appointment is Cancelled on ".date('d-m-Y');
+						$date_time              = date('d-m-y h:i:s');
+	$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+					$date_time              = date('d-m-Y h:i:s');
+						$message_status         = "Appointment is Cancelled on ".date('d-m-Y');
+						$date_time              = date('d-m-y h:i:s');
+					$date_time              = date('d-m-Y h:i:s');
+						$message_status         = "Appointment is Cancelled on ".date('d-m-Y');
+						$date_time              = date('d-m-y h:i:s');
+		echo $docs = $_SERVER['DOCUMENT_ROOT']."/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+		echo $docs = $_SERVER['DOCUMENT_ROOT']."/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+		echo $sql = "INSERT INTO `final_billing` (`user_id`,`form_id`,`pdf_name`) VALUES ('$_REQUEST[uid]','$_REQUEST[fid]','caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf')";
+	$dattime = date('d-M-Y h:i:s a');
+          <td align="right" valign="top" style="border-right:1px solid #999a9e; padding:2px;"><b><?php echo date('d-m-y h:i:s A'); ?></b></td>
+		echo $docs = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+		echo $docs = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+		echo $sql = "INSERT INTO `final_billing` (`user_id`,`form_id`,`pdf_name`) VALUES ('$_REQUEST[uid]','$_REQUEST[fid]','caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf')";
+								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+	<div class="email_address_15"><?php $date_birth = $row['p_d_o_b']; echo date('d-m-Y',strtotime($date_birth));?>&nbsp;</div>
+								echo date('d-M-Y',strtotime($getdate)); 
+								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+		<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+							$n_date = date('d-M-Y',strtotime($data)); 
+			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+				<?php $dob_cd = $row['date_time'];  echo date('d-m-Y',strtotime($dob_cd)); ?>
+				<?php $dateSurgury = explode('/',$row['date_appt']); list($a,$b)=$dateSurgury; echo date('d-m-Y',strtotime($a)) ;?>
+								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+				<input type="text" name="dob" placeholder="" value="<?php echo date('d-m-Y',strtotime($reports->p_d_o_b));?>">
+				<input type="text" name="adate" placeholder="" value="<?php echo date('d-m-Y',strtotime($reports->date_time)); ?>">
+<?php $dateSurgury = explode('/',$reports->date_appt); list($a,$b)=$dateSurgury; echo date('d-m-Y',strtotime($a)) ;?>">
+				<input type="text" name="bdate" placeholder="" value="<?php echo date('d-m-Y',strtotime($reports->billing_date)); ?>">
+						<td width="40" align="center" valign="middle" class="border_right border_bottom">'.date('d-m-y',strtotime($billingfinal->date_bill)).'</td>
+					<td width="40" align="center" valign="middle" class="border_bottom border_right">'.date('d-m-y').'</td>
+						<td width="40" align="center" valign="middle" class="border_right border_bottom">'.date('d-m-y',strtotime($billingfinal->date_bill)).'</td>
+					<td width="40" align="center" valign="middle" class="border_bottom border_right">'.date('d-m-y').'</td>
+ $docs = $pathofmayo."/billing/caseno-".$_REQUEST['fid']."-".date('d-m-y_h-m-s').".pdf";
+$insertPdf = "INSERT INTO `final_billing` (`user_id`,`form_id`,`hire_id`,`pdf_name`,`billing_amount`,`date_time`) VALUES ('$_REQUEST[uid]','$_REQUEST[fid]','$_REQUEST[staffinfo]','caseno-".$_REQUEST['fid']."-".date('d-m-y_h-m-s').".pdf','$totalmoney',now())";
+ $docs = $pathofmayo."/billing/caseno-".$_REQUEST['fid']."-".date('d-m-y_h-m-s').".pdf";
+$insertPdf = "INSERT INTO `final_billing` (`user_id`,`form_id`,`hire_id`,`pdf_name`,`billing_amount`,`date_time`) VALUES ('$_REQUEST[uid]','$_REQUEST[fid]','$_REQUEST[staffinfo]','caseno-".$_REQUEST['fid']."-".date('d-m-y_h-m-s').".pdf','$totalmoney',now())";
+	$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+		echo $docs = $_SERVER['DOCUMENT_ROOT']."/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+		echo $docs = $_SERVER['DOCUMENT_ROOT']."/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+		echo $sql = "INSERT INTO `final_billing` (`user_id`,`form_id`,`pdf_name`) VALUES ('$_REQUEST[uid]','$_REQUEST[fid]','caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf')";
+	$dattime = date('d-M-Y h:i:s a');
+          <td align="right" valign="top" style="border-right:1px solid #999a9e; padding:2px;"><b><?php echo date('d-m-y h:i:s A'); ?></b></td>
+		echo $docs = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+		echo $docs = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+		echo $sql = "INSERT INTO `final_billing` (`user_id`,`form_id`,`pdf_name`) VALUES ('$_REQUEST[uid]','$_REQUEST[fid]','caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf')";
+								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+	<div class="email_address_15"><?php $date_birth = $row['p_d_o_b']; echo date('d-m-Y',strtotime($date_birth));?>&nbsp;</div>
+								echo date('d-M-Y',strtotime($getdate)); 
+								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+		<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+								Generated On:&nbsp;<?=date('d-M-y',strtotime($fbilling->date_time))?>
+						$temp_send   = mysql_query("INSERT INTO `bill_forward_underwriter` (`form_id`,`user_id`,`underwriter_id`,`admin_message`,`date_time`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$underwriter','$messagess',now())") or die(msyql_error());$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+						$dattime = date('d-M-Y h:i:s a');
+			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+							$n_date = date('d-M-Y',strtotime($data)); 
+			<div class="first_name_16"><?php $dob_c = $row['p_d_o_b'];  echo date('d-m-Y',strtotime($dob_c)); ?></div>
+				<?php $dob_cd = $row['date_time'];  echo date('d-m-Y',strtotime($dob_cd)); ?>
+				<?php $dateSurgury = explode('/',$row['date_appt']); list($a,$b)=$dateSurgury; echo date('d-m-Y',strtotime($a)) ;?>
+				$date_time = date('d-m-Y');
+						<div class="attorney_span_1"><?php $getdate = $listdocuments['upload_date']; echo date('d-M-Y',strtotime($getdate)); ?></div>
+						<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>
+					<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>
+		 $n_date       = date('d-M-Y', strtotime($datetime));
+				$date_time = date('d-m-Y');
+									echo $dattime = date('d-M-Y',strtotime($date));
+						<div class="attorney_span_1"><?php //$getdate = $listdocuments['upload_date']; echo date('d-M-Y',strtotime($getdate)); ?></div>
+				$date_time = date('d-m-Y');
+				$date_time = date('d-m-Y');
+						<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>
+					<?php $date = date('d-M-Y', strtotime($row['date_time'])); ?>

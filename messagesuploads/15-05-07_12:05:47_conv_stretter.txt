@@ -1,0 +1,97 @@
+Is this in regards to the website design from Odeks?
+[10:48:17 AM] Streetter Vickell: are you available to talk
+[10:50:32 AM] Nordiff Technologies: Hi streetter
+[10:51:32 AM] Streetter Vickell: Hi. I have a project I am to do for a redesign of a website... however that entire project is put on hold for another week. 
+I do have a simple WordPress site I need built
+[10:52:32 AM] Streetter Vickell: The project is worth $100. I have a theme that just needs to be installed. Some plugins installed.
+[10:52:34 AM] Streetter Vickell: http://anpsthemes.com/demo/?theme=constructo
+[10:52:44 AM] Nordiff Technologies: okay... i am having good experience in making wP websites
+[10:52:53 AM] Streetter Vickell: That's the theme. "Classic" look is what we are doing
+[10:53:18 AM] Streetter Vickell: I just need the same picture, same colours, same functionality
+[10:53:32 AM] Streetter Vickell: I already have the theme purchased. I just need it installed and the site setup
+[10:53:58 AM] Nordiff Technologies: let me  check this
+[10:54:10 AM] Nordiff Technologies: give me a minute please
+[10:54:33 AM] Streetter Vickell: Install the Contructo Theme (Classic look)
+http://anpsthemes.com/demo/?theme=constructo 
+Same look, same pictures, same colours
+However use the SMC logo
+
+Add Plugins
+-SEO Friendly Images
+-All In One SEO Pack
+-Google Analytics
+-any others you may think will be beneficial
+
+Copy Paste info from the word document onto the pages. Homepage, About Us, Commercial, Residential
+[10:55:52 AM] Streetter Vickell: There are some default pages on the site that we would like on there "Projects" and "What we do" as we do all the same things
+[10:57:23 AM] Nordiff Technologies: so you just want me to install the theme and to add the plug ins only..?
+[10:58:15 AM] Streetter Vickell: Need to make sure it functions the same way as the Demo Page. Same buttons etc...
+[10:59:28 AM] Nordiff Technologies: okay...
+[11:00:18 AM] Streetter Vickell: I downloaded the theme. But I can't seem to find any of the pictures from the theme. Have you dealt with the themes before? Not sure why I can't seem to find them
+[11:01:13 AM] Nordiff Technologies: Yes.... i have worked on these themes before this also
+[11:03:08 AM] Nordiff Technologies: just send me the details and i will look into it
+[11:04:55 AM] Nordiff Technologies: ?
+[11:07:46 AM] Streetter Vickell: Ok. So you can setup the same pictures. Keep same content. I know there is some Lorem ipsum on many pages. That can stay, and I will replace later...
+[11:08:26 AM] Nordiff Technologies: ok
+[11:08:34 AM] Streetter Vickell: So you'll complete project for $100, and do you have a time frame of completion?
+[11:09:14 AM] Streetter Vickell: Will also need your email to give you access to the admin on the WordPress site
+[11:10:22 AM] Nordiff Technologies: I will complete this by tomorrow
+[11:11:35 AM] Nordiff Technologies: and yes i am ready for installing the theme and adding plug ins in $100
+[11:11:53 AM | Edited 11:12:09 AM] Nordiff Technologies: but any other work will cost additional..ok?
+[11:13:23 AM] Streetter Vickell: Great. We want it to function the exact same as the Classic demo site. I can copy and paste the text myself. Not a big deal. You can leave it Lorem ispum as long as all the buttons & pages etc.. are there
+[11:13:33 AM] Streetter Vickell: What is your email address?
+[11:13:51 AM] Nordiff Technologies: rao.biz1@gmail.com
+[11:14:13 AM] Nordiff Technologies: please send me the job contract also on odesk
+[11:14:38 AM] Streetter Vickell: Yes of course.
+[11:17:13 AM] Streetter Vickell: I cannot find your profile. Can you Message Kareina Turton on odes
+[11:17:26 AM] Nordiff Technologies: ok
+[11:18:58 AM | Edited 11:19:34 AM] Nordiff Technologies: done.. Please check my message on Odesk
+[11:20:08 AM] Streetter Vickell: Under Susmita Gupta
+[11:20:25 AM] Nordiff Technologies: yes..
+[11:23:41 AM] Streetter Vickell: Ok. Job is being sent shortly.
+[11:24:19 AM] Nordiff Technologies: ok
+[11:24:34 AM] Streetter Vickell: OK project sent. Your username and password are both: nordiff
+[11:24:44 AM] Nordiff Technologies: ok
+[11:25:06 AM] Streetter Vickell: Files are in the offer
+[11:25:19 AM] Nordiff Technologies: ok
+[11:25:41 AM] Streetter Vickell: I hope there's no questions. Because I will be going to bed. It's very late here
+[11:26:19 AM] Nordiff Technologies: ok
+[11:26:39 AM] Streetter Vickell: thank you for your help. Talk to you tomorrow
+[11:28:06 AM] Streetter Vickell: Actually maybe I should check to make sure you can log in first before I go to bed
+[11:29:21 AM] Nordiff Technologies: Yes backend details are working. Can you please send me the cpanel details also?
+[11:30:04 AM] Streetter Vickell: Cpanel details ... which details do you require?
+[11:31:07 AM | Edited 11:31:10 AM] Nordiff Technologies: I need to check the database first.
+[11:31:22 AM | Edited 11:31:52 AM] Nordiff Technologies: For that i need hosting details.
+[11:32:33 AM] Streetter Vickell: Domain:             adconnection.ca
+    1st Nameserver:     ns8429.hostgator.com
+    2nd Nameserver:     ns8430.hostgator.com
+    Server IP:          108.167.189.41
+[11:32:35 AM] Streetter Vickell: These?
+[11:33:24 AM] Nordiff Technologies: http://smconstruction.ca/cpanel
+[11:33:28 AM] Nordiff Technologies: Details
+[11:35:02 AM] Streetter Vickell: Really. I didn't know you needed login into there. Let me see what I can come up with
+[11:35:19 AM] Nordiff Technologies: ok
+[11:36:36 AM] Nordiff Technologies: Meanwhile I will start working on it...
+[11:36:40 AM] Streetter Vickell: Do you need to change anything in there or just view?
+[11:37:06 AM] Streetter Vickell: I just don't know if I'm allowed to give out the password to the Cpanel
+[11:37:25 AM] Nordiff Technologies: ok....
+[11:37:32 AM] Nordiff Technologies: leave that for now..
+[11:38:07 AM] Streetter Vickell: I can do a screenshare, and give you temporary mouse control. Would that work?
+
+I just not know if I have approval to give out that password is all
+[11:38:45 AM] Nordiff Technologies: no... that would't work..
+[11:38:54 AM] Nordiff Technologies: no problem.. just leave that for now
+[11:39:29 AM] Streetter Vickell: Really. Mouse control would allow you to go anywhere in the Cpanel you need to, and key in from your keyboard should you need to change things
+[11:39:41 AM] Streetter Vickell: Do you want to try?
+[11:40:12 AM] Streetter Vickell: And did you accept the job yet from Odes
+[11:40:27 AM] Nordiff Technologies: no, not yet
+[11:42:00 AM] Nordiff Technologies: Offer Accepted.
+[11:42:26 AM] Nordiff Technologies: Sometimes there is the problem with the database table. Somethimes we have to clear up the things in the database.
+[11:43:11 AM] Nordiff Technologies: You can give me the access of only smconstruction.ca. If there is the multisite hosting.
+[11:43:32 AM] Nordiff Technologies: Or you can give me the access to the particular database.
+[11:43:59 AM] Nordiff Technologies: Don't worry to share the details with me. You will not get any problem from my side.
+[11:45:27 AM] Streetter Vickell: OK. well just let me know if you need the Cpanel later. I just don't know about the giving out the password. And everyone I can ask is currently a sleep right now
+[11:45:51 AM] Nordiff Technologies: Ok. No problem.
+[11:46:05 AM] Streetter Vickell: Ok. I am off to bed myself. Thank you for your assistance
+[11:46:27 AM] Nordiff Technologies: YW :)
+Streetter Vickell

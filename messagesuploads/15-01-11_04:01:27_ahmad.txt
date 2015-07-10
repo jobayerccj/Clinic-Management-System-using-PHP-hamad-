@@ -1,0 +1,33 @@
+Questions:-
+
+Q 1) Who will fill the Plantiff form? Is it is Mayo staff or Plantiff Itself?
+
+Q 2) If Plantiff fill the form then how he can select the doctors with his own choice? This functionality should be given to mayo admin.
+
+Q 3): We don't have the Underwriter information during registration process. How we can manage this ?
+
+Q 4): How doctor can view his payment? Is there any seperate panel for the payment?
+
+Q 5): At this time we have the users in Registration form are (Including doctor, Medical Facility and Plantiff but there is no underwriter)
+	a) Anesthesiologist
+	b) Attorney
+	c) Doctor
+	d) Medical Facility
+	e) Plantiff Injured Party.
+
+Q 6): Can plantiff fill the multiple forms (Means in ongoing case. Can he fill the form for other case?)
+
+On the basis of this information i retrieves the lists of the doctors including (Anesthesiologist,Doctor,Medical Facility).
+Issue in it :- There is no any Underwriter information in this table ?
+
+And the panels are divided on this basis of registration Process:-
+1) Plantiff Panel (In which he can view his status information (Steps) from mayo admin,Doctors, Underwrite)
+2) Doctors Panel (Firstly, retrieves the list of the Plantiff's injured party case.Case that is forwarded by the admin to particular doctor).
+3) Underwriter (Missing)
+4) What is the Role of Attorney ?
+
+
+And one more thing, Firstly, we will complete the PSD. If PSD is okay then we will start the developement phase. In this way step by step we will complete the whole project. 
+
+
+

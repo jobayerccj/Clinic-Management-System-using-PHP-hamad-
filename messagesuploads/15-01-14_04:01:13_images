@@ -1,0 +1,15 @@
+#!/bin/bash
+for png;
+do
+jpg="${png%.png}.jpg";
+echo converting "$png"..
+if convert "$png" png.to.jpg; then
+mv png.to.jpg "$jpg"
+else
+echo 'error'
+exit 1
+fi
+done
+echo all the conversions are successfull
+exit 0
+

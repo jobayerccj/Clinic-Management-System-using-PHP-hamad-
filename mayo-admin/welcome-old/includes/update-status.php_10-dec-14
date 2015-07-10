@@ -1,0 +1,95 @@
+<h2>Update Status</h2>
+<div class="dashbord_client">
+	<div class="update_status_top">
+		<h1>Update Status</h1>
+		<form name="update_status" method="post" action="">
+			<textarea name="status" id="status_message" placeholder="Update client status" required></textarea>
+			<input type="submit" name="send_status" class="status_update" value="Submit"/>
+		</form>	
+		<script type="text/javascript">
+			$(function() {
+			$(".status_update").click(function() {
+			var element = $(this);
+			var status     = $("#status_message").val();
+			var formId     = <?php echo $_REQUEST['fid'] ?>;
+			var userId     = <?php echo $_REQUEST['uid'] ?>;
+			var dataString = 'status='+status+'&fid='+formId+'&uid='+userId;
+					if(status=='')
+					{
+						alert("Please Enter Some Text");
+					}
+					else
+					{
+							$("#status_show").show();
+							$("#status_show").fadeIn(400).html('<img src="<?php echo $sitepath; ?>/images/loading.gif" align="absmiddle" style="height: 55px; width: 55px;">&nbsp;<span class="loading"></span>');
+							$.ajax({
+							type: "POST",
+							url: "../includes/insert-status.php",
+							data: dataString,
+							cache: false,
+							success: function(html){
+							$("#display_status").after(html);
+							document.getElementById('status_message').value='';
+							$("#status_show").hide();
+							$("#display_status1").hide();
+							$(".thank_message").fadeOut(4000);
+							}
+							});
+				}
+				return false;
+				});
+			});
+		</script>
+		<div id="status_show"></div>
+			<div id="display_status1">
+				<div class="update_status_botom">
+					<div class="update_status_row_heading">
+						<div class="update_status_span_1">Date</div>
+						<div class="update_status_span_2">Update By</div>
+						<div class="update_status_span_3">Status</div>
+					</div>
+						<?php
+							$count=0;
+							$temp_getstatus = mysql_query("SELECT * FROM `status_update` where `form_id`='$_REQUEST[fid]' && `user_id`='$_REQUEST[uid]' order by id desc") or die(mysql_error());
+							if(mysql_num_rows($temp_getstatus)>0)
+							{
+								while($getstatus= mysql_fetch_object($temp_getstatus))
+								{
+							?>
+									<div class="update_status_row">
+										<div class="update_status_span_1">
+											<?php 
+												$tempdate = $getstatus->date_status;
+												echo $date_time = date("Y-M-d",strtotime($tempdate))."<br/>"; 
+												echo $datetime = date("H:m:s a",strtotime($tempdate));
+											?>
+										</div>
+										<div class="update_status_span_2">
+											<?php 
+												$a_id = $getstatus->main_user_id;
+												$fname = $getdata->GetObjectById($a_id,"first_name");
+												$lname = $getdata->GetObjectById($a_id,"last_name");
+												echo ucwords($fname)."&nbsp;";
+												echo ucwords($lname);
+												//echo $temdes= $getinformation->GetObjectById($a_id,"designation");									
+											?>
+										</div>
+										<div class="update_status_span_3"><?php echo $getstatus->status_messages; ?></div>
+									</div>
+							<?php	
+								}
+						 }
+							else
+							{
+						?>
+								<div class="update_status_row">
+									No Status Update Till now.
+								</div>
+						<?php
+							}
+						?>
+				</div>
+			</div>
+			<div id="display_status"></div>
+	</div>
+</div>

@@ -1,0 +1,37 @@
+<?php
+	class Plantiff
+{
+	function PlantiffRegister($plantiff_name,$plantiff_date,$plantiff_address,$plantiff_workphone,$plantiff_dob,$plantiff_homephone,$plantiff_driverlicense,$plantiff_mobilephone,$plantiff_email,$plantiff_autoinsurance,$plantiff_UM_UIM,$plantiff_PIP_med_pay,$plantiff_client_bankrupty)
+{
+	$insert_plantiff = mysql_query("INSERT INTO `plantiff_information` (`id`,`plantiff_name`,`date_completed`,`address`,`work_phone`,`d_o_b`,`home_phone`,`driver_licence`,`mobile_phone`,`e_mail`,`auto_insurance`,
+`um_uim`,`pip_med_pay`,`client_bankrupty`) VALUES (1,'$plantiff_name','$plantiff_date','$plantiff_address','$plantiff_workphone','$plantiff_dob','$plantiff_homephone','$plantiff_driverlicense',
+'$plantiff_mobilephone','$plantiff_email','$plantiff_autoinsurance','$plantiff_UM_UIM','$plantiff_PIP_med_pay','$plantiff_client_bankrupty')") or die(mysql_error());
+}
+
+function PlantiffAttorneyInformation($plantiff_AttorneyInformation_firm,$plantiff_AttorneyInformation_address,$plantiff_AttorneyInformation_phone,$plantiff_AttorneyInformation_fax,$plantiff_AttorneyInformation_firm_contact,$plantiff_AttorneyInformation_position,$plantiff_AttorneyInformation_contact_email)
+{
+	$insert_Attorney = mysql_query("INSERT INTO `plantiff_attorney_information` (`id`, `a_firm`, `a_address`, `a_phone`, `a_fax`, `a_firm_contact_person`, `a_position`, `a_contact_e_mail`) VALUES (37,'$plantiff_AttorneyInformation_firm','$plantiff_AttorneyInformation_address','$plantiff_AttorneyInformation_phone',
+'$plantiff_AttorneyInformation_fax','$plantiff_AttorneyInformation_firm_contact','$plantiff_AttorneyInformation_position',
+'$plantiff_AttorneyInformation_contact_email')") or die(mysql_error());
+}
+
+function Plantiffdefendants_information($plantiffdefendants_information_name,$plantiffdefendants_information_company,$plantiffdefendants_information_claim,$plantiffdefendants_information_limits)
+{
+	$insert_defendants_information = mysql_query("INSERT INTO `defendants_information` (`id`, `d_defendant_name`, `d_insurance_company`, `d_claim_no`, `d_limits`) VALUES (37,'$plantiffdefendants_information_name' , '$plantiffdefendants_information_company' , '$plantiffdefendants_information_claim', '$plantiffdefendants_information_limits' )") or die(mysql_error());
+}
+
+function Plantiffincident_information($plantiffincident_information_injury_date,$plantiffincident_information_event_location,$plantiffincident_information_event_description,$plantiffincident_information_injuries_description,$plantiffincident_information_report,$plantiffincident_information_injured_claim,$plantiffincident_information_witnes_name)
+{
+	$insert_incident_information = mysql_query("INSERT INTO `incident_information` (`id`, `i_injury_date`, `event_location`, `i_event_description`, `i_injuries_description`, `i_police_report`, `i_others_injured`, `i_witness`) 
+	VALUES (37,'$plantiffincident_information_injury_date','$plantiffincident_information_event_location','$plantiffincident_information_event_description','$plantiffincident_information_injuries_description','$plantiffincident_information_report','$plantiffincident_information_injured_claim','$plantiffincident_information_witnes_name')") or die(mysql_error());
+}
+
+function Plantiffstatus_claim($plantiffstatus_claim_action_title,$plantiffstatus_claim_index_no,$plantiffstatus_claim_venue,$plantiffstatus_claim_state,$plantiffstatus_claim_supreme,$plantiffstatus_claim_federal,$plantiffstatus_claim_date,$plantiffstatus_claim_projected_date)
+{
+	$insert_status_claim = mysql_query("INSERT INTO `status_claim`(`id`, `s_action_title`, `s_index_number`, `s_venue`, `s_state`, `s_supreme`, `s_federal`, `s_trial_date`, `projected_date`) VALUES (37,'$plantiffstatus_claim_action_title','$plantiffstatus_claim_index_no','$plantiffstatus_claim_venue','$plantiffstatus_claim_state','$plantiffstatus_claim_supreme','$plantiffstatus_claim_federal','$plantiffstatus_claim_date','$plantiffstatus_claim_projected_date')") or die(mysql_error());
+}
+
+}
+?>
+
+

@@ -1,0 +1,262 @@
+		setcookie("username", $username, time()+7600, "/", "/mayo-admin"); //here we are setting a cookie named username, with the Username on the database that will last 48 hours and will be set on the understandesign.com domain. This is an optional parameter.
+		setcookie("username", $username, time()+7600, "/", "/mayo-admin");
+	$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+		setcookie("username", $username, time()+7600, "/", "/mayo-admin"); //here we are setting a cookie named username, with the Username on the database that will last 48 hours and will be set on the understandesign.com domain. This is an optional parameter.
+		setcookie("username", $username, time()+7600, "/", "/mayo-admin");
+	$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+							echo '<div class="backpanel"><a href="'.$sitepath.'/mayo-admin/welcome/">Admin Profile</a></div>';
+$stylesheet  		 = $_SERVER['DOCUMENT_ROOT']."/mayo-admin/users/style.css";
+$headeradmin         = $_SERVER['DOCUMENT_ROOT']."/mayo-admin/welcome/header.php";
+$headerwtlogin       = $_SERVER['DOCUMENT_ROOT']."/mayo-admin/header.php";
+		setcookie("username", $username, time()+7600, "/", "/mayo-admin"); //here we are setting a cookie named username, with the Username on the database that will last 48 hours and will be set on the understandesign.com domain. This is an optional parameter.
+		setcookie("username", $username, time()+7600, "/", "/mayo-admin");
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+			case "/mayo-admin/welcome/index.php":
+			case "/mayo-admin/welcome/adduser.php":
+			case "/mayo-admin/welcome/adduser.php":
+			case "/mayo-admin/welcome/verify-users.php":
+			case "/mayo-admin/welcome/add-subroles.php":
+			case "/mayo-admin/welcome/manage-professionals.php":
+			case "/mayo-admin/welcome/new-cases/":
+			case "/mayo-admin/welcome/mesh-case/":
+			case "/mayo-admin/welcome/ortho-case/":
+			case "/mayo-admin/welcome/pain-management-case/":
+			case "/mayo-admin/welcome/general-surgery-case/":
+			case "/mayo-admin/welcome/neurology-case/":
+			case "/mayo-admin/welcome/medical-release/":
+			case "/mayo-admin/welcome/view-logs.php":
+			case "/mayo-admin/welcome/reset-password.php":
+			case "/mayo-admin/welcome/insert-cpt-code.php":
+			case "/mayo-admin/welcome/insert-email.php":
+			case "/mayo-admin/welcome/add-billing.php":
+			case "/mayo-admin/welcome/reports.php":
+			case "/mayo-admin/welcome/forms.php":
+	<link rel="stylesheet" href="<?php echo $sitepath; ?>/mayo-admin/welcome/admin-style.css" type="text/css"/>
+			<h1><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/">logo</a></h1>
+$tcpdfpath = $pathofmayo."/mayo-admin/welcome/includes/tcpdf/examples/tcpdf_include.php";
+	$tcpdfpath = $pathofmayo."/mayo-admin/welcome/includes/tcpdf/examples/tcpdf_include.php";
+$tcpdfpath = $pathofmayo."/mayo-admin/welcome/includes/tcpdf/examples/tcpdf_include.php";
+	'/var/www/mayo-admin/welcome/includes/tcpdf/tcpdf.php'
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+											<a href="/mayo-admin/welcome/re-schedule.php?fid=<?=$_REQUEST['fid']?>&id=<?=$data->appt_id?>&uid=<?=$_REQUEST['uid']?>" target="_blank">Re-Schedule</a>
+								echo "<a href='/mayo-admin/welcome/ortho-case/index.php?cid=1&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+								echo "<a href='/mayo-admin/welcome/mesh-case/index.php?cid=2&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+								echo "<a href='/mayo-admin/welcome/pain-management-case/index.php?cid=3&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+								echo "<a href='/mayo-admin/welcome/general-surgery-case/index.php?cid=4&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+								echo "<a href='/mayo-admin/welcome/neurology-case/index.php?cid=5&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+								echo "<a href='/mayo-admin/welcome/medical-release/index.php?cid=6&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+	//echo $contentfile = $_SERVER['DOCUMENT_ROOT']."/mayo-admin/includes/final-billing-document.php";
+		echo $docs = $_SERVER['DOCUMENT_ROOT']."/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+		echo $docs = $_SERVER['DOCUMENT_ROOT']."/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+		define('FPDF_FONTPATH','/var/www/rao/mayo-admin/welcome/includes/pdf-generator/font/');
+		require('/var/www/rao/mayo-admin/welcome/includes/pdf-generator/fpdf.php');
+						<a href="<?php echo $sitepath; ?>/mayo-admin/welcome/download.php?filename=<?=$docs->upload_document_path;?>&fid=<?php echo $docs->form_id; ?>">Download</a>
+										echo "<a href='/mayo-admin/welcome/ortho-case/index.php?cid=1&fid=".$message->form_id."&uid=".$message->user_id."#messages'><b>".ucwords($getdata->GetInfoPlantiffInformation('plantiff_name',$message->form_id))."</b></a>";
+										echo "<a href='/mayo-admin/welcome/mesh-case/index.php?cid=2&fid=".$message->form_id."&uid=".$message->user_id."#messages'><b>".ucwords($getdata->GetInfoPlantiffInformation('plantiff_name',$message->form_id))."</b></a>";
+										echo "<a href='/mayo-admin/welcome/pain-management-case/index.php?cid=3&fid=".$message->form_id."&uid=".$message->user_id."#messages'><b>".ucwords($getdata->GetInfoPlantiffInformation('plantiff_name',$message->form_id))."</b></a>";
+										echo "<a href='/mayo-admin/welcome/general-surgery-case/index.php?cid=4&fid=".$message->form_id."&uid=".$message->user_id."#messages'><b>".ucwords($getdata->GetInfoPlantiffInformation('plantiff_name',$message->form_id))."</b></a>";
+										echo "<a href='/mayo-admin/welcome/neurology-case/index.php?cid=5&fid=".$message->form_id."&uid=".$message->user_id."#messages'><b>".ucwords($getdata->GetInfoPlantiffInformation('plantiff_name',$message->form_id))."</b></a>";
+										echo "<a href='/mayo-admin/welcome/medical-release/index.php?cid=6&fid=".$message->form_id."&uid=".$message->user_id."#messages'><b>".ucwords($getdata->GetInfoPlantiffInformation('plantiff_name',$message->form_id))."</b></a>";
+									echo "<a href='/mayo-admin/welcome/ortho-case/index.php?cid=1&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+									echo "<a href='/mayo-admin/welcome/mesh-case/index.php?cid=2&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+									echo "<a href='/mayo-admin/welcome/pain-management-case/index.php?cid=3&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+									echo "<a href='/mayo-admin/welcome/general-surgery-case/index.php?cid=4&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+									echo "<a href='/mayo-admin/welcome/neurology-case/index.php?cid=5&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+									echo "<a href='/mayo-admin/welcome/medical-release/index.php?cid=6&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+								echo "<a href='/mayo-admin/welcome/closed-cases/index.php?cid=".$cide."&fid=".$message->form_id."&uid=".$message->user_id."#messages'><b>".ucwords($getdata->GetInfoPlantiffInformation('plantiff_name',$message->form_id))."</b></a>";
+									echo "<a href='/mayo-admin/welcome/closed-cases/index.php?cid=".$cide."&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+						echo "<a href='/mayo-admin/welcome/new-cases/index.php?cid=".$cide."&fid=".$message->form_id."&uid=".$message->user_id."#messages'><b>".ucwords($getdata->GetInfoPlantiffInformation('plantiff_name',$message->form_id))."</b></a>";
+									echo "<a href='/mayo-admin/welcome/new-cases/index.php?cid=".$cide."&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+								echo "<a href='/mayo-admin/welcome/ortho-case/index.php?cid=1&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+								echo "<a href='/mayo-admin/welcome/mesh-case/index.php?cid=2&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+								echo "<a href='/mayo-admin/welcome/pain-management-case/index.php?cid=3&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+								echo "<a href='/mayo-admin/welcome/general-surgery-case/index.php?cid=4&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+								echo "<a href='/mayo-admin/welcome/neurology-case/index.php?cid=5&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+								echo "<a href='/mayo-admin/welcome/medical-release/index.php?cid=6&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+						<a href="<?php echo $sitepath; ?>/mayo-admin/welcome/download.php?filename=<?=$docs->upload_document_path;?>&fid=<?php echo $docs->form_id; ?>">Download</a>
+									echo "<a href='/mayo-admin/welcome/ortho-case/index.php?cid=1&fid=".$message->form_id."&uid=".$message->user_id."#messages'><b>".ucwords($getdata->GetInfoPlantiffInformation('plantiff_name',$message->form_id))."</b></a>";
+									echo "<a href='/mayo-admin/welcome/mesh-case/index.php?cid=2&fid=".$message->form_id."&uid=".$message->user_id."#messages'><b>".ucwords($getdata->GetInfoPlantiffInformation('plantiff_name',$message->form_id))."</b></a>";
+									echo "<a href='/mayo-admin/welcome/pain-management-case/index.php?cid=3&fid=".$message->form_id."&uid=".$message->user_id."#messages'><b>".ucwords($getdata->GetInfoPlantiffInformation('plantiff_name',$message->form_id))."</b></a>";
+									echo "<a href='/mayo-admin/welcome/general-surgery-case/index.php?cid=4&fid=".$message->form_id."&uid=".$message->user_id."#messages'><b>".ucwords($getdata->GetInfoPlantiffInformation('plantiff_name',$message->form_id))."</b></a>";
+									echo "<a href='/mayo-admin/welcome/neurology-case/index.php?cid=5&fid=".$message->form_id."&uid=".$message->user_id."#messages'><b>".ucwords($getdata->GetInfoPlantiffInformation('plantiff_name',$message->form_id))."</b></a>";
+									echo "<a href='/mayo-admin/welcome/medical-release/index.php?cid=6&fid=".$message->form_id."&uid=".$message->user_id."#messages'><b>".ucwords($getdata->GetInfoPlantiffInformation('plantiff_name',$message->form_id))."</b></a>";
+									echo "<a href='/mayo-admin/welcome/ortho-case/index.php?cid=1&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+									echo "<a href='/mayo-admin/welcome/mesh-case/index.php?cid=2&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+									echo "<a href='/mayo-admin/welcome/pain-management-case/index.php?cid=3&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+									echo "<a href='/mayo-admin/welcome/general-surgery-case/index.php?cid=4&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+									echo "<a href='/mayo-admin/welcome/neurology-case/index.php?cid=5&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+									echo "<a href='/mayo-admin/welcome/medical-release/index.php?cid=6&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+	//echo $contentfile = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/includes/final-billing-document.php";
+		echo $docs = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+		echo $docs = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+												<a href="/mayo-admin/welcome/download.php?filename=<?=$docs->upload_document_path;?>&fid=<?php echo $docs->form_id; ?>">Download</a>
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+<?phpob_start();ini_set('display_errors',1);  error_reporting(E_ALL);require_once('../../../includes/functions.php');$path       = $_SERVER['DOCUMENT_ROOT']."/path.php";require_once($path);include($config);include '../../functions.php';include '../classes/Cases.php';$desg       = new Cases();$functions  = $pathofmayo."/classes/functions.php";include($functions);$meshedfile = $pathofmayo."/attorney/classes/meshed.php";require_once($meshedfile);$getdata    = new Meshed();?><script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script><?phpif(loggedin()){	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";	require_once($header_admin);?><section class="row">	<div class="container dashboard_bg">		<?php if(isset($_REQUEST['fid']))		{		?>		</div>		<div class="container dashboard_bg">		<div class="slide_left_pane">			<script>				$(document).ready(function() 				{					 $(".view").load("../includes-closed/latest-messages.php");				   var refreshId = setInterval(function() {					  $(".view").load("../includes-closed/latest-messages.php");				   }, 30000);				   $.ajaxSetup({ cache: false });				});			</script>			<div class="view"></div>		</div>		<div class="slide_right_pane">				<!---- tabs ---->				<div id="tabs">			<ul class="tabbernav">				<li><a href="#application">Application</a></li>				<li><a href="#documents">Documents</a></li>				<li><a href="#assign-professional">Assign Professionals</a></li>				<li><a href="#work-flow">Work Flow/Status Update</a></li>				<li><a href="#messages">Messages</a></li>				<li><a href="#billing">Billing</a></li>				<li><a href="#forward-billing">Forward Billing</a></li>				<li><a href="#final-billing">Final Billing</a></li>				<li><a href="#close-case">Close Case</a></li>			</ul>		<div id="application">		<?php			$qry = "select a.*,b.*,d.* from plantiff_information a 			inner join plantiff_case_type_info b on a.form_id=b.form_id and a.id=b.id			inner join members d on a.id=d.id and b.id=d.id			where b.admin_approved=1 and b.case_closed=1 && a.form_id='$_REQUEST[fid]' && b.form_id='$_REQUEST[fid]' && a.id='$_REQUEST[uid]' && b.id='$_REQUEST[uid]'";			$sql = mysql_query($qry) or die(mysql_error());			$row = mysql_fetch_array($sql);		?>				<?php					$caseId = $_REQUEST['cid'];					if($caseId==2||$caseId==4)					{						$getdata->meshedView($row);					}					elseif($caseId==1||$caseId==3||$caseId==5)					{						$getdata->orthoView($row);					}					else					{						$getdata->medicalView($row);					}				?>					</div>		<div id="documents">		<?php				$admin    = $_SESSION['username'];				$admin_id = $getdata->GetDetailsByUsername($admin,"id");				include('../includes-closed/upload-documents.php');			?>		</div>		<div id="assign-professional">		<?php				include('../includes-closed/assign-proffessional.php');			?>		</div>		<div id="work-flow">		<?php				include('../includes-closed/update-status.php');			?>		</div>		<div id="messages">		<?php include('../includes-closed/messages.php'); ?>		</div>		<div id="billing">			<?php include('../includes-closed/billing.php'); ?>		</div>		<div id="forward-billing">			<?php include('../includes-closed/forward-billing.php'); ?>		</div>		<div id="final-billing">			<?php 				//include('../includes-closed/final-billing-document.php'); 				//include('../includes-closed/pdf-generator/final-billing.php'); 					//include('../includes-closed/tcpdf/examples/final-billing.php');				include('../includes-closed/forward-final-billing.php');			?>		</div>		<div id="close-case">			<div class="dashbord_client">				<div class="billing_box_bg">					<?php include('../includes-closed/close-case.php'); ?>				</div>			</div>		</div>				<!---- End tabs ---->				<script src="//code.jquery.com/jquery-1.10.2.js"></script>		<script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>				<script>		$(function() {			//  jQueryUI 1.10 and HTML5 ready			//      http://jqueryui.com/upgrade-guide/1.10/#removed-cookie-option 			//  Documentation			//      http://api.jqueryui.com/tabs/#option-active			//      http://api.jqueryui.com/tabs/#event-activate			//      http://balaarjunan.wordpress.com/2010/11/10/html5-session-storage-key-things-to-consider/			//			//  Define friendly index name			var index = 'key';			//  Define friendly data store name			var dataStore = window.sessionStorage;			//  Start magic!			try {				// getter: Fetch previous value				var oldIndex = dataStore.getItem(index);			} catch(e) {				// getter: Always default to first tab in error state				var oldIndex = 0;			}			$('#tabs').tabs({				// The zero-based index of the panel that is active (open)				active : oldIndex,				// Triggered after a tab has been activated				activate : function( event, ui ){					//  Get future value					var newIndex = ui.newTab.parent().children().index(ui.newTab);					//  Set future value					dataStore.setItem( index, newIndex ) 				}			}); 		}); 		</script>		<?php		}		else		{		?>		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>         <script type="text/javascript">            $(document).ready(function(){                function loading_show(){                    $('#loading').html("<img src='../images/loading.gif'/>").fadeIn('fast');                }                function loading_hide(){                    $('#loading').fadeOut('fast');                }                                function loadData(page){                    loading_show();                                        $.ajax                    ({                        type: "POST",                        url: "meshed-pagin.php",                        data: "page="+page,                        success: function(msg)                        {                            $("#container").ajaxComplete(function(event, request, settings)                            {                                loading_hide();                                $("#container").html(msg);                            });                        }                    });                }                loadData(1);  // For first time page load default results                $('#container .pagination li.active').live('click',function(){                    var page = $(this).attr('p');                    loadData(page);                                    });                           $('#go_btn').live('click',function(){                    var page = parseInt($('.goto').val());                    var no_of_pages = parseInt($('.total').attr('a'));                    if(page != 0 && page <= no_of_pages){                        loadData(page);                    }else{                        alert('Enter a PAGE between 1 and '+no_of_pages);                        $('.goto').val("").focus();                        return false;                    }                                    });            });        </script>		<div class="form_section_content">			<h1 class="add_user">Mesh Cases</h1>			<div class="view_log_details">				<div class="log_heading">					<div class="serial_no_16">S.No.</div>					<div class="user_name_16">Name</div>					<div class="first_name_16">D.O.B</div>					<div class="workflow_16">Work Flow</div>					<div class="status_16">Status</div>					<div class="action_16">Action</div>				</div>			</div>		</div>		         <div id="loading"></div>        <div id="container">            <div class="data"></div>            <div class="pagination"></div>        </div>       <?php } ?></div></div>	<div class="clear"></div></div></section><?phprequire($get_footer);?><?php }else { header('Location:../../login.php');}?>
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+	$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+	$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+					header("url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]");
+	$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+	$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+	$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+	<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/adduser.php">Manage Users</a>
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/adduser.php">Add User</a></li>
+			<!--<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/modify-user.php">Modify User</a></li>-->
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/verify-users.php">Verify Users</a></li>
+			<!--<li><a href="<?php //echo $sitepath; ?>/mayo-admin/welcome/online-users.php">Online Users</a></li>-->
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/add-subroles.php">Add Sub Roles</a></li>
+	<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/manage-professionals.php">Manage Professionals</a></li>
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/new-cases">New Cases
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/mesh-case">Mesh Cases</a></li>
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/ortho-case">Ortho Case</a></li>
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/pain-management-case">Pain Management</a></li>
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/general-surgery-case">General Surgery</a></li>
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/neurology-case">Neurology</a></li>
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/medical-release">Medical Record Request</a></li>
+			<!--<li><a href="<?php //echo $sitepath; ?>/mayo-admin/welcome/cases/case-history.php">Case History</a></li>-->
+			<!--<li><a href="<?php //echo $sitepath; ?>/mayo-admin/welcome/view-logs.php">View Logs</a></li>-->
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/reset-password.php">Change Password</a></li>
+		<li><a href="<?php echo $sitepath;?>/mayo-admin/welcome/insert-cpt-code.php">Insert CPT Code</a></li>
+		<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/insert-email.php">Insert Email Format</a></li>
+		<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/add-billing.php">Add Billing System</a></li>
+		<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/reports.php">Billing Report</a></li>
+		<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/general-reports.php">General Report</a></li>
+		<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/forms.php">Forms</a></li>
+$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+			case "/mayo-admin/welcome/index.php":
+			case "/mayo-admin/welcome/adduser.php":
+			case "/mayo-admin/welcome/adduser.php":
+			case "/mayo-admin/welcome/verify-users.php":
+			case "/mayo-admin/welcome/add-subroles.php":
+			case "/mayo-admin/welcome/manage-professionals.php":
+			case "/mayo-admin/welcome/new-cases/":
+			case "/mayo-admin/welcome/mesh-case/":
+			case "/mayo-admin/welcome/ortho-case/":
+			case "/mayo-admin/welcome/pain-management-case/":
+			case "/mayo-admin/welcome/general-surgery-case/":
+			case "/mayo-admin/welcome/neurology-case/":
+			case "/mayo-admin/welcome/medical-release/":
+			case "/mayo-admin/welcome/view-logs.php":
+			case "/mayo-admin/welcome/reset-password.php":
+			case "/mayo-admin/welcome/insert-cpt-code.php":
+			case "/mayo-admin/welcome/insert-email.php":
+			case "/mayo-admin/welcome/add-billing.php":
+			case "/mayo-admin/welcome/reports.php":
+			case "/mayo-admin/welcome/forms.php":
+	<link rel="stylesheet" href="<?php echo $sitepath; ?>/mayo-admin/welcome/admin-style.css" type="text/css"/>
+			<h1><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/">logo</a></h1>
+				<h1><a href="<?php echo $sitepath; ?>/mayo-admin/logout.php">Logout</a></h1>
+$tcpdfpath = $pathofmayo."/mayo-admin/welcome/includes/tcpdf/examples/tcpdf_include.php";
+	$tcpdfpath = $pathofmayo."/mayo-admin/welcome/includes/tcpdf/examples/tcpdf_include.php";
+$tcpdfpath = $pathofmayo."/mayo-admin/welcome/includes/tcpdf/examples/tcpdf_include.php";
+	'/var/www/mayo-admin/welcome/includes/tcpdf/tcpdf.php'
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+								echo "<a href='/mayo-admin/welcome/ortho-case/index.php?cid=1&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+								echo "<a href='/mayo-admin/welcome/mesh-case/index.php?cid=2&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+								echo "<a href='/mayo-admin/welcome/pain-management-case/index.php?cid=3&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+								echo "<a href='/mayo-admin/welcome/general-surgery-case/index.php?cid=4&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+								echo "<a href='/mayo-admin/welcome/neurology-case/index.php?cid=5&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+								echo "<a href='/mayo-admin/welcome/medical-release/index.php?cid=6&fid=".$message->form_id."&uid=".$message->user_id."'>Read More</a>";
+	//echo $contentfile = $_SERVER['DOCUMENT_ROOT']."/mayo-admin/includes/final-billing-document.php";
+		echo $docs = $_SERVER['DOCUMENT_ROOT']."/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+		echo $docs = $_SERVER['DOCUMENT_ROOT']."/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+		define('FPDF_FONTPATH','/var/www/rao/mayo-admin/welcome/includes/pdf-generator/font/');
+		require('/var/www/rao/mayo-admin/welcome/includes/pdf-generator/fpdf.php');
+	//echo $contentfile = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/includes/final-billing-document.php";
+		echo $docs = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+		echo $docs = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/includes/pdf-generator/caseno-".$_REQUEST['fid']."-".date('d-m-y-s').".pdf";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $pathofmayo."/mayo-admin/welcome/header.php";
+	$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+	$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+	$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+					header("url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]");
+	$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+	$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+	$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+	<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/adduser.php">Manage Users</a>
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/adduser.php">Add User</a></li>
+			<!--<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/modify-user.php">Modify User</a></li>-->
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/verify-users.php">Verify Users</a></li>
+			<!--<li><a href="<?php //echo $sitepath; ?>/mayo-admin/welcome/online-users.php">Online Users</a></li>-->
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/add-subroles.php">Add Sub Roles</a></li>
+	<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/manage-professionals.php">Manage Professionals</a></li>
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/new-cases">New Cases
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/mesh-case">Mesh Cases</a></li>
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/ortho-case">Ortho Case</a></li>
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/pain-management-case">Pain Management</a></li>
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/general-surgery-case">General Surgery</a></li>
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/neurology-case">Neurology</a></li>
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/medical-release">Medical Record Request</a></li>
+			<!--<li><a href="<?php //echo $sitepath; ?>/mayo-admin/welcome/cases/case-history.php">Case History</a></li>-->
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/view-logs.php">View Logs</a></li>
+			<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/reset-password.php">Change Password</a></li>
+		<li><a href="<?php echo $sitepath;?>/mayo-admin/welcome/insert-cpt-code.php">Insert CPT Code</a></li>
+		<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/insert-email.php">Insert Email Format</a></li>
+		<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/add-billing.php">Add Billing System</a></li>
+		<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/reports.php">Reports</a></li>
+		<li><a href="<?php echo $sitepath; ?>/mayo-admin/welcome/forms.php">Forms</a></li>
+$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+		setcookie("username", $username, time()+7600, "/", "/mayo-admin"); //here we are setting a cookie named username, with the Username on the database that will last 48 hours and will be set on the understandesign.com domain. This is an optional parameter.
+		setcookie("username", $username, time()+7600, "/", "/mayo-admin");
+						header("Location:mayo-admin/welcome");
+						header("Location:mayo-admin/welcome");
+	$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+	$header_admin = $_SERVER['DOCUMENT_ROOT']."/rao/mayo-admin/welcome/header.php";
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");

@@ -1,0 +1,12 @@
+/var/www/doctors/index.php:	$('#popupDatepicker').datepick({yearRange: '1920:2020',minDate: new Date(12-1, 25),dateFormat: 'dd-mm-yyyy'});
+/var/www/underwriter/index.php:	$('#popupDatepicker').datepick({yearRange: '1920:2020',minDate: new Date(12-1, 25),dateFormat: 'dd-mm-yyyy'});
+/var/www/mayo-admin/welcome/includes/assign-proffessional_backup.php:						 <div class="controls input-append date form_datetime" data-date="<?php echo date('d-mm-Y'); ?>T05:25:07Z" data-date-format="dd-mm-yyyy / HH:ii p" data-link-field="dtp_input1">
+/var/www/mayo-admin/welcome/includes/assign-proffessional_backup.php:						<div class="controls input-append date form_datetime" data-date="<?php echo date('d-mm-Y'); ?>T05:25:07Z" data-date-format="dd-mm-yyyy / HH:ii p" 
+/var/www/mayo-admin/welcome/includes/assign-proffessional_uuuu.php:						 <div class="controls input-append date form_datetime" data-date="<?php echo date('d-mm-Y'); ?>T05:25:07Z" data-date-format="dd-mm-yyyy / HH:ii p" data-link-field="dtp_input1">
+/var/www/mayo-admin/welcome/includes/assign-proffessional_uuuu.php:						<div class="controls input-append date form_datetime" data-date="<?php echo date('d-mm-Y'); ?>T05:25:07Z" data-date-format="dd-mm-yyyy / HH:ii p" 
+/var/www/mayo-admin/welcome/includes-closed/assign-proffessional_backup.php:						 <div class="controls input-append date form_datetime" data-date="<?php echo date('d-mm-Y'); ?>T05:25:07Z" data-date-format="dd-mm-yyyy / HH:ii p" data-link-field="dtp_input1">
+/var/www/mayo-admin/welcome/includes-closed/assign-proffessional_backup.php:						<div class="controls input-append date form_datetime" data-date="<?php echo date('d-mm-Y'); ?>T05:25:07Z" data-date-format="dd-mm-yyyy / HH:ii p" 
+/var/www/mayo-admin/welcome/includes-closed/assign-proffessional_uuuu.php:						 <div class="controls input-append date form_datetime" data-date="<?php echo date('d-mm-Y'); ?>T05:25:07Z" data-date-format="dd-mm-yyyy / HH:ii p" data-link-field="dtp_input1">
+/var/www/mayo-admin/welcome/includes-closed/assign-proffessional_uuuu.php:						<div class="controls input-append date form_datetime" data-date="<?php echo date('d-mm-Y'); ?>T05:25:07Z" data-date-format="dd-mm-yyyy / HH:ii p" 
+/var/www/case-manager/pain-management/pain-management-step-2.php:						<input type="text" placeholder="dd-mm-yyyy" class="required_field name="injury_date" id="injury_date"/>
+/var/www/case-manager/cases.php:	$('#popupDatepicker').datepick({yearRange: '1920:2020',minDate: new Date(12-1, 25),dateFormat: 'dd-mm-yyyy'});

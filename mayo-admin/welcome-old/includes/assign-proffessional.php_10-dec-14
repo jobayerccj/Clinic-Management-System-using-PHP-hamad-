@@ -1,0 +1,189 @@
+<h2>Assign Professionals</h2>
+			<div class="dashbord_client dashboard_boder">
+				<h1>Process Verified Clients</h1>
+				<div class="client_box_bg">
+					<form name="form1" method="post" action="">
+						<div class="hire_left">
+							<div class="dashboard_row">
+								<label>Choose Department</label>
+								<select name="desgntn" onchange="getUser(this.value)">
+									<option>Select Department</option>
+									<?php
+										$sql = mysql_query("SELECT * FROM `designation` LIMIT 0,7") or die(mysql_error());
+										while($data=mysql_fetch_object($sql))
+										{
+											echo "<option value='$data->id'>$data->designation</option>";
+										}
+									?>
+								</select>
+							</div>
+							<div class="dashboard_row">
+								<label>Employee Name</label>
+								<div id="result">
+									<select name="members" >
+										<option value="">...Select...</option>
+									</select>
+								</div>
+								<div id="result2"></div>
+								
+							</div>
+						</div>
+						<div class="hire_right">
+							<div class="dashboard_row">
+								<label>Message</label>
+								<textarea name="hire_message"></textarea>
+							</div>
+							<div class="dashboard_row">
+								<input type="submit" name="hire_button" id="" value="Submit"/>
+							</div>
+						</div>	 
+					</form>
+					<?php
+						$date_time       = date("Y-m-d H:i:s a");
+						if(isset($_POST['hire_button']))
+						{
+							$desgntn      = $_REQUEST['desgntn'];
+							$getname      = $getdata->GetDesgBydesId($desgntn);
+							
+							/*client info*/
+						    $user_id_req   = $_REQUEST['uid'];
+							$fname         = $getdata->GetObjectById($user_id_req,"first_name");
+							$lname         = $getdata->GetObjectById($user_id_req,"last_name");
+							$c_email_id    = $getdata->GetObjectById($user_id_req,"email_id");
+							$contact_cl    = $getdata->GetObjectById($user_id_req,"email_id");
+							/*end*/
+							
+							/*Hire information*/
+							$hire_id       = $_REQUEST['user_details'];
+							$h_f_name      = $getdata->GetObjectById($hire_id,"first_name");
+							$l_f_name      = $getdata->GetObjectById($hire_id,"last_name");
+							$s_email_id    = $getdata->GetObjectById($hire_id,"email_id");
+							$s_email_id    = $getdata->GetObjectById($hire_id,"email_id");
+							$contact_h     = $getdata->GetObjectById($hire_id,"email_id");
+							/*End*/
+							
+							/*Emails*/
+							$c_subject     = "Case Successfully Transferred";
+							$s_subject     = "New Case Information";
+							$s_message     = $_REQUEST['hire_message']; 
+							/*ends*/
+							
+							$message_c     = "Client Details";
+							$extravalues_c = array("Name" =>ucwords($h_f_name),"Email Id" =>$c_email_id,"Contact No" =>$contact_cl);
+							$extravalues_s = array("Name" =>ucwords($fname),"Email Id" =>$s_email_id ,"Contact No" =>$contact_h);
+							$form_id_req   = $_REQUEST['fid'];
+							
+							/*Store Hire Information*/ 
+							
+							$temp_hire     = mysql_query("INSERT INTO `hire_staff` (`form_id`,`hire_id`,`user_id`,`message`,`date_time`)VALUES 
+							('$form_id_req','$hire_id','$user_id_req','$s_message','$date_time')") or die(mysql_error());
+							
+							/*Store Messsage*/    
+							//$mess_insert   = mysql_query("INSERT INTO `message_sent` (`form_id`,`user_id`,`main_user_id`,`message`,`date_message`) VALUES ('$form_id_req','$user_id_req','$hire_id','$s_message ','$date_time')") or die(mysql_error());
+							
+							/*Delete user record from upload Documents*/
+							//$delete_docs   = mysql_query("DELETE FROM `documents_messages` WHERE `form_id`='$_REQUEST[id]'") or die(mysql_error());
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+							
+							if($temp_hire)
+							{
+								$sendmail_client = $getdata->SendEmail($c_email_id,$c_subject,$message_c,$extravalues_c);
+								$sendmail_staff  = $getdata->SendEmail($s_email_id,$s_subject,$s_message,$extravalues_s);
+								echo "<div class='thank_message'>".$getname." ".ucwords($h_f_name)." ".ucwords($l_f_name)." is Successfully Assigned to ".ucwords($fname)." ".ucwords($lname)."</div>";
+							}
+						}
+					?>
+				</div>
+</div>
+			<div class="dashbord_client">
+				<h1>Details List</h1>
+				<div class="client_box_bg">
+					<div class="dashboard_row_heading">
+						<div class="dashboard_span_h1">Case ID</div>
+						<div class="dashboard_span_h2">Choose Department</div>
+						<div class="dashboard_span_h3">Employee Name</div>
+						<div class="dashboard_span_h4">Email ID</div>
+						<div class="dashboard_span_h5">Message</div>
+						<div class="dashboard_span_h6">Action</div>
+					</div>
+					 <script src="<?php echo $sitepath; ?>/js/jquery.js"></script>
+					<script type="text/javascript">
+						$(function()
+						{
+							$(".assign_prof").click(function()
+							{
+								var element = $(this);
+								var del_id = element.attr("hid");
+								var info = 'hid='+del_id;
+								if(confirm("Sure you want to delete this update? There is no undo"))
+								{
+									$.ajax({
+										type:"POST",
+										url:"../includes/delete-c-staff.php",
+										data:info,
+										success:function()
+										{
+										}
+									});
+								$(this).parents(".client_row_content").animate({ backgroundColor: "#fbc7c7" }, "fast")
+.animate({ opacity: "hide" }, "slow");
+								}
+								return false;
+							});
+						});
+					</script>
+					<?php
+						$count=0;
+						$query= "SELECT * FROM `hire_staff` WHERE `user_id`= '$_REQUEST[uid]' && `form_id`='$_REQUEST[fid]'";
+						$temp_hired_inform = mysql_query("SELECT * FROM `hire_staff` WHERE `user_id`= '$_REQUEST[uid]' && `form_id`='$_REQUEST[fid]'") or die(mysql_error());
+							while($data    = mysql_fetch_object($temp_hired_inform))
+							{
+								$count++;
+								$hire_id = $data->hire_id;
+								if($count>0)
+								{
+					?>
+								<div class="client_row_content">
+									<div class="dashboard_span_h1"><?php echo $data->form_id; ?></div>
+									<div class="dashboard_span_h2">
+										<?php 
+											$department = $getdata->GetObjectById($hire_id,"designation"); 
+											echo $depar = $getdata->GetDesgBydesId($department);
+										?>
+									</div>
+									<div class="dashboard_span_h3">
+										<?php 
+											$hire_id = $data->hire_id; 
+											$f_name  = $getdata->GetObjectById($hire_id,"first_name");
+											$l_name  = $getdata->GetObjectById($hire_id,"last_name");
+											echo ucwords($f_name)."&nbsp".ucwords($l_name);
+										?>
+									</div>
+									<div class="dashboard_span_h4">
+										<?php 
+											echo $email_id  = $getdata->GetObjectById($hire_id,"email_id"); 
+										?>
+									</div>
+									<div class="dashboard_span_h5">
+										<?php
+											echo $data->message; 
+										?>
+									</div>
+									<div class="dashboard_span_h6">
+										<a class="assign_prof" id="deletestaff" href="#" hid=<?=$data->id?> alt="Delete Professionals">Delete</a>	
+									</div>
+								</div>
+						<?php 
+							}
+							else
+							{
+						?>
+							<div class="client_row_content">
+								<h1>No Team is selected for this Client.</h1>		
+							</div>
+						<?php
+							}
+						} 
+						?>
+				</div>
+			</div>				

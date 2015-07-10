@@ -1,0 +1,176 @@
+<div class="dashbord_client">
+				<div class="billing_box_bg">
+					<?php /* Add Biiling Code */ ?>
+					<h1>Add Billing</h1>
+
+					<form name="addcpt" id="otho_group" method="post" action="">
+						<select name="ctp_code" onchange="getValues(this.value);" required />
+						<?php
+							$temp_cpt = mysql_query("SELECT * FROM `cpt_codes`") or die(mysql_error());
+							echo '<option value="">...CPT Code...</option>';
+							while($cpt= mysql_fetch_object($temp_cpt))
+							{
+								echo '<option value='.$cpt->cpt_code.'>'.$cpt->cpt_code.'</option>';
+							}
+						?>
+						</select>
+						<div id="show_data"></div>
+						<!--<textarea name="description" placeholder="Description" required /></textarea>
+						<input type="text" name="physician" placeholder="Physician" required />
+						<input type="text" name="facility" placeholder="Facility" required />
+						<input type="text" name="other" placeholder="Other" required />
+						<input type="submit" name="add_cpt" value="Add Bill">-->
+					</form>
+					<?php
+						if(isset($_POST['add_cpt']))
+						{
+							$ctp_code    = $_POST['ctp_code'];	
+							$description = mysql_real_escape_string($_POST['description']);
+							$physician   = mysql_real_escape_string($_POST['physician']);
+							$facility    = mysql_real_escape_string($_POST['facility']);
+							$other       = mysql_real_escape_string($_POST['other']);	
+							$phy_loc     = mysql_real_escape_string($_POST['phy_loc']);
+							$query_bill  = mysql_query("INSERT INTO `billing_info` (`form_id`,`user_id`,`cpt_code`,`description`,`loc`,`physician`,`facility`,`other_total`,
+							`date_bill`) VALUES ('$_REQUEST[fid]','$_REQUEST[uid]','$ctp_code','$description','$phy_loc','$physician','$facility','$other',now())")  or die(mysql_error());
+							if($query_bill)
+							{
+								echo "<div class='welcome_message'>Billing is Inserted Successfully</div>";
+							}
+							else
+							{
+								echo "<div class='welcome_message'>There is something going wrong. Please try again Later.</div>";
+							}							
+						}
+					?>
+				</div>
+				
+	<div class="anesth_box_bg">
+		<div class="anesth_row_heading">
+			<div class="anesth_span_1">Date</div>
+			<div class="anesth_span_2">Code</div>
+			<div class="anesth_span_3">Description</div>
+			<div class="anesth_span_4">Physician</div>
+			<div class="anesth_span_5">Facility</div>
+			<div class="anesth_span_6">Other</div>
+			<div class="anesth_span_7">Physician Cost</div>
+			<div class="anesth_span_8">Total</div>
+			<div class="anesth_span_9">Actions</div>
+		</div>
+	<?php
+		$query = mysql_query("SELECT * , SUM( physician + facility + other_total+loc) AS total FROM `billing_info`WHERE form_id = '$_REQUEST[fid]' && `user_id`='$_REQUEST[uid]'  GROUP BY cpt_code") 
+		or die(mysql_error());
+		while($getapp = mysql_fetch_object($query))
+		{
+			$uid  = $_REQUEST['fid'];
+			$f_id = $_REQUEST['uid']; 
+	?>
+			<div class="anesth_row_content">
+				<div class="anesth_span_1">
+					<?php echo "$".$dateb = $getapp->date_bill?>
+				</div>
+				<div class="anesth_span_2">
+					<?php 
+						$cpt = $getapp->cpt_code;
+						echo $cpt;
+					?>
+				</div>
+				<div class="anesth_span_3">
+					<?php 
+						echo $des = $getapp->description;
+					?>
+				</div>
+				<div class="anesth_span_4">
+					<?php 
+						$phy = $getapp->physician;
+						echo "$".number_format($phy,2); 
+					?>
+				</div>
+				<div class="anesth_span_5">
+					<?php 
+						$fac = $getapp->facility; 
+						echo "$".number_format($fac,2);
+					?>
+				</div>
+				<div class="anesth_span_6">
+					<?php 
+						$other = $getapp->other_total; 
+						echo "$".number_format($other,2);
+					?>
+				</div>
+				<div class="anesth_span_7">
+					<?php 
+						$loc = $getapp->loc; 
+						echo "$".number_format($loc,2);
+					?>
+				</div>
+				<div class="anesth_span_8">
+					<?php 
+						$total = $getapp->total; 
+						echo "$".number_format($total,2);
+					?>
+				</div>
+				<div class="anesth_span_9">
+					<a href="update-billing.php?fid=<?=$_REQUEST['fid']?>&uid=<?=$_REQUEST['uid']?>&billing_id=<?=$getapp->billing_id?>&action=update">Update</a>
+				</div>
+			</div>
+		<?php
+		 }
+		?>
+		<div class="anesth_box_bg">
+			<?php 
+				$sql = mysql_query("SELECT SUM(physician) AS tPhy, SUM(facility) AS tfac, SUM(loc) as tloc, SUM(other_total) AS tother, (SUM(physician) + SUM(facility) + SUM(other_total)) AS total FROM `billing_info` WHERE form_id = '$_REQUEST[fid]' && user_id = '$_REQUEST[uid]'") or die(mysql_error()); 
+				$row = mysql_fetch_object($sql);
+			?>
+			<div class="anesth_row_heading">
+				<div class="anesth_span_1"></div>
+				<div class="anesth_span_2"></div>
+				<div class="anesth_span_3"></div>
+				<div class="anesth_span_4"><b>
+				$<?php 
+					$tphy = $row->tPhy;
+					echo number_format($tphy,2);
+				?>
+				</b></div>
+				<div class="anesth_span_5"><b>
+				$<?php 
+					$tfac = $row->tfac;
+					echo number_format($tfac,2);
+				?>
+				</b></div>
+				<div class="anesth_span_6"><b>
+				$<?php 
+					$tother = $row->tother;
+					echo number_format($tother,2);
+				?>
+				</b></div>
+				<div class="anesth_span_7">
+				<b>
+				$<?php 
+					$tloc = $row->tloc;
+					echo number_format($tloc,2);
+				?>
+				</b></div>
+				<div class="anesth_span_8">
+					<b>
+				$<?php 
+					$all_total = $row->total;
+					echo number_format($all_total,2);
+				?>
+				</b>
+				</div>
+				<div class="anesth_span_9">
+					<a href="forward-bill.php?fid=<?=$_REQUEST['fid']?>&uid=<?=$_REQUEST['uid']?>&action=update">Forward</a>
+				</div>
+			</div>
+			<div class="anesth_row_content">
+				<div class="anesth_span_1">
+					
+				</div>
+			</div>
+		</div>
+		<div class="under_decisions">
+			<div class="under_dec_bg">
+			</div>
+		</div>
+	</div>
+</div>

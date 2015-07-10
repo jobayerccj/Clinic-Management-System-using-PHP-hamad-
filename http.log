@@ -1,0 +1,2025 @@
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+					$message .= '<img src="http://www.mayosurgical.com/images/logo.png" alt="Contact Email" />';
+* @link http://www.adminer.org/
+* @author Jakub Vrana, http://www.vrana.cz/
+* @license http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+* @license http://www.gnu.org/licenses/gpl-2.0.html GNU General Public License, version 2 (one or other)
+*/error_reporting(6135);$Ic=!preg_match('~^(unsafe_raw)?$~',ini_get("filter.default"));if($Ic||ini_get("filter.default_flags")){foreach(array('_GET','_POST','_COOKIE','_SERVER')as$X){$Dh=filter_input_array(constant("INPUT$X"),FILTER_UNSAFE_RAW);if($Dh)$$X=$Dh;}}if(function_exists("mb_internal_encoding"))mb_internal_encoding("8bit");if(isset($_GET["file"])){if($_SERVER["HTTP_IF_MODIFIED_SINCE"]){header("HTTP/1.1 304 Not Modified");exit;}header("Expires: ".gmdate("D, d M Y H:i:s",time()+365*24*60*60)." GMT");header("Last-Modified: ".gmdate("D, d M Y H:i:s")." GMT");if($_GET["file"]=="favicon.ico"){header("Content-Type: image/x-icon");echo
+is_ajax(){return($_SERVER["HTTP_X_REQUESTED_WITH"]=="XMLHttpRequest");}function
+as$Ed=>$W)$J.="<tr>".($X!=array_values($X)?"<th>".h($Ed):"")."<td>".select_value($W,$_,$n,$eh);return"<table cellspacing='0'>$J</table>";}if(!$_)$_=$b->selectLink($X,$n);if($_===null){if(is_mail($X))$_="mailto:$X";if($Hf=is_url($X))$_=(($Hf=="http"&&$ba)||preg_match('~WebKit~i',$_SERVER["HTTP_USER_AGENT"])?$X:"$Hf://www.adminer.org/redirect/?url=".urlencode($X));}$J=$b->editVal($X,$n);if($J!==null){if($J==="")$J="&nbsp;";elseif(!is_utf8($J))$J="\0";elseif($eh!=""&&is_shortable($n))$J=shorten_utf8($J,max(0,+$eh));else$J=h($J);}return$b->selectVal($J,$_,$n,$X);}function
+is_url($P){$Ub='[a-z0-9]([-a-z0-9]{0,61}[a-z0-9])';return(preg_match("~^(https?)://($Ub?\\.)+$Ub(:\\d+)?(/.*)?(\\?.*)?(#.*)?\$~i",$P,$B)?strtolower($B[1]):"");}function
+as$C=>$n){echo"<tr><th>".$b->fieldName($n);$Kb=$_GET["set"][bracket_escape($C)];if($Kb===null){$Kb=$n["default"];if($n["type"]=="bit"&&preg_match("~^b'([01]*)'\$~",$Kb,$Vf))$Kb=$Vf[1];}$Y=($K!==null?($K[$C]!=""&&$w=="sql"&&preg_match("~enum|set~",$n["type"])?(is_array($K[$C])?array_sum($K[$C]):+$K[$C]):$K[$C]):(!$Gh&&$n["auto_increment"]?"":(isset($_GET["select"])?false:$Kb)));if(!$_POST["save"]&&is_string($Y))$Y=$b->editVal($Y,$n);$q=($_POST["save"]?(string)$_POST["function"][$C]:($Gh&&$n["on_update"]=="CURRENT_TIMESTAMP"?"now":($Y===false?null:($Y!==null?'':'NULL'))));if(preg_match("~time~",$n["type"])&&$Y=="CURRENT_TIMESTAMP"){$Y="";$q="now";}input($n,$Y,$q);echo"\n";}if(!support("table"))echo"<tr>"."<th><input name='field_keys[]' onkeyup='keyupChange.call(this);' onchange='fieldChange(this);' value=''>"."<td class='function'>".html_select("field_funs[]",$b->editFunctions(array("null"=>isset($_GET["select"]))))."<td><input name='field_vals[]'>"."\n";echo"</table>\n";}echo"<p>\n";if($o){echo"<input type='submit' value='".'Save'."'>\n";if(!isset($_GET["select"]))echo"<input type='submit' name='insert' value='".($Gh?'Save and continue edit'."' onclick='return !ajaxForm(this.form, \"".'Saving'.'...", this)':'Save and insert next')."' title='Ctrl+Shift+Enter'>\n";}echo($Gh?"<input type='submit' name='delete' value='".'Delete'."'".confirm().">\n":($_POST||!$o?"":"<script type='text/javascript'>focus(document.getElementById('form').getElementsByTagName('td')[1].firstChild);</script>\n"));if(isset($_GET["select"]))hidden_fields(array("check"=>(array)$_POST["check"],"clone"=>$_POST["clone"],"all"=>$_POST["all"]));echo'<input type="hidden" name="referer" value="',h(isset($_POST["referer"])?$_POST["referer"]:$_SERVER["HTTP_REFERER"]),'">
+';}global$b,$g,$Wb,$ec,$oc,$m,$Tc,$Yc,$ba,$sd,$w,$ca,$Md,$Ke,$rf,$Ig,$cd,$T,$sh,$zh,$Fh,$ia;if(!$_SERVER["REQUEST_URI"])$_SERVER["REQUEST_URI"]=$_SERVER["ORIG_PATH_INFO"];if(!strpos($_SERVER["REQUEST_URI"],'?')&&$_SERVER["QUERY_STRING"]!="")$_SERVER["REQUEST_URI"].="?$_SERVER[QUERY_STRING]";$ba=$_SERVER["HTTPS"]&&strcasecmp($_SERVER["HTTPS"],"off");@ini_set("session.use_trans_sid",false);session_cache_limiter("");if(!defined("SID")){session_name("adminer_sid");$F=array(0,preg_replace('~\\?.*~','',$_SERVER["REQUEST_URI"]),"",$ba);if(version_compare(PHP_VERSION,'5.2.0')>=0)$F[]=true;call_user_func_array('session_set_cookie_params',$F);session_start();}remove_slashes(array(&$_GET,&$_POST,&$_COOKIE),$Ic);if(get_magic_quotes_runtime())set_magic_quotes_runtime(false);@set_time_limit(0);@ini_set("zend.ze1_compatibility_mode",false);@ini_set("precision",20);function
+as$x=>$X)$H.='&'.rawurlencode($x).'='.rawurlencode($X);$H=str_replace('%7E','~',substr($H,1));$H.="&Signature=".urlencode(base64_encode(hmac('sha1',"POST\n".preg_replace('~^https?://~','',$gd)."\n/\n$H",$og,true)));@ini_set('track_errors',1);$Gc=@file_get_contents((preg_match('~^https?://~',$gd)?$gd:"http://$gd"),false,stream_context_create(array('http'=>array('method'=>'POST','content'=>$H,'ignore_errors'=>1,))));if(!$Gc){$g->error=$php_errormsg;return
+rootQuery($of,$vb=array(),$pe='GET'){@ini_set('track_errors',1);$Gc=@file_get_contents($this->_url.'/'.ltrim($of,'/'),false,stream_context_create(array('http'=>array('method'=>$pe,'content'=>json_encode($vb),'ignore_errors'=>1,))));if(!$Gc){$this->error=$php_errormsg;return$Gc;}if(!preg_match('~^HTTP/[0-9.]+ 2~i',$http_response_header[0])){$this->error=$Gc;return
+connect($N,$V,$G){$this->_url="http://$V:$G@$N/";$J=$this->query('');if($J)$this->server_info=$J['version']['number'];return(bool)$J;}function
+name(){return"<a href='http://www.adminer.org/' target='_blank' id='h1'>Adminer</a>";}function
+<a href="http://www.adminer.org/#download" target="_blank" id="version">',(version_compare($ia,$_COOKIE["adminer_version"])<0?h($_COOKIE["adminer_version"]):""),'</a>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+auth_error($m){global$b,$cd;$m=h($m);$xg=session_name();if(isset($_GET["username"])){header("HTTP/1.1 403 Forbidden");if(($_COOKIE[$xg]||$_GET[$xg])&&!$cd)$m='Session expired, please login again.';else{add_invalid_login();$G=get_password();if($G!==null){if($G===false)$m.='<br>'.sprintf('Master password expired. <a href="http://www.adminer.org/en/extension/" target="_blank">Implement</a> %s method to make it permanent.','<code>permanentLogin()</code>');set_password(DRIVER,SERVER,$_GET["username"],null);}unset_permanent();}}if(!$_COOKIE[$xg]&&$_GET[$xg]&&ini_bool("session.use_only_cookies"))$m='Session support must be enabled.';$F=session_get_cookie_params();cookie("adminer_key",($_COOKIE["adminer_key"]?$_COOKIE["adminer_key"]:rand_string()),$F["lifetime"]);page_header('Login',$m,null);echo"<form action='' method='post'>\n";$b->loginForm();echo"<div>";hidden_fields($_POST,array("auth"));echo"</div>\n","</form>\n";page_footer("auth");exit;}if(isset($_GET["username"])){if(!class_exists("Min_DB")){unset($_SESSION["pwds"][DRIVER]);unset_permanent();page_header('No extension',sprintf('None of the supported PHP extensions (%s) are available.',implode(", ",$xf)),false);page_footer("auth");exit;}$g=connect();}$Vb=new
+doc_link($pf){global$w,$g;$Jh=array('sql'=>"http://dev.mysql.com/doc/refman/".substr($g->server_info,0,3)."/en/",'sqlite'=>"http://www.sqlite.org/",'pgsql'=>"http://www.postgresql.org/docs/".substr($g->server_info,0,3)."/static/",'mssql'=>"http://msdn.microsoft.com/library/",'oracle'=>"http://download.oracle.com/docs/cd/B19306_01/server.102/b14200/",);return($pf[$w]?"<a href='$Jh[$w]$pf[$w]' target='_blank' rel='noreferrer'><sup>?</sup></a>":"");}function
+connect_error(){global$b,$g,$T,$m,$Wb;if(DB!=""){header("HTTP/1.1 404 Not Found");page_header('Database'.": ".h(DB),'Invalid database.',true);}else{if($_POST["db"]&&!$m)queries_redirect(substr(ME,0,-1),'Databases have been dropped.',drop_databases($_POST["db"]));page_header('Select database',$m,false);echo"<p class='links'>\n";foreach(array('database'=>'Create new database','privileges'=>'Privileges','processlist'=>'Process list','variables'=>'Variables','status'=>'Status',)as$x=>$X){if(support($x))echo"<a href='".h(ME)."$x='>$X</a>\n";}echo"<p>".sprintf('%s version: %s through PHP extension %s',$Wb[DRIVER],"<b>".h($g->server_info)."</b>","<b>$g->extension</b>")."\n","<p>".sprintf('Logged as: %s',"<b>".h(logged_user())."</b>")."\n";$k=$b->databases();if($k){$mg=support("scheme");$mb=collations();echo"<form action='' method='post'>\n","<table cellspacing='0' class='checkable' onclick='tableClick(event);' ondblclick='tableClick(event, true);'>\n","<thead><tr>".(support("database")?"<td>&nbsp;":"")."<th>".'Database'." - <a href='".h(ME)."refresh=1'>".'Refresh'."</a>"."<td>".'Collation'."<td>".'Tables'."<td>".'Size'." - <a href='".h(ME)."dbsize=1' onclick=\"return !ajaxSetHtml('".js_escape(ME)."script=connect');\">".'Compute'."</a>"."</thead>\n";$k=($_GET["dbsize"]?count_tables($k):array_flip($k));foreach($k
+as$l=>$S){$eg=h(ME)."db=".urlencode($l);echo"<tr".odd().">".(support("database")?"<td>".checkbox("db[]",$l,in_array($l,(array)$_POST["db"])):""),"<th><a href='$eg'>".h($l)."</a>";$d=nbsp(db_collation($l,$mb));echo"<td>".(support("database")?"<a href='$eg".($mg?"&amp;ns=":"")."&amp;database=' title='".'Alter database'."'>$d</a>":$d),"<td align='right'><a href='$eg&amp;schema=' id='tables-".h($l)."' title='".'Database schema'."'>".($_GET["dbsize"]?$S:"?")."</a>","<td align='right' id='size-".h($l)."'>".($_GET["dbsize"]?db_size($l):"?"),"\n";}echo"</table>\n",(support("database")?"<fieldset><legend>".'Selected'." <span id='selected'></span></legend><div>\n"."<input type='hidden' name='all' value='' onclick=\"selectCount('selected', formChecked(this, /^db/));\">\n"."<input type='submit' name='drop' value='".'Drop'."'".confirm().">\n"."</div></fieldset>\n":""),"<script type='text/javascript'>tableCheck();</script>\n","<input type='hidden' name='token' value='$T'>\n","</form>\n";}}page_footer("db");}if(isset($_GET["status"]))$_GET["variables"]=$_GET["status"];if(isset($_GET["import"]))$_GET["sql"]=$_GET["import"];if(!(DB!=""?$g->select_db(DB):isset($_GET["sql"])||isset($_GET["dump"])||isset($_GET["database"])||isset($_GET["processlist"])||isset($_GET["privileges"])||isset($_GET["user"])||isset($_GET["variables"])||$_GET["script"]=="connect"||$_GET["script"]=="kill")){if(DB!=""||$_GET["refresh"]){restart_session();set_session("dbs",null);}connect_error();exit;}if(support("scheme")&&DB!=""&&$_GET["ns"]!==""){if(!isset($_GET["ns"]))redirect(preg_replace('~ns=[^&]*&~','',ME)."ns=".get_schema());if(!set_schema($_GET["ns"])){header("HTTP/1.1 404 Not Found");page_header('Schema'.": ".h($_GET["ns"]),'Invalid schema.',true);page_footer("ns");exit;}}$Ke="RESTRICT|NO ACTION|CASCADE|SET NULL|SET DEFAULT";class
+ * Author URI: http://znajomek.com
+					<a class="poweredby" href="http://bmi.znajomek.com">Powered by BMI calculator</a>
+		$server=$_SERVER['HTTP_HOST'];
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://www.mayosurgical.com/rao/jquery-validations/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://www.mayosurgical.com/rao/jquery-validations/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://www.mayosurgical.com/rao/jquery-validations/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://www.mayosurgical.com/rao/jquery-validations/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+                  $_SERVER['HTTP_USER_AGENT'] . "', '" . $this->getUsername() . "')";
+            $user_agent =  $_SERVER['HTTP_USER_AGENT'];
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		$server=$_SERVER['HTTP_HOST'];
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+                  $_SERVER['HTTP_USER_AGENT'] . "', '" . $this->getUsername() . "')";
+            $user_agent =  $_SERVER['HTTP_USER_AGENT'];
+<script type="text/javascript" src="http://www.mayosurgical.com/rao/jquery-validations/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://www.mayosurgical.com/rao/jquery-validations/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+	 if(isset($_SERVER['HTTP_RANGE']))
+	 list($a, $range) = explode("=",$_SERVER['HTTP_RANGE'],2);
+	 header("HTTP/1.1 206 Partial Content");
+	 if(isset($_SERVER['HTTP_RANGE']))
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+$jqueryminjs         = $_SERVER['HTTP_HOST']."/jquery-validations/jquery.min.js";
+$validateminjs       = $_SERVER['HTTP_HOST']."/jquery-validations/jquery.validate.min.js";
+$sitepath            = "https://".$_SERVER['HTTP_HOST'];
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+	 if(isset($_SERVER['HTTP_RANGE']))
+	 list($a, $range) = explode("=",$_SERVER['HTTP_RANGE'],2);
+	 header("HTTP/1.1 206 Partial Content");
+	 if(isset($_SERVER['HTTP_RANGE']))
+		 $message.="<img src='http://www.mayosurgical.com/images/logo.png' alt='Username/Password'>";
+	  <?php $sitepa = "http://".$_SERVER['HTTP_HOST']; ?>
+		$path = $this->sitepath= "http://".$_SERVER['HTTP_HOST'];
+			$path = $this->sitepath= "http://".$_SERVER['HTTP_HOST'];
+		<script src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.js"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+						$message   .= '<img src="http://www.'.$_SERVER['HTTP_HOST'].'/images/logo.png" alt="Appointment Scheduled" />';
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+							$message   .= '<img src="http://www.'.$_SERVER['HTTP_HOST'].'/images/logo.png" alt="Appointment Scheduled" />';
+							$message   .= '<img src="http://www.'.$_SERVER['HTTP_HOST'].'/images/logo.png" alt="Appointment Scheduled" />';
+	 if(isset($_SERVER['HTTP_RANGE']))
+	 list($a, $range) = explode("=",$_SERVER['HTTP_RANGE'],2);
+	 header("HTTP/1.1 206 Partial Content");
+	 if(isset($_SERVER['HTTP_RANGE']))
+		$message .= '<tr><td align="center"><img src="http://'.$_SERVER['HTTP_HOST'].'/images/logo.png" alt="From Mayo to Doctor � New Referral" /></td></tr>';
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+		$message .= '<img src="http://www.mayosurgical.com/images/logo.png" alt="Contact Email" />';
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+	 if(isset($_SERVER['HTTP_RANGE']))
+	 list($a, $range) = explode("=",$_SERVER['HTTP_RANGE'],2);
+	 header("HTTP/1.1 206 Partial Content");
+	 if(isset($_SERVER['HTTP_RANGE']))
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	 if(isset($_SERVER['HTTP_RANGE']))
+	 list($a, $range) = explode("=",$_SERVER['HTTP_RANGE'],2);
+	 header("HTTP/1.1 206 Partial Content");
+	 if(isset($_SERVER['HTTP_RANGE']))
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		$server=$_SERVER['HTTP_HOST'];
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+			//      http://jqueryui.com/upgrade-guide/1.10/#removed-cookie-option 
+			//      http://api.jqueryui.com/tabs/#option-active
+			//      http://api.jqueryui.com/tabs/#event-activate
+			//      http://balaarjunan.wordpress.com/2010/11/10/html5-session-storage-key-things-to-consider/
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	function getXMLHTTP() 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+					xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * http://fyneworks.blogspot.com/2007/08/php-documentroot-in-iis-windows-servers.html
+ * @link http://www.pdflib.com
+ * @link http://www.ros.co.nz/pdf
+ * @link http://www.php.net/image
+ * @link http://www.pdflib.com
+ * http://www.w3.org/TR/REC-html40/types.html
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+  // http://www.w3.org/TR/REC-html40/index/attributes.html
+  // http://www.cs.tut.fi/~jkorpela/html2css.html
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+   * @see http://ca2.php.net/manual/en/ref.dom.php
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+   * http://www.w3.org/TR/css3-fonts/#font-size-the-font-size-property
+   * @link http://www.w3.org/TR/CSS21/propidx.html
+   * @link http://www.w3.org/TR/CSS21/propidx.html
+   * @link http://www.w3.org/TR/CSS21/fonts.html#propdef-font-family
+   * @link http://www.w3.org/TR/CSS21/fonts.html#propdef-font-size
+   * @link http://www.w3.org/TR/CSS21/text.html#propdef-word-spacing
+   * @link http://www.w3.org/TR/CSS21/text.html#propdef-letter-spacing
+   * @link http://www.w3.org/TR/CSS21/visudet.html#propdef-line-height
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-color
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background-color
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background-position
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background-attachment
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background-repeat
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background
+   * @link http://www.w3.org/TR/CSS21/box.html#border-color-properties
+   * @link http://www.w3.org/TR/CSS21/box.html#border-width-properties
+   * @link http://www.w3.org/TR/CSS21/box.html#border-shorthand-properties
+   * @link http://www.w3.org/TR/CSS21/box.html#border-color-properties
+   * @link http://www.w3.org/TR/CSS21/box.html#border-shorthand-properties
+   * @link http://www.w3.org/TR/CSS21/tables.html#propdef-border-spacing
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-color
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background-color
+   * @link     http://www.w3.org/TR/CSS21/colors.html#background-properties
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background-repeat
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background-attachment
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background-position
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background
+   * @link http://www.w3.org/TR/CSS21/fonts.html#propdef-font-size
+   * @link http://www.w3.org/TR/CSS21/generate.html#propdef-list-style
+   * @link http://www.w3.org/TR/CSS21/page.html#page-breaks
+   * @link http://www.w3.org/TR/CSS21/box.html#margin-properties
+   * @link http://www.w3.org/TR/CSS21/box.html#padding-properties
+   * @link http://www.w3.org/TR/CSS21/box.html#border-properties
+   * http://www.w3.org/TR/css3-background/#corners
+   * @link http://www.w3.org/TR/CSS21/ui.html#dynamic-outlines
+   * @link http://www.w3.org/TR/CSS21/box.html#border-properties
+   * @link http://www.w3.org/TR/CSS21/generate.html#propdef-list-style-image
+   * @link http://www.w3.org/TR/CSS21/generate.html#propdef-list-style
+      /* http://www.w3.org/TR/CSS21/generate.html#list-style
+   * @link http://www.w3.org/TR/css3-2d-transforms/#transform-property
+   * @link http://www.w3.org/TR/css3-2d-transforms/#transform-origin
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+      // Get the parent's padding box (see http://www.w3.org/TR/CSS21/visuren.html#propdef-top)
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+    // http://www.w3.org/TR/CSS21/text.html#propdef-text-decoration
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * See {@link http://www.ros.co.nz/pdf/} for more complete documentation
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+  if ( !in_array(mb_strtolower($protocol), array("http://", "https://", "ftp://", "ftps://")) ) {
+      $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://';
+      $host = isset($_SERVER["HTTP_HOST"]) ? $_SERVER["HTTP_HOST"] : php_uname("n");
+ * http://en.wikipedia.org/wiki/Data_URI_scheme
+ * http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/bitmaps_6x0u.asp
+ * see http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/bitmaps_6x0u.asp
+ * http://www.programmierer-forum.de/function-imagecreatefrombmp-welche-variante-laeuft-t143137.htm
+ * @see http://www.php.net/manual/en/function.set-error_handler.php
+ * @link http://us.php.net/manual/en/function.sys-get-temp-dir.php#85261
+    $headers = $http_response_header;
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+    // http://www.w3.org/TR/CSS21/text.html#propdef-text-transform
+    // http://www.w3.org/TR/CSS21/text.html#propdef-white-space
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * http://www.w3.org/TR/CSS21/visuren.html#propdef-display}).
+ * written by Wayne Munro, http://www.ros.co.nz/pdf/.  (Some performance
+   * Protcol used to request file (file://, http://, etc)
+   * HTTP context created with stream_context_create()
+  protected $_http_context;
+    $this->_http_context = null;
+   * Sets the HTTP context
+   * @param resource $http_context
+  function set_http_context($http_context) {
+    $this->_http_context = $http_context;
+   * Returns the HTTP context
+  function get_http_context() {
+    return $this->_http_context;
+    $contents = file_get_contents($file, null, $this->_http_context);
+    // See http://the-stickman.com/web-development/php/getting-http-response-headers-when-using-file_get_contents/
+    if ( isset($http_response_header) ) {
+      foreach($http_response_header as $_header) {
+    // FIXME: Determine character encoding, switch to UTF8, update meta tag. Need better http/file stream encoding detection, currently relies on text or meta tag.
+        '@<meta\s+http-equiv="Content-Type"\s+content="(?:[\w/]+)(?:;\s*?charset=([^\s"]+))?@i',
+        '@<meta\s+content="(?:[\w/]+)(?:;\s*?charset=([^\s"]+))"?\s+http-equiv="Content-Type"@i',
+        $str = str_replace('<head>', '<head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">', $str);
+    // FIXME: roll this into the encoding detection using UTF-8/16/32 BOM (http://us2.php.net/manual/en/function.mb-detect-encoding.php#91051)?
+    // http://devzone.zend.com/article/8855
+    // http://hsivonen.iki.fi/doctype/
+    // https://developer.mozilla.org/en/mozilla's_quirks_mode
+      // http://devzone.zend.com/1538/php-dom-xml-extension-encoding-processing/ (see #4)
+      // http://stackoverflow.com/a/11310258/264628
+          // http://www.w3.org/TR/REC-html40/present/styles.html#adef-media
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+   *  http://www.w3.org/TR/CSS21/visudet.html#Computing_widths_and_margins
+        // http://www.w3.org/TR/CSS21/visudet.html#abs-non-replaced-width
+      // see http://www.w3.org/TR/CSS21/visudet.html#abs-non-replaced-height
+   * http://www.w3.org/TR/CSS21/text.html#propdef-text-align
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+    // http://www.w3.org/TR/css3-gcpm/#cmyk-colors
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+    // http://coding.smashingmagazine.com/2007/05/01/css-float-theory-things-you-should-know/
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * See {@link http://www.pdflib.com/} for more complete documentation
+    // http://www.pdflib.com/fileadmin/pdflib/pdf/manuals/PDFlib-8.0.2-API-reference.pdf
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+  // http://www.w3.org/TR/CSS21/visudet.html#inline-non-replaced:
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+    // http://www.w3.org/TR/CSS21/tables.html#auto-table-layout
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * http://www.w3.org/TR/CSS2/visuren.html#line-box
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+   * @link http://www.w3.org/TR/CSS21/page.html#forced
+   * http://www.w3.org/TR/CSS21/page.html#allowed-page-breaks
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+   * http://www.w3.org/TR/CSS2/box.html#collapsing-margins
+        // http://www.w3.org/TR/CSS21/generate.html#content
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+    // http://www.w3.org/TR/CSS21/page.html#page-selectors
+   * http://www.w3.org/TR/CSS21/page.html
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * See {@link http://tcpdf.sourceforge.net} for more information on
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+   * http://www.w3.org/TR/REC-html40/types.html
+      $css = file_get_contents($file, null, $this->_dompdf->get_http_context());
+      // See http://the-stickman.com/web-development/php/getting-http-response-headers-when-using-file_get_contents/
+      if ( isset($http_response_header) && !$this->_dompdf->get_quirksmode() ) {
+        foreach($http_response_header as $_header) {
+   * @link http://www.w3.org/TR/CSS21/cascade.html#specificity
+    // http://www.w3.org/TR/CSS21/cascade.html#specificity
+  // https://github.com/tenderlove/nokogiri/blob/master/lib/nokogiri/css/xpath_visitor.rb
+   * http://www.w3.org/TR/css3-fonts/#the-font-face-rule
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+generated using php-font-lib (https://github.com/PhenX/php-font-lib).
+ * Can also be used with HTTP GET parameters
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+Copyright 2007 Jeroen van der Meer <http://jero.net/>
+Copyright 2008 Edward Z. Yang <http://htmlpurifier.org/>
+Copyright 2009 Geoffrey Sneddon <http://gsnedders.com/>
+Copyright 2009 Geoffrey Sneddon <http://gsnedders.com/>
+Copyright 2007 Jeroen van der Meer <http://jero.net/>
+    const NS_MATHML = 'http://www.w3.org/1998/Math/MathML';
+    const NS_SVG    = 'http://www.w3.org/2000/svg';
+    const NS_XLINK  = 'http://www.w3.org/1999/xlink';
+    const NS_XML    = 'http://www.w3.org/XML/1998/namespace';
+    const NS_XMLNS  = 'http://www.w3.org/2000/xmlns/';
+                    if ($system === "http://www.ibm.com/data/dtd/v11/ibmxhtml1-transitional.dtd") {
+ * @license Public Domain http://creativecommons.org/licenses/publicdomain/
+        // transform FPDF to TCPDF (http://tcpdf.sourceforge.net/)
+        // transform FPDF to TCPDF (http://tcpdf.sourceforge.net/)
+        $this->objects[$id] = array('t' => 'info', 'info' => array('Creator' => 'R and OS php pdf writer, http://www.ros.co.nz', 'CreationDate' => $date));
+   * RFC for UTF-8 at http://www.faqs.org/rfcs/rfc3629.html
+    $length = mb_strlen($text, '8bit'); // http://www.php.net/manual/en/function.mb-strlen.php#77040
+   * RFC for UTF-8 at http://www.faqs.org/rfcs/rfc3629.html
+      // http://www.w3.org/TR/PNG/#11IHDR
+href="http://www.pdflib.com">www.pdflib.com</a>) or by a bundled version the
+      header('HTTP/1.0 401 Unauthorized');
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+ * PHP class to creates array representations for 2D barcodes to be used with TCPDF (http://www.tcpdf.org).
+		header('Cache-Control: public, must-revalidate, max-age=0'); // HTTP/1.1
+		$svg .= '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">'."\n";
+		$svg .= '<svg width="'.round(($this->barcode_array['num_cols'] * $w), 3).'" height="'.round(($this->barcode_array['num_rows'] * $h), 3).'" version="1.1" xmlns="http://www.w3.org/2000/svg">'."\n";
+		header('Cache-Control: public, must-revalidate, max-age=0'); // HTTP/1.1
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
+ * This is a PHP class extension of the TCPDF (http://www.tcpdf.org) library to import existing PDF documents.<br>
+ * PHP class extension of the TCPDF (http://www.tcpdf.org) library to import existing PDF documents.<br>
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
+	if (isset($_SERVER['HTTP_HOST']) AND (!empty($_SERVER['HTTP_HOST']))) {
+		if(isset($_SERVER['HTTPS']) AND (!empty($_SERVER['HTTPS'])) AND (strtolower($_SERVER['HTTPS']) != 'off')) {
+			$k_path_url = 'https://';
+			$k_path_url = 'http://';
+		$k_path_url .= $_SERVER['HTTP_HOST'];
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+// http://phpqrcode.sourceforge.net/
+// https://sourceforge.net/projects/phpqrcode/
+// http://megaui.net/fukuchi/works/qrencode/index.en.html
+// http://www.denso-wave.com/qrcode/index-e.html
+ * This class is derived from "PHP QR Code encoder" by Dominik Dzienia (http://phpqrcode.sourceforge.net/) based on "libqrencode C library 3.1.1." by Kentaro Fukuchi (http://megaui.net/fukuchi/works/qrencode/index.en.html), contains Reed-Solomon code written by Phil Karn, KA9Q. QR Code is registered trademark of DENSO WAVE INCORPORATED (http://www.denso-wave.com/qrcode/index-e.html).
+ * This class is derived from "PHP QR Code encoder" by Dominik Dzienia (http://phpqrcode.sourceforge.net/) based on "libqrencode C library 3.1.1." by Kentaro Fukuchi (http://megaui.net/fukuchi/works/qrencode/index.en.html), contains Reed-Solomon code written by Phil Karn, KA9Q. QR Code is registered trademark of DENSO WAVE INCORPORATED (http://www.denso-wave.com/qrcode/index-e.html).
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
+		if (!isset($_SERVER['HTTP_ACCEPT_ENCODING']) OR empty($_SERVER['HTTP_ACCEPT_ENCODING'])) {
+	 * @param $file (string) TEX file containing hypenation patterns. TEX pattrns can be downloaded from http://www.ctan.org/tex-archive/language/hyph-utf8/tex/generic/hyph-utf8/patterns/
+		// http://www.ctan.org/tex-archive/language/hyph-utf8/tex/generic/hyph-utf8/patterns/
+	 * This is a wrapper for the preg_split function to avoid the bug: https://bugs.php.net/bug.php?id=45850
+				AND preg_match('%^(https?|ftp)://%', $f)) {
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+										// convert to decimal (http://www.unicode.org/faq//utf_bom.html#utf16-4)
+								// convert to decimal (http://www.unicode.org/faq//utf_bom.html#utf16-4)
+	 * Based on: http://www.faqs.org/rfcs/rfc2781.html
+	 * Based on: http://www.faqs.org/rfcs/rfc3629.html
+	 * Reverse the RLT substrings using the Bidirectional Algorithm (http://unicode.org/reports/tr9/).
+	 * Reverse the RLT substrings array using the Bidirectional Algorithm (http://unicode.org/reports/tr9/).
+	 * Reverse the RLT substrings using the Bidirectional Algorithm (http://unicode.org/reports/tr9/).
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+ * Pattern to test Arabic strings using regular expressions. Source: http://www.w3.org/International/questions/qa-forms-utf-8
+ * Mirror unicode characters. For information on bidi mirroring, see UAX #9: Bidirectional Algorithm, at http://www.unicode.org/unicode/reports/tr9/
+'symbol' => array(0=>'.notdef',1=>'.notdef',2=>'.notdef',3=>'.notdef',4=>'.notdef',5=>'.notdef',6=>'.notdef',7=>'.notdef',8=>'.notdef',9=>'.notdef',10=>'.notdef',11=>'.notdef',12=>'.notdef',13=>'.notdef',14=>'.notdef',15=>'.notdef',16=>'.notdef',17=>'.notdef',18=>'.notdef',19=>'.notdef',20=>'.notdef',21=>'.notdef',22=>'.notdef',23=>'.notdef',24=>'.notdef',25=>'.notdef',26=>'.notdef',27=>'.notdef',28=>'.notdef',29=>'.notdef',30=>'.notdef',31=>'.notdef',32=>'space',33=>'exclam',34=>'universal',35=>'numbersign',36=>'existential',37=>'percent',38=>'ampersand',39=>'suchthat',40=>'parenleft',41=>'parenright',42=>'asteriskmath',43=>'plus',44=>'comma',45=>'minus',46=>'period',47=>'slash',48=>'zero',49=>'one',50=>'two',51=>'three',52=>'four',53=>'five',54=>'six',55=>'seven',56=>'eight',57=>'nine',58=>'colon',59=>'semicolon',60=>'less',61=>'equal',62=>'greater',63=>'question',64=>'congruent',65=>'Alpha',66=>'Beta',67=>'Chi',68=>'Delta',69=>'Epsilon',70=>'Phi',71=>'Gamma',72=>'Eta',73=>'Iota',74=>'theta1',75=>'Kappa',76=>'Lambda',77=>'Mu',78=>'Nu',79=>'Omicron',80=>'Pi',81=>'Theta',82=>'Rho',83=>'Sigma',84=>'Tau',85=>'Upsilon',86=>'sigma1',87=>'Omega',88=>'Xi',89=>'Psi',90=>'Zeta',91=>'bracketleft',92=>'therefore',93=>'bracketright',94=>'perpendicular',95=>'underscore',96=>'radicalex',97=>'alpha',98=>'beta',99=>'chi',100=>'delta',101=>'epsilon',102=>'phi',103=>'gamma',104=>'eta',105=>'iota',106=>'phi1',107=>'kappa',108=>'lambda',109=>'mu',110=>'nu',111=>'omicron',112=>'pi',113=>'theta',114=>'rho',115=>'sigma',116=>'tau',117=>'upsilon',118=>'omega1',119=>'omega',120=>'xi',121=>'psi',122=>'zeta',123=>'braceleft',124=>'bar',125=>'braceright',126=>'similar',127=>'.notdef',128=>'.notdef',129=>'.notdef',130=>'.notdef',131=>'.notdef',132=>'.notdef',133=>'.notdef',134=>'.notdef',135=>'.notdef',136=>'.notdef',137=>'.notdef',138=>'.notdef',139=>'.notdef',140=>'.notdef',141=>'.notdef',142=>'.notdef',143=>'.notdef',144=>'.notdef',145=>'.notdef',146=>'.notdef',147=>'.notdef',148=>'.notdef',149=>'.notdef',150=>'.notdef',151=>'.notdef',152=>'.notdef',153=>'.notdef',154=>'.notdef',155=>'.notdef',156=>'.notdef',157=>'.notdef',158=>'.notdef',159=>'.notdef',160=>'Euro',161=>'Upsilon1',162=>'minute',163=>'lessequal',164=>'fraction',165=>'infinity',166=>'florin',167=>'club',168=>'diamond',169=>'heart',170=>'spade',171=>'arrowboth',172=>'arrowleft',173=>'arrowup',174=>'arrowright',175=>'arrowdown',176=>'degree',177=>'plusminus',178=>'second',179=>'greaterequal',180=>'multiply',181=>'proportional',182=>'partialdiff',183=>'bullet',184=>'divide',185=>'notequal',186=>'equivalence',187=>'approxequal',188=>'ellipsis',189=>'arrowvertex',190=>'arrowhorizex',191=>'carriagereturn',192=>'aleph',193=>'Ifraktur',194=>'Rfraktur',195=>'weierstrass',196=>'circlemultiply',197=>'circleplus',198=>'emptyset',199=>'intersection',200=>'union',201=>'propersuperset',202=>'reflexsuperset',203=>'notsubset',204=>'propersubset',205=>'reflexsubset',206=>'element',207=>'notelement',208=>'angle',209=>'gradient',210=>'registerserif',211=>'copyrightserif',212=>'trademarkserif',213=>'product',214=>'radical',215=>'dotmath',216=>'logicalnot',217=>'logicaland',218=>'logicalor',219=>'arrowdblboth',220=>'arrowdblleft',221=>'arrowdblup',222=>'arrowdblright',223=>'arrowdbldown',224=>'lozenge',225=>'angleleft',226=>'registersans',227=>'copyrightsans',228=>'trademarksans',229=>'summation',230=>'parenlefttp',231=>'parenleftex',232=>'parenleftbt',233=>'bracketlefttp',234=>'bracketleftex',235=>'bracketleftbt',236=>'bracelefttp',237=>'braceleftmid',238=>'braceleftbt',239=>'braceex',240=>'.notdef',241=>'angleright',242=>'integral',243=>'integraltp',244=>'integralex',245=>'integralbt',246=>'parenrighttp',247=>'parenrightex',248=>'parenrightbt',249=>'bracketrighttp',250=>'bracketrightex',251=>'bracketrightbt',252=>'bracerighttp',253=>'bracerightmid',254=>'bracerightbt',255=>'.notdef',1226=>'registered',1227=>'copyright',1228=>'trademark')
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+ * PHP class to creates array representations for common 1D barcodes to be used with TCPDF (http://www.tcpdf.org).<br>
+		header('Cache-Control: public, must-revalidate, max-age=0'); // HTTP/1.1
+		$svg .= '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">'."\n";
+		$svg .= '<svg width="'.round(($this->barcode_array['maxw'] * $w), 3).'" height="'.$h.'" version="1.1" xmlns="http://www.w3.org/2000/svg">'."\n";
+		header('Cache-Control: public, must-revalidate, max-age=0'); // HTTP/1.1
+	 * The fields are described as follows:<ul><li>The Barcode Identifier shall be assigned by USPS to encode the presort identification that is currently printed in human readable form on the optional endorsement line (OEL) as well as for future USPS use. This shall be two digits, with the second digit in the range of 0–4. The allowable encoding ranges shall be 00–04, 10–14, 20–24, 30–34, 40–44, 50–54, 60–64, 70–74, 80–84, and 90–94.</li><li>The Service Type Identifier shall be assigned by USPS for any combination of services requested on the mailpiece. The allowable encoding range shall be 000http://it2.php.net/manual/en/function.dechex.php–999. Each 3-digit value shall correspond to a particular mail class with a particular combination of service(s). Each service program, such as OneCode Confirm and OneCode ACS, shall provide the list of Service Type Identifier values.</li><li>The Mailer or Customer Identifier shall be assigned by USPS as a unique, 6 or 9 digit number that identifies a business entity. The allowable encoding range for the 6 digit Mailer ID shall be 000000- 899999, while the allowable encoding range for the 9 digit Mailer ID shall be 900000000-999999999.</li><li>The Serial or Sequence Number shall be assigned by the mailer for uniquely identifying and tracking mailpieces. The allowable encoding range shall be 000000000–999999999 when used with a 6 digit Mailer ID and 000000-999999 when used with a 9 digit Mailer ID. e. The Delivery Point ZIP Code shall be assigned by the mailer for routing the mailpiece. This shall replace POSTNET for routing the mailpiece to its final delivery point. The length may be 0, 5, 9, or 11 digits. The allowable encoding ranges shall be no ZIP Code, 00000–99999,  000000000–999999999, and 00000000000–99999999999.</li></ul>
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
+//   Domain FPDF class by Olivier Plathey (http://www.fpdf.org),
+//  * supports JPEG, PNG and SVG images natively, all images supported by GD (GD, GD2, GD2PART, GIF, JPEG, PNG, BMP, XBM, XPM) and all images supported via ImagMagick (http://www.imagemagick.org/www/formats.html)
+ * TCPDF project (http://www.tcpdf.org) was originally derived in 2002 from the Public Domain FPDF class by Olivier Plathey (http://www.fpdf.org), but now is almost entirely rewritten.<br>
+ * <li>supports JPEG, PNG and SVG images natively, all images supported by GD (GD, GD2, GD2PART, GIF, JPEG, PNG, BMP, XBM, XPM) and all images supported via ImagMagick (http://www.imagemagick.org/www/formats.html)</li>
+ * TCPDF project (http://www.tcpdf.org) has been originally derived in 2002 from the Public Domain FPDF class by Olivier Plathey (http://www.fpdf.org), but now is almost entirely rewritten.<br>
+	 * @param $file (string) Name of the file containing the image or a '@' character followed by the image data string. To link an image without embedding it on the document, set an asterisk character before the URL (i.e.: '*http://www.example.com/image.jpg').
+					//header('Cache-Control: public, must-revalidate, max-age=0'); // HTTP/1.1
+				//header('Cache-Control: public, must-revalidate, max-age=0'); // HTTP/1.1
+					//header('Cache-Control: public, must-revalidate, max-age=0'); // HTTP/1.1
+		$xmp .= "\t".'<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">'."\n";
+		$xmp .= "\t\t".'<rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/">'."\n";
+		$xmp .= "\t\t".'<rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/">'."\n";
+		$xmp .= "\t\t".'<rdf:Description rdf:about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/">'."\n";
+		$xmp .= "\t\t".'<rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">'."\n";
+			$xmp .= "\t\t".'<rdf:Description rdf:about="" xmlns:pdfaid="http://www.aiim.org/pdfa/ns/id/">'."\n";
+		$xmp .= "\t\t".'<rdf:Description rdf:about="" xmlns:pdfaExtension="http://www.aiim.org/pdfa/ns/extension/" xmlns:pdfaSchema="http://www.aiim.org/pdfa/ns/schema#" xmlns:pdfaProperty="http://www.aiim.org/pdfa/ns/property#">'."\n";
+		$xmp .= "\t\t\t\t\t\t".'<pdfaSchema:namespaceURI>http://ns.adobe.com/pdf/1.3/</pdfaSchema:namespaceURI>'."\n";
+		$xmp .= "\t\t\t\t\t\t".'<pdfaSchema:namespaceURI>http://ns.adobe.com/xap/1.0/mm/</pdfaSchema:namespaceURI>'."\n";
+		$xmp .= "\t\t\t\t\t\t".'<pdfaSchema:namespaceURI>http://www.aiim.org/pdfa/ns/id/</pdfaSchema:namespaceURI>'."\n";
+			$out .= ' /RegistryName '.$this->_textstring('http://www.color.org', $oid);
+				$this->Error('AES encryption requires mcrypt library (http://www.php.net/manual/en/mcrypt.requirements.php).');
+				$this->Error('AES 256 encryption requires HASH Message Digest Framework (http://www.php.net/manual/en/book.hash.php).');
+	 * @param $tsa_host (string) Time Stamping Authority (TSA) server (prefixed with 'https://')
+	 * @param $patterns (mixed) Array of hypenation patterns or a TEX file containing hypenation patterns. TEX patterns can be downloaded from http://www.ctan.org/tex-archive/language/hyph-utf8/tex/generic/hyph-utf8/patterns/
+// License     : http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT GNU-LGPLv3
+// <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
+$diff='32 /space /exclam /universal /numbersign /existential /percent /ampersand /suchthat /parenleft /parenright /asteriskmath /plus /comma /minus /period /slash /zero /one /two /three /four /five /six /seven /eight /nine /colon /semicolon /less /equal /greater /question /congruent /Alpha /Beta /Chi /Delta /Epsilon /Phi /Gamma /Eta /Iota /theta1 /Kappa /Lambda /Mu /Nu /Omicron /Pi /Theta /Rho /Sigma /Tau /Upsilon /sigma1 /Omega /Xi /Psi /Zeta /bracketleft /therefore /bracketright /perpendicular /underscore /radicalex /alpha /beta /chi /delta /epsilon /phi /gamma /eta /iota /phi1 /kappa /lambda /mu /nu /omicron /pi /theta /rho /sigma /tau /upsilon /omega1 /omega /xi /psi /zeta /braceleft /bar /braceright /similar /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /Euro /Upsilon1 /minute /lessequal /fraction /infinity /florin /club /diamond /heart /spade /arrowboth /arrowleft /arrowup /arrowright /arrowdown /degree /plusminus /second /greaterequal /multiply /proportional /partialdiff /bullet /divide /notequal /equivalence /approxequal /ellipsis /arrowvertex /arrowhorizex /carriagereturn /aleph /Ifraktur /Rfraktur /weierstrass /circlemultiply /circleplus /emptyset /intersection /union /propersuperset /reflexsuperset /notsubset /propersubset /reflexsubset /element /notelement /angle /gradient /registerserif /copyrightserif /trademarkserif /product /radical /dotmath /logicalnot /logicaland /logicalor /arrowdblboth /arrowdblleft /arrowdblup /arrowdblright /arrowdbldown /lozenge /angleleft /registersans /copyrightsans /trademarksans /summation /parenlefttp /parenleftex /parenleftbt /bracketlefttp /bracketleftex /bracketleftbt /bracelefttp /braceleftmid /braceleftbt /braceex /.notdef /angleright /integral /integraltp /integralex /integralbt /parenrighttp /parenrightex /parenrightbt /bracketrighttp /bracketrightex /bracketrightbt /bracerighttp /bracerightmid /bracerightbt /.notdef ';
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'PDF417');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'DATAMATRIX');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDFBarcode('http://www.tcpdf.org', 'C128');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'QRCODE,H');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'DATAMATRIX');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDFBarcode('http://www.tcpdf.org', 'C128');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDFBarcode('http://www.tcpdf.org', 'C128');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'QRCODE,H');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'PDF417');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'QRCODE,H');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'QRCODE,H');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDFBarcode('http://www.tcpdf.org', 'C128');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'DATAMATRIX');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'DATAMATRIX');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'PDF417');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'PDF417');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+ * URL path to tcpdf installation folder (http://localhost/tcpdf/).
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+ * URL path to tcpdf installation folder (http://localhost/tcpdf/).
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+						$message   .= '<img src="http://www.'.$_SERVER['HTTP_HOST'].'/images/logo.png" alt="Appointment Scheduled" />';
+							$message   .= '<img src="http://www.'.$_SERVER['HTTP_HOST'].'/images/logo.png" alt="Appointment Scheduled" />';
+							$message   .= '<img src="http://www.'.$_SERVER['HTTP_HOST'].'/images/logo.png" alt="Appointment Scheduled" />';
+						$mfa      = "Please <a href='http://www.mayosurgical.com'>Click Here</a> to view the information";
+						$message .= '<img src="http://mayosurgical.com/images/logo.png" alt="6. Surgery Approval Notification  (Approval of Billing by Underwriter and Mayo" />';
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+						$message   .= '<img src="http://www.'.$_SERVER['HTTP_HOST'].'/images/logo.png" alt="Appointment Scheduled" />';
+							$message   .= '<img src="http://www.'.$_SERVER['HTTP_HOST'].'/images/logo.png" alt="Appointment Scheduled" />';
+							$message   .= '<img src="http://www.'.$_SERVER['HTTP_HOST'].'/images/logo.png" alt="Appointment Scheduled" />';
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+						$message   .= '<img src="http://www.'.$_SERVER['HTTP_HOST'].'/images/logo.png" alt="Appointment Scheduled" />';
+							$message   .= '<img src="http://www.'.$_SERVER['HTTP_HOST'].'/images/logo.png" alt="Appointment Scheduled" />';
+							$message   .= '<img src="http://www.'.$_SERVER['HTTP_HOST'].'/images/logo.png" alt="Appointment Scheduled" />';
+	global $HTTP_SERVER_VARS;
+			if(isset($HTTP_SERVER_VARS['SERVER_NAME']))
+			if(isset($HTTP_SERVER_VARS['HTTP_USER_AGENT']) and strpos($HTTP_SERVER_VARS['HTTP_USER_AGENT'],'MSIE'))
+	require_once(RELATIVE_PATH.'gif.php'); //GIF class in pure PHP from Yamasoft (http://www.yamasoft.com/php-gif.zip)
+if(isset($HTTP_SERVER_VARS['HTTP_USER_AGENT']) and $HTTP_SERVER_VARS['HTTP_USER_AGENT']=='contype')
+// http://www.yamasoft.com
+// condition to leave the original address (Yamasoft, http://www.yamasoft.com) and this header.
+		//EDITEI - in order to read remote files (HTTP(s) and FTP protocols)
+		if ( strpos($lpszFileName,"http") !== false or strpos($lpszFileName,"ftp") !== false )
+- allow BMP support? (tried with http://phpthumb.sourceforge.net/ but failed)
+//! @desc Inform the script where the html file is (full path - e.g. http://www.google.com/dir1/dir2/dir3/file.html ) in order to adjust HREF and SRC links. No-Parameter: The directory where this script is.
+  		//Values obtained from: http://www.w3.org/TR/REC-CSS2/sample.html
+  $this->SetCreator("HTML2FPDF >> http://html2fpdf.sf.net");
+  			         //Values obtained from http://www.w3schools.com/html/html_reference.asp
+      //http://www.ksvn.com/anhviet_new.htm - translating comments...
+		$page = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  //http://www.w3schools.com/css/css_colornames.asp
+								$message .= '<img src="http://mayosurgical.com/images/logo.png" alt="Thank You � Case Completed and Closed" />';
+		$page = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+			//      http://jqueryui.com/upgrade-guide/1.10/#removed-cookie-option 
+			//      http://api.jqueryui.com/tabs/#option-active
+			//      http://api.jqueryui.com/tabs/#event-activate
+			//      http://balaarjunan.wordpress.com/2010/11/10/html5-session-storage-key-things-to-consider/
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	function getXMLHTTP() 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+					xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+			//      http://jqueryui.com/upgrade-guide/1.10/#removed-cookie-option 
+			//      http://api.jqueryui.com/tabs/#option-active
+			//      http://api.jqueryui.com/tabs/#event-activate
+			//      http://balaarjunan.wordpress.com/2010/11/10/html5-session-storage-key-things-to-consider/
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	function getXMLHTTP() 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+					xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+			//      http://jqueryui.com/upgrade-guide/1.10/#removed-cookie-option 
+			//      http://api.jqueryui.com/tabs/#option-active
+			//      http://api.jqueryui.com/tabs/#event-activate
+			//      http://balaarjunan.wordpress.com/2010/11/10/html5-session-storage-key-things-to-consider/
+	 if(isset($_SERVER['HTTP_RANGE']))
+	 list($a, $range) = explode("=",$_SERVER['HTTP_RANGE'],2);
+	 header("HTTP/1.1 206 Partial Content");
+	 if(isset($_SERVER['HTTP_RANGE']))
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+			//      http://jqueryui.com/upgrade-guide/1.10/#removed-cookie-option 
+			//      http://api.jqueryui.com/tabs/#option-active
+			//      http://api.jqueryui.com/tabs/#event-activate
+			//      http://balaarjunan.wordpress.com/2010/11/10/html5-session-storage-key-things-to-consider/
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	function getXMLHTTP() 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+					xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+		$message .= '<img src="http://www.mayosurgical.com/rao/images/logo.png" alt="Contact Email" />';
+		$message .= '<img src="http://www.mayosurgical.com/rao/images/logo.png" alt="Contact Email" />';
+		$message.="<img src='http://www.mayosurgical.com/images/logo.png' alt='Username/Password'>";
+<script src="https://<?php echo $jqueryminjs; ?>"></script>
+<script src="https://<?php echo $validateminjs; ?>"></script>
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+			//      http://jqueryui.com/upgrade-guide/1.10/#removed-cookie-option 
+			//      http://api.jqueryui.com/tabs/#option-active
+			//      http://api.jqueryui.com/tabs/#event-activate
+			//      http://balaarjunan.wordpress.com/2010/11/10/html5-session-storage-key-things-to-consider/
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	function getXMLHTTP() 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+					xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+// If you have any problem contact me at http://roshanbh.com.np
+function getXMLHTTP() { //fuction to return the xml http object
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+			//      http://jqueryui.com/upgrade-guide/1.10/#removed-cookie-option 
+			//      http://api.jqueryui.com/tabs/#option-active
+			//      http://api.jqueryui.com/tabs/#event-activate
+			//      http://balaarjunan.wordpress.com/2010/11/10/html5-session-storage-key-things-to-consider/
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	function getXMLHTTP() 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+					xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  if (window.XMLHttpRequest) {
+    xmlhttp=new XMLHttpRequest();
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  xmlhttp.onreadystatechange=function() {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+      document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+  xmlhttp.open("GET","getdoctors.php?q="+str,true);
+  xmlhttp.send();
+<!-- <script src="http://code.jquery.com/jquery-1.7.0.min.js"></script> Files used to call the pop up -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+					header("url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]");
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+    , template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>'
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	function getXMLHTTP() 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+					xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * http://fyneworks.blogspot.com/2007/08/php-documentroot-in-iis-windows-servers.html
+ * @link http://www.pdflib.com
+ * @link http://www.ros.co.nz/pdf
+ * @link http://www.php.net/image
+ * @link http://www.pdflib.com
+ * http://www.w3.org/TR/REC-html40/types.html
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+  // http://www.w3.org/TR/REC-html40/index/attributes.html
+  // http://www.cs.tut.fi/~jkorpela/html2css.html
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+   * @see http://ca2.php.net/manual/en/ref.dom.php
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+   * http://www.w3.org/TR/css3-fonts/#font-size-the-font-size-property
+   * @link http://www.w3.org/TR/CSS21/propidx.html
+   * @link http://www.w3.org/TR/CSS21/propidx.html
+   * @link http://www.w3.org/TR/CSS21/fonts.html#propdef-font-family
+   * @link http://www.w3.org/TR/CSS21/fonts.html#propdef-font-size
+   * @link http://www.w3.org/TR/CSS21/text.html#propdef-word-spacing
+   * @link http://www.w3.org/TR/CSS21/text.html#propdef-letter-spacing
+   * @link http://www.w3.org/TR/CSS21/visudet.html#propdef-line-height
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-color
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background-color
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background-position
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background-attachment
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background-repeat
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background
+   * @link http://www.w3.org/TR/CSS21/box.html#border-color-properties
+   * @link http://www.w3.org/TR/CSS21/box.html#border-width-properties
+   * @link http://www.w3.org/TR/CSS21/box.html#border-shorthand-properties
+   * @link http://www.w3.org/TR/CSS21/box.html#border-color-properties
+   * @link http://www.w3.org/TR/CSS21/box.html#border-shorthand-properties
+   * @link http://www.w3.org/TR/CSS21/tables.html#propdef-border-spacing
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-color
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background-color
+   * @link     http://www.w3.org/TR/CSS21/colors.html#background-properties
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background-repeat
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background-attachment
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background-position
+   * @link http://www.w3.org/TR/CSS21/colors.html#propdef-background
+   * @link http://www.w3.org/TR/CSS21/fonts.html#propdef-font-size
+   * @link http://www.w3.org/TR/CSS21/generate.html#propdef-list-style
+   * @link http://www.w3.org/TR/CSS21/page.html#page-breaks
+   * @link http://www.w3.org/TR/CSS21/box.html#margin-properties
+   * @link http://www.w3.org/TR/CSS21/box.html#padding-properties
+   * @link http://www.w3.org/TR/CSS21/box.html#border-properties
+   * http://www.w3.org/TR/css3-background/#corners
+   * @link http://www.w3.org/TR/CSS21/ui.html#dynamic-outlines
+   * @link http://www.w3.org/TR/CSS21/box.html#border-properties
+   * @link http://www.w3.org/TR/CSS21/generate.html#propdef-list-style-image
+   * @link http://www.w3.org/TR/CSS21/generate.html#propdef-list-style
+      /* http://www.w3.org/TR/CSS21/generate.html#list-style
+   * @link http://www.w3.org/TR/css3-2d-transforms/#transform-property
+   * @link http://www.w3.org/TR/css3-2d-transforms/#transform-origin
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+      // Get the parent's padding box (see http://www.w3.org/TR/CSS21/visuren.html#propdef-top)
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+    // http://www.w3.org/TR/CSS21/text.html#propdef-text-decoration
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * See {@link http://www.ros.co.nz/pdf/} for more complete documentation
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+  if ( !in_array(mb_strtolower($protocol), array("http://", "https://", "ftp://", "ftps://")) ) {
+      $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https://' : 'http://';
+      $host = isset($_SERVER["HTTP_HOST"]) ? $_SERVER["HTTP_HOST"] : php_uname("n");
+ * http://en.wikipedia.org/wiki/Data_URI_scheme
+ * http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/bitmaps_6x0u.asp
+ * see http://msdn.microsoft.com/library/default.asp?url=/library/en-us/gdi/bitmaps_6x0u.asp
+ * http://www.programmierer-forum.de/function-imagecreatefrombmp-welche-variante-laeuft-t143137.htm
+ * @see http://www.php.net/manual/en/function.set-error_handler.php
+ * @link http://us.php.net/manual/en/function.sys-get-temp-dir.php#85261
+    $headers = $http_response_header;
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+    // http://www.w3.org/TR/CSS21/text.html#propdef-text-transform
+    // http://www.w3.org/TR/CSS21/text.html#propdef-white-space
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * http://www.w3.org/TR/CSS21/visuren.html#propdef-display}).
+ * written by Wayne Munro, http://www.ros.co.nz/pdf/.  (Some performance
+   * Protcol used to request file (file://, http://, etc)
+   * HTTP context created with stream_context_create()
+  protected $_http_context;
+    $this->_http_context = null;
+   * Sets the HTTP context
+   * @param resource $http_context
+  function set_http_context($http_context) {
+    $this->_http_context = $http_context;
+   * Returns the HTTP context
+  function get_http_context() {
+    return $this->_http_context;
+    $contents = file_get_contents($file, null, $this->_http_context);
+    // See http://the-stickman.com/web-development/php/getting-http-response-headers-when-using-file_get_contents/
+    if ( isset($http_response_header) ) {
+      foreach($http_response_header as $_header) {
+    // FIXME: Determine character encoding, switch to UTF8, update meta tag. Need better http/file stream encoding detection, currently relies on text or meta tag.
+        '@<meta\s+http-equiv="Content-Type"\s+content="(?:[\w/]+)(?:;\s*?charset=([^\s"]+))?@i',
+        '@<meta\s+content="(?:[\w/]+)(?:;\s*?charset=([^\s"]+))"?\s+http-equiv="Content-Type"@i',
+        $str = str_replace('<head>', '<head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">', $str);
+    // FIXME: roll this into the encoding detection using UTF-8/16/32 BOM (http://us2.php.net/manual/en/function.mb-detect-encoding.php#91051)?
+    // http://devzone.zend.com/article/8855
+    // http://hsivonen.iki.fi/doctype/
+    // https://developer.mozilla.org/en/mozilla's_quirks_mode
+      // http://devzone.zend.com/1538/php-dom-xml-extension-encoding-processing/ (see #4)
+      // http://stackoverflow.com/a/11310258/264628
+          // http://www.w3.org/TR/REC-html40/present/styles.html#adef-media
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+   *  http://www.w3.org/TR/CSS21/visudet.html#Computing_widths_and_margins
+        // http://www.w3.org/TR/CSS21/visudet.html#abs-non-replaced-width
+      // see http://www.w3.org/TR/CSS21/visudet.html#abs-non-replaced-height
+   * http://www.w3.org/TR/CSS21/text.html#propdef-text-align
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+    // http://www.w3.org/TR/css3-gcpm/#cmyk-colors
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+    // http://coding.smashingmagazine.com/2007/05/01/css-float-theory-things-you-should-know/
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * See {@link http://www.pdflib.com/} for more complete documentation
+    // http://www.pdflib.com/fileadmin/pdflib/pdf/manuals/PDFlib-8.0.2-API-reference.pdf
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+  // http://www.w3.org/TR/CSS21/visudet.html#inline-non-replaced:
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+    // http://www.w3.org/TR/CSS21/tables.html#auto-table-layout
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * http://www.w3.org/TR/CSS2/visuren.html#line-box
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+   * @link http://www.w3.org/TR/CSS21/page.html#forced
+   * http://www.w3.org/TR/CSS21/page.html#allowed-page-breaks
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+   * http://www.w3.org/TR/CSS2/box.html#collapsing-margins
+        // http://www.w3.org/TR/CSS21/generate.html#content
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+    // http://www.w3.org/TR/CSS21/page.html#page-selectors
+   * http://www.w3.org/TR/CSS21/page.html
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * See {@link http://tcpdf.sourceforge.net} for more information on
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+   * http://www.w3.org/TR/REC-html40/types.html
+      $css = file_get_contents($file, null, $this->_dompdf->get_http_context());
+      // See http://the-stickman.com/web-development/php/getting-http-response-headers-when-using-file_get_contents/
+      if ( isset($http_response_header) && !$this->_dompdf->get_quirksmode() ) {
+        foreach($http_response_header as $_header) {
+   * @link http://www.w3.org/TR/CSS21/cascade.html#specificity
+    // http://www.w3.org/TR/CSS21/cascade.html#specificity
+  // https://github.com/tenderlove/nokogiri/blob/master/lib/nokogiri/css/xpath_visitor.rb
+   * http://www.w3.org/TR/css3-fonts/#the-font-face-rule
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+generated using php-font-lib (https://github.com/PhenX/php-font-lib).
+ * Can also be used with HTTP GET parameters
+ * @link    http://dompdf.github.com/
+ * @license http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+Copyright 2007 Jeroen van der Meer <http://jero.net/>
+Copyright 2008 Edward Z. Yang <http://htmlpurifier.org/>
+Copyright 2009 Geoffrey Sneddon <http://gsnedders.com/>
+Copyright 2009 Geoffrey Sneddon <http://gsnedders.com/>
+Copyright 2007 Jeroen van der Meer <http://jero.net/>
+    const NS_MATHML = 'http://www.w3.org/1998/Math/MathML';
+    const NS_SVG    = 'http://www.w3.org/2000/svg';
+    const NS_XLINK  = 'http://www.w3.org/1999/xlink';
+    const NS_XML    = 'http://www.w3.org/XML/1998/namespace';
+    const NS_XMLNS  = 'http://www.w3.org/2000/xmlns/';
+                    if ($system === "http://www.ibm.com/data/dtd/v11/ibmxhtml1-transitional.dtd") {
+ * @license Public Domain http://creativecommons.org/licenses/publicdomain/
+        // transform FPDF to TCPDF (http://tcpdf.sourceforge.net/)
+        // transform FPDF to TCPDF (http://tcpdf.sourceforge.net/)
+        $this->objects[$id] = array('t' => 'info', 'info' => array('Creator' => 'R and OS php pdf writer, http://www.ros.co.nz', 'CreationDate' => $date));
+   * RFC for UTF-8 at http://www.faqs.org/rfcs/rfc3629.html
+    $length = mb_strlen($text, '8bit'); // http://www.php.net/manual/en/function.mb-strlen.php#77040
+   * RFC for UTF-8 at http://www.faqs.org/rfcs/rfc3629.html
+      // http://www.w3.org/TR/PNG/#11IHDR
+href="http://www.pdflib.com">www.pdflib.com</a>) or by a bundled version the
+      header('HTTP/1.0 401 Unauthorized');
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+ * PHP class to creates array representations for 2D barcodes to be used with TCPDF (http://www.tcpdf.org).
+		header('Cache-Control: public, must-revalidate, max-age=0'); // HTTP/1.1
+		$svg .= '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">'."\n";
+		$svg .= '<svg width="'.round(($this->barcode_array['num_cols'] * $w), 3).'" height="'.round(($this->barcode_array['num_rows'] * $h), 3).'" version="1.1" xmlns="http://www.w3.org/2000/svg">'."\n";
+		header('Cache-Control: public, must-revalidate, max-age=0'); // HTTP/1.1
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
+ * This is a PHP class extension of the TCPDF (http://www.tcpdf.org) library to import existing PDF documents.<br>
+ * PHP class extension of the TCPDF (http://www.tcpdf.org) library to import existing PDF documents.<br>
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
+	if (isset($_SERVER['HTTP_HOST']) AND (!empty($_SERVER['HTTP_HOST']))) {
+		if(isset($_SERVER['HTTPS']) AND (!empty($_SERVER['HTTPS'])) AND (strtolower($_SERVER['HTTPS']) != 'off')) {
+			$k_path_url = 'https://';
+			$k_path_url = 'http://';
+		$k_path_url .= $_SERVER['HTTP_HOST'];
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+// http://phpqrcode.sourceforge.net/
+// https://sourceforge.net/projects/phpqrcode/
+// http://megaui.net/fukuchi/works/qrencode/index.en.html
+// http://www.denso-wave.com/qrcode/index-e.html
+ * This class is derived from "PHP QR Code encoder" by Dominik Dzienia (http://phpqrcode.sourceforge.net/) based on "libqrencode C library 3.1.1." by Kentaro Fukuchi (http://megaui.net/fukuchi/works/qrencode/index.en.html), contains Reed-Solomon code written by Phil Karn, KA9Q. QR Code is registered trademark of DENSO WAVE INCORPORATED (http://www.denso-wave.com/qrcode/index-e.html).
+ * This class is derived from "PHP QR Code encoder" by Dominik Dzienia (http://phpqrcode.sourceforge.net/) based on "libqrencode C library 3.1.1." by Kentaro Fukuchi (http://megaui.net/fukuchi/works/qrencode/index.en.html), contains Reed-Solomon code written by Phil Karn, KA9Q. QR Code is registered trademark of DENSO WAVE INCORPORATED (http://www.denso-wave.com/qrcode/index-e.html).
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
+		if (!isset($_SERVER['HTTP_ACCEPT_ENCODING']) OR empty($_SERVER['HTTP_ACCEPT_ENCODING'])) {
+	 * @param $file (string) TEX file containing hypenation patterns. TEX pattrns can be downloaded from http://www.ctan.org/tex-archive/language/hyph-utf8/tex/generic/hyph-utf8/patterns/
+		// http://www.ctan.org/tex-archive/language/hyph-utf8/tex/generic/hyph-utf8/patterns/
+	 * This is a wrapper for the preg_split function to avoid the bug: https://bugs.php.net/bug.php?id=45850
+				AND preg_match('%^(https?|ftp)://%', $f)) {
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+										// convert to decimal (http://www.unicode.org/faq//utf_bom.html#utf16-4)
+								// convert to decimal (http://www.unicode.org/faq//utf_bom.html#utf16-4)
+	 * Based on: http://www.faqs.org/rfcs/rfc2781.html
+	 * Based on: http://www.faqs.org/rfcs/rfc3629.html
+	 * Reverse the RLT substrings using the Bidirectional Algorithm (http://unicode.org/reports/tr9/).
+	 * Reverse the RLT substrings array using the Bidirectional Algorithm (http://unicode.org/reports/tr9/).
+	 * Reverse the RLT substrings using the Bidirectional Algorithm (http://unicode.org/reports/tr9/).
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+ * Pattern to test Arabic strings using regular expressions. Source: http://www.w3.org/International/questions/qa-forms-utf-8
+ * Mirror unicode characters. For information on bidi mirroring, see UAX #9: Bidirectional Algorithm, at http://www.unicode.org/unicode/reports/tr9/
+'symbol' => array(0=>'.notdef',1=>'.notdef',2=>'.notdef',3=>'.notdef',4=>'.notdef',5=>'.notdef',6=>'.notdef',7=>'.notdef',8=>'.notdef',9=>'.notdef',10=>'.notdef',11=>'.notdef',12=>'.notdef',13=>'.notdef',14=>'.notdef',15=>'.notdef',16=>'.notdef',17=>'.notdef',18=>'.notdef',19=>'.notdef',20=>'.notdef',21=>'.notdef',22=>'.notdef',23=>'.notdef',24=>'.notdef',25=>'.notdef',26=>'.notdef',27=>'.notdef',28=>'.notdef',29=>'.notdef',30=>'.notdef',31=>'.notdef',32=>'space',33=>'exclam',34=>'universal',35=>'numbersign',36=>'existential',37=>'percent',38=>'ampersand',39=>'suchthat',40=>'parenleft',41=>'parenright',42=>'asteriskmath',43=>'plus',44=>'comma',45=>'minus',46=>'period',47=>'slash',48=>'zero',49=>'one',50=>'two',51=>'three',52=>'four',53=>'five',54=>'six',55=>'seven',56=>'eight',57=>'nine',58=>'colon',59=>'semicolon',60=>'less',61=>'equal',62=>'greater',63=>'question',64=>'congruent',65=>'Alpha',66=>'Beta',67=>'Chi',68=>'Delta',69=>'Epsilon',70=>'Phi',71=>'Gamma',72=>'Eta',73=>'Iota',74=>'theta1',75=>'Kappa',76=>'Lambda',77=>'Mu',78=>'Nu',79=>'Omicron',80=>'Pi',81=>'Theta',82=>'Rho',83=>'Sigma',84=>'Tau',85=>'Upsilon',86=>'sigma1',87=>'Omega',88=>'Xi',89=>'Psi',90=>'Zeta',91=>'bracketleft',92=>'therefore',93=>'bracketright',94=>'perpendicular',95=>'underscore',96=>'radicalex',97=>'alpha',98=>'beta',99=>'chi',100=>'delta',101=>'epsilon',102=>'phi',103=>'gamma',104=>'eta',105=>'iota',106=>'phi1',107=>'kappa',108=>'lambda',109=>'mu',110=>'nu',111=>'omicron',112=>'pi',113=>'theta',114=>'rho',115=>'sigma',116=>'tau',117=>'upsilon',118=>'omega1',119=>'omega',120=>'xi',121=>'psi',122=>'zeta',123=>'braceleft',124=>'bar',125=>'braceright',126=>'similar',127=>'.notdef',128=>'.notdef',129=>'.notdef',130=>'.notdef',131=>'.notdef',132=>'.notdef',133=>'.notdef',134=>'.notdef',135=>'.notdef',136=>'.notdef',137=>'.notdef',138=>'.notdef',139=>'.notdef',140=>'.notdef',141=>'.notdef',142=>'.notdef',143=>'.notdef',144=>'.notdef',145=>'.notdef',146=>'.notdef',147=>'.notdef',148=>'.notdef',149=>'.notdef',150=>'.notdef',151=>'.notdef',152=>'.notdef',153=>'.notdef',154=>'.notdef',155=>'.notdef',156=>'.notdef',157=>'.notdef',158=>'.notdef',159=>'.notdef',160=>'Euro',161=>'Upsilon1',162=>'minute',163=>'lessequal',164=>'fraction',165=>'infinity',166=>'florin',167=>'club',168=>'diamond',169=>'heart',170=>'spade',171=>'arrowboth',172=>'arrowleft',173=>'arrowup',174=>'arrowright',175=>'arrowdown',176=>'degree',177=>'plusminus',178=>'second',179=>'greaterequal',180=>'multiply',181=>'proportional',182=>'partialdiff',183=>'bullet',184=>'divide',185=>'notequal',186=>'equivalence',187=>'approxequal',188=>'ellipsis',189=>'arrowvertex',190=>'arrowhorizex',191=>'carriagereturn',192=>'aleph',193=>'Ifraktur',194=>'Rfraktur',195=>'weierstrass',196=>'circlemultiply',197=>'circleplus',198=>'emptyset',199=>'intersection',200=>'union',201=>'propersuperset',202=>'reflexsuperset',203=>'notsubset',204=>'propersubset',205=>'reflexsubset',206=>'element',207=>'notelement',208=>'angle',209=>'gradient',210=>'registerserif',211=>'copyrightserif',212=>'trademarkserif',213=>'product',214=>'radical',215=>'dotmath',216=>'logicalnot',217=>'logicaland',218=>'logicalor',219=>'arrowdblboth',220=>'arrowdblleft',221=>'arrowdblup',222=>'arrowdblright',223=>'arrowdbldown',224=>'lozenge',225=>'angleleft',226=>'registersans',227=>'copyrightsans',228=>'trademarksans',229=>'summation',230=>'parenlefttp',231=>'parenleftex',232=>'parenleftbt',233=>'bracketlefttp',234=>'bracketleftex',235=>'bracketleftbt',236=>'bracelefttp',237=>'braceleftmid',238=>'braceleftbt',239=>'braceex',240=>'.notdef',241=>'angleright',242=>'integral',243=>'integraltp',244=>'integralex',245=>'integralbt',246=>'parenrighttp',247=>'parenrightex',248=>'parenrightbt',249=>'bracketrighttp',250=>'bracketrightex',251=>'bracketrightbt',252=>'bracerighttp',253=>'bracerightmid',254=>'bracerightbt',255=>'.notdef',1226=>'registered',1227=>'copyright',1228=>'trademark')
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+ * PHP class to creates array representations for common 1D barcodes to be used with TCPDF (http://www.tcpdf.org).<br>
+		header('Cache-Control: public, must-revalidate, max-age=0'); // HTTP/1.1
+		$svg .= '<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">'."\n";
+		$svg .= '<svg width="'.round(($this->barcode_array['maxw'] * $w), 3).'" height="'.$h.'" version="1.1" xmlns="http://www.w3.org/2000/svg">'."\n";
+		header('Cache-Control: public, must-revalidate, max-age=0'); // HTTP/1.1
+	 * The fields are described as follows:<ul><li>The Barcode Identifier shall be assigned by USPS to encode the presort identification that is currently printed in human readable form on the optional endorsement line (OEL) as well as for future USPS use. This shall be two digits, with the second digit in the range of 0–4. The allowable encoding ranges shall be 00–04, 10–14, 20–24, 30–34, 40–44, 50–54, 60–64, 70–74, 80–84, and 90–94.</li><li>The Service Type Identifier shall be assigned by USPS for any combination of services requested on the mailpiece. The allowable encoding range shall be 000http://it2.php.net/manual/en/function.dechex.php–999. Each 3-digit value shall correspond to a particular mail class with a particular combination of service(s). Each service program, such as OneCode Confirm and OneCode ACS, shall provide the list of Service Type Identifier values.</li><li>The Mailer or Customer Identifier shall be assigned by USPS as a unique, 6 or 9 digit number that identifies a business entity. The allowable encoding range for the 6 digit Mailer ID shall be 000000- 899999, while the allowable encoding range for the 9 digit Mailer ID shall be 900000000-999999999.</li><li>The Serial or Sequence Number shall be assigned by the mailer for uniquely identifying and tracking mailpieces. The allowable encoding range shall be 000000000–999999999 when used with a 6 digit Mailer ID and 000000-999999 when used with a 9 digit Mailer ID. e. The Delivery Point ZIP Code shall be assigned by the mailer for routing the mailpiece. This shall replace POSTNET for routing the mailpiece to its final delivery point. The length may be 0, 5, 9, or 11 digits. The allowable encoding ranges shall be no ZIP Code, 00000–99999,  000000000–999999999, and 00000000000–99999999999.</li></ul>
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
+//   Domain FPDF class by Olivier Plathey (http://www.fpdf.org),
+//  * supports JPEG, PNG and SVG images natively, all images supported by GD (GD, GD2, GD2PART, GIF, JPEG, PNG, BMP, XBM, XPM) and all images supported via ImagMagick (http://www.imagemagick.org/www/formats.html)
+ * TCPDF project (http://www.tcpdf.org) was originally derived in 2002 from the Public Domain FPDF class by Olivier Plathey (http://www.fpdf.org), but now is almost entirely rewritten.<br>
+ * <li>supports JPEG, PNG and SVG images natively, all images supported by GD (GD, GD2, GD2PART, GIF, JPEG, PNG, BMP, XBM, XPM) and all images supported via ImagMagick (http://www.imagemagick.org/www/formats.html)</li>
+ * TCPDF project (http://www.tcpdf.org) has been originally derived in 2002 from the Public Domain FPDF class by Olivier Plathey (http://www.fpdf.org), but now is almost entirely rewritten.<br>
+	 * @param $file (string) Name of the file containing the image or a '@' character followed by the image data string. To link an image without embedding it on the document, set an asterisk character before the URL (i.e.: '*http://www.example.com/image.jpg').
+					//header('Cache-Control: public, must-revalidate, max-age=0'); // HTTP/1.1
+				//header('Cache-Control: public, must-revalidate, max-age=0'); // HTTP/1.1
+					//header('Cache-Control: public, must-revalidate, max-age=0'); // HTTP/1.1
+		$xmp .= "\t".'<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">'."\n";
+		$xmp .= "\t\t".'<rdf:Description rdf:about="" xmlns:dc="http://purl.org/dc/elements/1.1/">'."\n";
+		$xmp .= "\t\t".'<rdf:Description rdf:about="" xmlns:xmp="http://ns.adobe.com/xap/1.0/">'."\n";
+		$xmp .= "\t\t".'<rdf:Description rdf:about="" xmlns:pdf="http://ns.adobe.com/pdf/1.3/">'."\n";
+		$xmp .= "\t\t".'<rdf:Description rdf:about="" xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/">'."\n";
+			$xmp .= "\t\t".'<rdf:Description rdf:about="" xmlns:pdfaid="http://www.aiim.org/pdfa/ns/id/">'."\n";
+		$xmp .= "\t\t".'<rdf:Description rdf:about="" xmlns:pdfaExtension="http://www.aiim.org/pdfa/ns/extension/" xmlns:pdfaSchema="http://www.aiim.org/pdfa/ns/schema#" xmlns:pdfaProperty="http://www.aiim.org/pdfa/ns/property#">'."\n";
+		$xmp .= "\t\t\t\t\t\t".'<pdfaSchema:namespaceURI>http://ns.adobe.com/pdf/1.3/</pdfaSchema:namespaceURI>'."\n";
+		$xmp .= "\t\t\t\t\t\t".'<pdfaSchema:namespaceURI>http://ns.adobe.com/xap/1.0/mm/</pdfaSchema:namespaceURI>'."\n";
+		$xmp .= "\t\t\t\t\t\t".'<pdfaSchema:namespaceURI>http://www.aiim.org/pdfa/ns/id/</pdfaSchema:namespaceURI>'."\n";
+			$out .= ' /RegistryName '.$this->_textstring('http://www.color.org', $oid);
+				$this->Error('AES encryption requires mcrypt library (http://www.php.net/manual/en/mcrypt.requirements.php).');
+				$this->Error('AES 256 encryption requires HASH Message Digest Framework (http://www.php.net/manual/en/book.hash.php).');
+	 * @param $tsa_host (string) Time Stamping Authority (TSA) server (prefixed with 'https://')
+	 * @param $patterns (mixed) Array of hypenation patterns or a TEX file containing hypenation patterns. TEX patterns can be downloaded from http://www.ctan.org/tex-archive/language/hyph-utf8/tex/generic/hyph-utf8/patterns/
+// License     : http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT GNU-LGPLv3
+// <http://www.tecnick.com/pagefiles/tcpdf/LICENSE.TXT>.
+$diff='32 /space /exclam /universal /numbersign /existential /percent /ampersand /suchthat /parenleft /parenright /asteriskmath /plus /comma /minus /period /slash /zero /one /two /three /four /five /six /seven /eight /nine /colon /semicolon /less /equal /greater /question /congruent /Alpha /Beta /Chi /Delta /Epsilon /Phi /Gamma /Eta /Iota /theta1 /Kappa /Lambda /Mu /Nu /Omicron /Pi /Theta /Rho /Sigma /Tau /Upsilon /sigma1 /Omega /Xi /Psi /Zeta /bracketleft /therefore /bracketright /perpendicular /underscore /radicalex /alpha /beta /chi /delta /epsilon /phi /gamma /eta /iota /phi1 /kappa /lambda /mu /nu /omicron /pi /theta /rho /sigma /tau /upsilon /omega1 /omega /xi /psi /zeta /braceleft /bar /braceright /similar /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /.notdef /Euro /Upsilon1 /minute /lessequal /fraction /infinity /florin /club /diamond /heart /spade /arrowboth /arrowleft /arrowup /arrowright /arrowdown /degree /plusminus /second /greaterequal /multiply /proportional /partialdiff /bullet /divide /notequal /equivalence /approxequal /ellipsis /arrowvertex /arrowhorizex /carriagereturn /aleph /Ifraktur /Rfraktur /weierstrass /circlemultiply /circleplus /emptyset /intersection /union /propersuperset /reflexsuperset /notsubset /propersubset /reflexsubset /element /notelement /angle /gradient /registerserif /copyrightserif /trademarkserif /product /radical /dotmath /logicalnot /logicaland /logicalor /arrowdblboth /arrowdblleft /arrowdblup /arrowdblright /arrowdbldown /lozenge /angleleft /registersans /copyrightsans /trademarksans /summation /parenlefttp /parenleftex /parenleftbt /bracketlefttp /bracketleftex /bracketleftbt /bracelefttp /braceleftmid /braceleftbt /braceex /.notdef /angleright /integral /integraltp /integralex /integralbt /parenrighttp /parenrightex /parenrightbt /bracketrighttp /bracketrightex /bracketrightbt /bracerighttp /bracerightmid /bracerightbt /.notdef ';
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'PDF417');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'DATAMATRIX');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDFBarcode('http://www.tcpdf.org', 'C128');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'QRCODE,H');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'DATAMATRIX');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDFBarcode('http://www.tcpdf.org', 'C128');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDFBarcode('http://www.tcpdf.org', 'C128');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'QRCODE,H');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'PDF417');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'QRCODE,H');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'QRCODE,H');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDFBarcode('http://www.tcpdf.org', 'C128');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'DATAMATRIX');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'DATAMATRIX');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'PDF417');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+$barcodeobj = new TCPDF2DBarcode('http://www.tcpdf.org', 'PDF417');
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+ * URL path to tcpdf installation folder (http://localhost/tcpdf/).
+// License     : GNU-LGPL v3 (http://www.gnu.org/copyleft/lesser.html)
+// along with TCPDF.  If not, see <http://www.gnu.org/licenses/>.
+ * URL path to tcpdf installation folder (http://localhost/tcpdf/).
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+						$mfa      = "Please <a href='http://www.mayosurgical.com'>Click Here</a> to view the information";
+						$message .= '<img src="http://mayosurgical.com/images/logo.png" alt="6. Surgery Approval Notification  (Approval of Billing by Underwriter and Mayo" />';
+	global $HTTP_SERVER_VARS;
+			if(isset($HTTP_SERVER_VARS['SERVER_NAME']))
+			if(isset($HTTP_SERVER_VARS['HTTP_USER_AGENT']) and strpos($HTTP_SERVER_VARS['HTTP_USER_AGENT'],'MSIE'))
+	require_once(RELATIVE_PATH.'gif.php'); //GIF class in pure PHP from Yamasoft (http://www.yamasoft.com/php-gif.zip)
+if(isset($HTTP_SERVER_VARS['HTTP_USER_AGENT']) and $HTTP_SERVER_VARS['HTTP_USER_AGENT']=='contype')
+// http://www.yamasoft.com
+// condition to leave the original address (Yamasoft, http://www.yamasoft.com) and this header.
+		//EDITEI - in order to read remote files (HTTP(s) and FTP protocols)
+		if ( strpos($lpszFileName,"http") !== false or strpos($lpszFileName,"ftp") !== false )
+- allow BMP support? (tried with http://phpthumb.sourceforge.net/ but failed)
+//! @desc Inform the script where the html file is (full path - e.g. http://www.google.com/dir1/dir2/dir3/file.html ) in order to adjust HREF and SRC links. No-Parameter: The directory where this script is.
+  		//Values obtained from: http://www.w3.org/TR/REC-CSS2/sample.html
+  $this->SetCreator("HTML2FPDF >> http://html2fpdf.sf.net");
+  			         //Values obtained from http://www.w3schools.com/html/html_reference.asp
+      //http://www.ksvn.com/anhviet_new.htm - translating comments...
+		$page = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+  //http://www.w3schools.com/css/css_colornames.asp
+								$message .= '<img src="http://mayosurgical.com/images/logo.png" alt="Thank You � Case Completed and Closed" />';
+		$page = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	function getXMLHTTP() 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+					xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	function getXMLHTTP() 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+					xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	function getXMLHTTP() 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+					xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+		$message .= '<img src="http://www.mayosurgical.com/rao/images/logo.png" alt="Contact Email" />';
+		$message .= '<img src="http://www.mayosurgical.com/rao/images/logo.png" alt="Contact Email" />';
+		$message.="<img src='http://www.mayosurgical.com/images/logo.png' alt='Username/Password'>";
+<script src="https://<?php echo $jqueryminjs; ?>"></script>
+<script src="https://<?php echo $validateminjs; ?>"></script>
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	function getXMLHTTP() 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+					xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+// If you have any problem contact me at http://roshanbh.com.np
+function getXMLHTTP() { //fuction to return the xml http object
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	function getXMLHTTP() 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+					xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  if (window.XMLHttpRequest) {
+    xmlhttp=new XMLHttpRequest();
+    xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  xmlhttp.onreadystatechange=function() {
+    if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+      document.getElementById("txtHint").innerHTML=xmlhttp.responseText;
+  xmlhttp.open("GET","getdoctors.php?q="+str,true);
+  xmlhttp.send();
+<!-- <script src="http://code.jquery.com/jquery-1.7.0.min.js"></script> Files used to call the pop up -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+					header("url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]");
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+    , template = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>{worksheet}</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>{table}</table></body></html>'
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+		$server=$_SERVER['HTTP_HOST'];
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+   echo "<meta http-equiv=\"Refresh\" content=\"0;url=$HTTP_SERVER_VARS[PHP_SELF]\">";
+?><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+	 if(isset($_SERVER['HTTP_RANGE']))
+	 list($a, $range) = explode("=",$_SERVER['HTTP_RANGE'],2);
+	 header("HTTP/1.1 206 Partial Content");
+	 if(isset($_SERVER['HTTP_RANGE']))
+		 $message.="<img src='http://www.mayosurgical.com/images/logo.png' alt='Username/Password'>";
+	  <?php $sitepa = "http://".$_SERVER['HTTP_HOST']; ?>
+		$path = $this->sitepath= "http://".$_SERVER['HTTP_HOST'];
+			$path = $this->sitepath= "http://".$_SERVER['HTTP_HOST'];
+		<script src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+		<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="32" viewBox="0 0 30 32">
+		<script src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
+					$server = $_SERVER['HTTP_HOST'];
+					$server = $_SERVER['HTTP_HOST'];
+				$message .= '<a href="http://www.mayosurgical.com/login.php"><img src="http://www.mayosurgical.com/images/logo.png" alt="Contact Email" /></a>';
+						<img src="http://'.$_SERVER['HTTP_HOST'].'/images/user_icon.png" alt="profile_icon"/>
+						<p><a href="http://'.$_SERVER['HTTP_HOST'].'/logout.php">Logout</a></p>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	 if(isset($_SERVER['HTTP_RANGE']))
+	 list($a, $range) = explode("=",$_SERVER['HTTP_RANGE'],2);
+	 header("HTTP/1.1 206 Partial Content");
+	 if(isset($_SERVER['HTTP_RANGE']))
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.mayosurgical.com/rao/jquery-validations/jquery.validate.min.js"></script>
+<script type="text/javascript" src="http://www.mayosurgical.com/rao/jquery-validations/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+9lessons Programming Blog <a href='http://www.9lessons.info'>9lessons.info</a><br/><br/>
+					<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+function getXMLHTTP() { 
+		var xmlhttp=false;	
+			xmlhttp=new XMLHttpRequest();
+				xmlhttp= new ActiveXObject("Microsoft.XMLHTTP");
+				xmlhttp = new ActiveXObject("Msxml2.XMLHTTP");
+					xmlhttp=false;
+		return xmlhttp;
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+		var req = getXMLHTTP();
+						alert("There was a problem while using XMLHTTP:\n" + req.statusText);
+							//header("refresh:3;url=http://$sitepath/mayo-admin/welcome/cases/new-cases.php?id=$_REQUEST[id]&uid=$_REQUEST[uid]/#tabnav3");
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+						$link = $_SERVER['HTTP_HOST'];
+						$message.= '<tr><td><img src="http://nordiff.biz/mayo/mayo-admin/users/images/logo.png" alt="Password Change Request"/></td></tr>';
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+<script src="http://<?php echo $jqueryminjs; ?>"></script>
+<script src="http://<?php echo $validateminjs; ?>"></script>
+										$link = $_SERVER['HTTP_HOST'];
+										$message.= '<tr><td><img src="http://mayosurgical.com/rao/mayo-admin/users/images/logo.png" alt="Password Change Request"/></td></tr>';

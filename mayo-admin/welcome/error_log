@@ -1,0 +1,340 @@
+[11-Aug-2014 23:52:14 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 40
+[11-Aug-2014 23:52:15 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 40
+[11-Aug-2014 23:53:30 America/Chicago] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 29
+[11-Aug-2014 23:53:30 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'arvsush'@'localhost' (using password: NO) in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 29
+[11-Aug-2014 23:53:30 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 29
+[11-Aug-2014 23:53:30 America/Chicago] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 31
+[11-Aug-2014 23:53:30 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'arvsush'@'localhost' (using password: NO) in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 31
+[11-Aug-2014 23:53:30 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 31
+[11-Aug-2014 23:53:31 America/Chicago] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 29
+[11-Aug-2014 23:53:31 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'arvsush'@'localhost' (using password: NO) in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 29
+[11-Aug-2014 23:53:31 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 29
+[11-Aug-2014 23:53:31 America/Chicago] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 31
+[11-Aug-2014 23:53:31 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'arvsush'@'localhost' (using password: NO) in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 31
+[11-Aug-2014 23:53:31 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 31
+[11-Aug-2014 23:55:44 America/Chicago] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 29
+[11-Aug-2014 23:55:44 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'arvsush'@'localhost' (using password: NO) in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 29
+[11-Aug-2014 23:55:44 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 29
+[11-Aug-2014 23:55:44 America/Chicago] PHP Deprecated:  mysql_real_escape_string(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 31
+[11-Aug-2014 23:55:44 America/Chicago] PHP Warning:  mysql_real_escape_string(): Access denied for user 'arvsush'@'localhost' (using password: NO) in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 31
+[11-Aug-2014 23:55:44 America/Chicago] PHP Warning:  mysql_real_escape_string(): A link to the server could not be established in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 31
+[11-Aug-2014 23:58:15 America/Chicago] PHP Fatal error:  Class 'users' not found in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 46
+[12-Aug-2014 00:03:25 America/Chicago] PHP Parse error:  syntax error, unexpected '$from' (T_VARIABLE) in /home/arvsush/public_html/mayo/mayo-admin/users/class.php on line 8
+[12-Aug-2014 00:03:27 America/Chicago] PHP Parse error:  syntax error, unexpected '$from' (T_VARIABLE) in /home/arvsush/public_html/mayo/mayo-admin/users/class.php on line 8
+[12-Aug-2014 00:03:46 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/arvsush/public_html/mayo/mayo-admin/users/class.php on line 8
+[12-Aug-2014 00:03:48 America/Chicago] PHP Parse error:  syntax error, unexpected ')' in /home/arvsush/public_html/mayo/mayo-admin/users/class.php on line 8
+[12-Aug-2014 00:04:27 America/Chicago] PHP Parse error:  syntax error, unexpected '$from' (T_VARIABLE) in /home/arvsush/public_html/mayo/mayo-admin/users/class.php on line 8
+[12-Aug-2014 00:04:30 America/Chicago] PHP Parse error:  syntax error, unexpected '$from' (T_VARIABLE) in /home/arvsush/public_html/mayo/mayo-admin/users/class.php on line 8
+[12-Aug-2014 00:25:43 America/Chicago] PHP Warning:  require_once(includes/functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:25:43 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'includes/functions.php' (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:25:48 America/Chicago] PHP Warning:  require_once(includes/functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:25:48 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'includes/functions.php' (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:04 America/Chicago] PHP Warning:  require_once(includes/functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:04 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'includes/functions.php' (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:05 America/Chicago] PHP Warning:  require_once(includes/functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:05 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'includes/functions.php' (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:06 America/Chicago] PHP Warning:  require_once(includes/functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:06 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'includes/functions.php' (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:07 America/Chicago] PHP Warning:  require_once(includes/functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:07 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'includes/functions.php' (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:07 America/Chicago] PHP Warning:  require_once(includes/functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:07 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'includes/functions.php' (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:08 America/Chicago] PHP Warning:  require_once(includes/functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:08 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'includes/functions.php' (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:28 America/Chicago] PHP Warning:  require_once(includes/functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:28 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'includes/functions.php' (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:29 America/Chicago] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:26:29 America/Chicago] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:26:29 America/Chicago] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:26:29 America/Chicago] PHP Fatal error:  Call to undefined function loggedin() in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 16
+[12-Aug-2014 00:26:30 America/Chicago] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:26:30 America/Chicago] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:26:30 America/Chicago] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:26:30 America/Chicago] PHP Fatal error:  Call to undefined function loggedin() in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 16
+[12-Aug-2014 00:26:31 America/Chicago] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:26:31 America/Chicago] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:26:31 America/Chicago] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:26:31 America/Chicago] PHP Fatal error:  Call to undefined function loggedin() in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 16
+[12-Aug-2014 00:26:40 America/Chicago] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:26:40 America/Chicago] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:26:40 America/Chicago] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:26:40 America/Chicago] PHP Fatal error:  Call to undefined function loggedin() in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 16
+[12-Aug-2014 00:26:41 America/Chicago] PHP Warning:  require_once(../../../includes/functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:41 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../../../includes/functions.php' (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:42 America/Chicago] PHP Warning:  require_once(../../../includes/functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:42 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../../../includes/functions.php' (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:43 America/Chicago] PHP Warning:  require_once(../../../includes/functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:43 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../../../includes/functions.php' (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:43 America/Chicago] PHP Warning:  require_once(../../../includes/functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:26:43 America/Chicago] PHP Fatal error:  require_once(): Failed opening required '../../../includes/functions.php' (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 6
+[12-Aug-2014 00:27:07 America/Chicago] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:27:07 America/Chicago] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:27:07 America/Chicago] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:27:07 America/Chicago] PHP Fatal error:  Call to undefined function loggedin() in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 16
+[12-Aug-2014 00:27:08 America/Chicago] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:27:08 America/Chicago] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:27:08 America/Chicago] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:27:08 America/Chicago] PHP Fatal error:  Call to undefined function loggedin() in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 16
+[12-Aug-2014 00:27:09 America/Chicago] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:27:09 America/Chicago] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:27:09 America/Chicago] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:27:09 America/Chicago] PHP Fatal error:  Call to undefined function loggedin() in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 16
+[12-Aug-2014 00:27:10 America/Chicago] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:27:10 America/Chicago] PHP Warning:  include(functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:27:10 America/Chicago] PHP Warning:  include(): Failed opening 'functions.php' for inclusion (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 12
+[12-Aug-2014 00:27:10 America/Chicago] PHP Fatal error:  Call to undefined function loggedin() in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 16
+[12-Aug-2014 01:58:53 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 44
+[12-Aug-2014 01:58:55 America/Chicago] PHP Warning:  Invalid argument supplied for foreach() in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 44
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:28 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'user_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 53
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'first_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 54
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'last_name' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 55
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'email_id' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 56
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'organisation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 57
+[12-Aug-2014 01:59:29 America/Chicago] PHP Warning:  Illegal string offset 'designation' in /home/arvsush/public_html/mayo/mayo-admin/users/modify-user.php on line 58
+[12-Aug-2014 04:45:40 America/Chicago] PHP Fatal error:  Cannot redeclare loggedin() (previously declared in /home/arvsush/public_html/mayo/mayo-admin/functions.php:6) in /home/arvsush/public_html/mayo/mayo-admin/functions.php on line 11
+[12-Aug-2014 07:14:29 America/Chicago] PHP Warning:  require_once(includes/functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 118
+[12-Aug-2014 07:14:29 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'includes/functions.php' (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 118
+[12-Aug-2014 07:17:48 America/Chicago] PHP Warning:  require_once(includes/functions.php): failed to open stream: No such file or directory in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 120
+[12-Aug-2014 07:17:48 America/Chicago] PHP Fatal error:  require_once(): Failed opening required 'includes/functions.php' (include_path='.:/opt/php55/lib/php') in /home/arvsush/public_html/mayo/mayo-admin/users/index.php on line 120
+[13-Aug-2014 00:40:43 America/Chicago] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 62
+[13-Aug-2014 00:40:44 America/Chicago] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 62
+[13-Aug-2014 00:40:53 America/Chicago] PHP Parse error:  syntax error, unexpected '$query' (T_VARIABLE) in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 62
+[13-Aug-2014 00:44:43 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 21
+[13-Aug-2014 00:44:44 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 21
+[13-Aug-2014 00:44:45 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 21
+[13-Aug-2014 00:44:55 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 21
+[13-Aug-2014 00:51:38 America/Chicago] PHP Parse error:  syntax error, unexpected ''confirm_' (T_ENCAPSED_AND_WHITESPACE), expecting ']' in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 64
+[13-Aug-2014 00:59:36 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 77
+[13-Aug-2014 00:59:37 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 77
+[13-Aug-2014 00:59:38 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 77
+[13-Aug-2014 00:59:52 America/Chicago] PHP Parse error:  syntax error, unexpected '}' in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 77
+[13-Aug-2014 01:20:57 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 68
+[13-Aug-2014 01:20:58 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 68
+[13-Aug-2014 01:20:59 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 68
+[13-Aug-2014 01:21:05 America/Chicago] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 68
+[13-Aug-2014 01:21:06 America/Chicago] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 66
+[13-Aug-2014 01:34:43 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arvsush/public_html/mayo/mayo-admin/users/header.php:8) in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 92
+[13-Aug-2014 01:34:43 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arvsush/public_html/mayo/mayo-admin/users/header.php:8) in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 94
+[13-Aug-2014 01:37:16 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arvsush/public_html/mayo/mayo-admin/users/header.php:8) in /home/arvsush/public_html/mayo/mayo-admin/functions.php on line 19
+[13-Aug-2014 01:37:16 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arvsush/public_html/mayo/mayo-admin/users/header.php:8) in /home/arvsush/public_html/mayo/mayo-admin/functions.php on line 21
+[13-Aug-2014 01:40:26 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arvsush/public_html/mayo/mayo-admin/users/header.php:8) in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 92
+[13-Aug-2014 01:41:15 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arvsush/public_html/mayo/mayo-admin/users/header.php:8) in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 92
+[13-Aug-2014 01:42:24 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arvsush/public_html/mayo/mayo-admin/users/header.php:8) in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 92
+[13-Aug-2014 01:45:42 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arvsush/public_html/mayo/mayo-admin/users/header.php:8) in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 88
+[14-Aug-2014 03:06:40 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arvsush/public_html/mayo/mayo-admin/users/adduser.php:19) in /home/arvsush/public_html/mayo/mayo-admin/users/adduser.php on line 226
+[14-Aug-2014 03:06:41 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arvsush/public_html/mayo/mayo-admin/users/adduser.php:19) in /home/arvsush/public_html/mayo/mayo-admin/users/adduser.php on line 226
+[14-Aug-2014 03:06:43 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arvsush/public_html/mayo/mayo-admin/users/adduser.php:19) in /home/arvsush/public_html/mayo/mayo-admin/users/adduser.php on line 226
+[14-Aug-2014 03:06:44 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arvsush/public_html/mayo/mayo-admin/users/adduser.php:19) in /home/arvsush/public_html/mayo/mayo-admin/users/adduser.php on line 226
+[14-Aug-2014 03:07:42 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arvsush/public_html/mayo/mayo-admin/users/adduser.php:19) in /home/arvsush/public_html/mayo/mayo-admin/users/adduser.php on line 226
+[14-Aug-2014 03:07:43 America/Chicago] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/arvsush/public_html/mayo/mayo-admin/users/adduser.php:19) in /home/arvsush/public_html/mayo/mayo-admin/users/adduser.php on line 226
+[14-Aug-2014 04:09:33 America/Chicago] PHP Parse error:  syntax error, unexpected end of file in /home/arvsush/public_html/mayo/mayo-admin/users/reset-password.php on line 117

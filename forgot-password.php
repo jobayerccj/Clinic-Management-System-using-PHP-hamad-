@@ -2,7 +2,7 @@
 
 session_start();
 
-$_SESSION['username']=$username;
+$_SESSION['username']= $username;
 
 $path = $_SERVER['DOCUMENT_ROOT']."/path.php";
 

@@ -14,6 +14,7 @@ if(loggedin())
 	*/
 	$formid = $_REQUEST['fid'];
 	$userid = $_REQUEST['uid'];
+        
 ?>
 <script type="text/javascript" src="<?php echo $sitepath; ?>/messages/common.js"></script>
 <script type="text/javascript" src="<?php echo $sitepath; ?>/messages/jquery.min.js"></script>
@@ -93,11 +94,13 @@ if(loggedin())
               <div style="margin-top:40px; width:100%;"> <input type="submit" onclick="TimedRefresh(3000);" name="message_sent_t" value="Submit" style="margin-top:5px; height:20px; border:1px solid #246d00; font-size:10px; font-weight:bold;" /></div>
             </form>
             <?php
-				$temp_message = mysql_query("SELECT * FROM `message_sent` WHERE `user_id`='$_REQUEST[uid]' &&`form_id`='$_REQUEST[fid]' order by message_id desc") or die(mysql_error());
-				if(mysql_num_rows($temp_message)>0)
+				$temp_message = mysql_query("SELECT * FROM `message_sent` WHERE `form_id`='$_REQUEST[fid]' && (`sent_by` = '$_SESSION[origin_user_id]' || `sent_by` = '1') order by message_id desc") or die(mysql_error());
+				
+                                
+                                if(mysql_num_rows($temp_message)>0)
 				{
 				while($message = mysql_fetch_object($temp_message))
-				{
+				{       
 					$getall_id  = $message->main_user_id;
 					$getalldeta = explode(",",$getall_id);
 				//echo $a = in_array($attorneys_id,$getalldeta);
@@ -175,12 +178,13 @@ if(loggedin())
             <?php	
 					$test = "SELECT a.* FROM  `message_reply` AS a, message_sent AS b WHERE a.message_sent_id = b.message_id && b.message_id='".$message->message_id."' && a.message_sent_id='".$message->message_id."'";
 					$data1 = mysql_query("SELECT a .* , b .* FROM  `message_reply` AS a, message_sent AS b WHERE a.message_sent_id = b.message_id && b.message_id='".$message->message_id."' && a.message_sent_id='".$message->message_id."' ") or die(mysql_error());
-					if(mysql_num_rows($data1)>0)
+					/*if(mysql_num_rows($data1)>0)
 					{
 						$i=1;
 						while($data = mysql_fetch_object($data1))
 						{
 						$count = count($data);
+                                                
 				?>
             <div>
               <div id="writer_list">
@@ -256,7 +260,7 @@ if(loggedin())
 									$i++;
 										}
 										/*end while*/
-								}/*end if from replies*/
+								 /*}end if from replies*/
 							}/*end main while*/
 				}
 				}

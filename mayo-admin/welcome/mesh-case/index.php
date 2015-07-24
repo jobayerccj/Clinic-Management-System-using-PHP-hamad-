@@ -257,6 +257,7 @@ if(loggedin())
 			?>
 		</div>
 		<div id="messages">
+		
 		<?php include('../includes/messages.php'); ?>
 		</div>
 		<div id="billing">

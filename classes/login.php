@@ -48,6 +48,10 @@ class Login
 					
 					$_SESSION['username']=$username;
 					
+                                        /*new jjj*/
+                                        
+                                        $_SESSION['origin_user_id'] = $getinfor['id'];
+                                        
 					$_SESSION['designation'] = $getinfor['designation'];
 					
 					$server = $_SERVER['HTTP_HOST'];
@@ -96,9 +100,18 @@ class Login
 				}
 				else if($remember=="")
 				{
+					
+				if(!isset($_SESSION)) 
+				{ 
 					session_start(); 
+				} 
+
 					
 					$_SESSION['username']=$username;
+                                        
+                                        /*new jjj*/
+                                        
+                                        $_SESSION['origin_user_id'] = $getinfor['id'];
 					
 					$server = $_SERVER['HTTP_HOST'];
 					

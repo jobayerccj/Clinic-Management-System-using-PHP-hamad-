@@ -25,7 +25,9 @@ else
 	<h1>Latest Message</h1>
 	<?php
 		$temp_message = mysql_query("SELECT * FROM `message_sent` WHERE find_in_set('$doctor_id',main_user_id) order by message_id desc limit 0,6") or die(mysql_error());
-		if(mysql_num_rows($temp_message)>0)
+		
+                
+                if(mysql_num_rows($temp_message)>0)
 		{
 		while($message= mysql_fetch_object($temp_message))
 			{

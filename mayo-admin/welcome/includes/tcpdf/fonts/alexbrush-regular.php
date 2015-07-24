@@ -34,6 +34,6 @@ $cw=array(
 250=>425,251=>425,252=>425,253=>370,254=>271,255=>370);
 $enc='cp1252';
 $diff='';
-$file='open_sans.z';
+$file='AlexBrush-Regular.z';
 $originalsize=74040;
 // --- EOF ---

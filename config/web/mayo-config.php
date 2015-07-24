@@ -9,15 +9,15 @@
  * */
  define("DB_HOST","localhost");
  define("DB_NAME","arvsush_mayo");
- define("DB_USER","root");
- define("DB_PASSWORD","");
+ define("DB_USER","arvsush_mayo");
+ define("DB_PASSWORD","AXmq8mEQzEDdKFjQ");
  
  class Database
  {
 		
 	private $db_host = "localhost";  // Change as required
-	private $db_user = "root";  // Change as required
-	private $db_pass = "";  // Change as required
+	private $db_user = "arvsush_mayo";  // Change as required
+	private $db_pass = "AXmq8mEQzEDdKFjQ";  // Change as required
 	private $db_name = "arvsush_mayo";	// Change as required
 	
 	/*

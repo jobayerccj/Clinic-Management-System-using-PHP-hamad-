@@ -1,5 +1,8 @@
 <?php
-	session_start();
+	if(!isset($_SESSION)) 
+    { 
+        session_start(); 
+    } 
 	include('classes/login-functions.php');
 	$path = $_SERVER['DOCUMENT_ROOT']."/path.php"; 
 	include($path);

@@ -1,7 +1,8 @@
 <?php
 ob_start();
 ini_set('display_errors',1);  
-error_reporting(E_ALL);
+//error_reporting(E_ALL);
+error_reporting(E_ALL & ~ E_DEPRECATED );
 $path = $_SERVER['DOCUMENT_ROOT']."/path.php"; 
 include($path);
 include($config);
